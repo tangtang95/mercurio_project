@@ -1,1 +1,4 @@
-# mercurio_project
+# Mercurio
+
+Sites:
+- yahoo.finance.com
