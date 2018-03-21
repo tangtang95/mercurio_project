@@ -2,4 +2,6 @@
 scrapingProject/.DS_Store
 scrapingProject/scrapingProject/.DS_Store
 *.pyc
-scrapingProject/bloomberg_news.tsv
+scrapingProject/scrapingProject/__pycache__
+scrapingProject/scrapingProject/spiders/__pycache__
+scrapingProject/geckodriver.logs
