@@ -6,8 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import csv
 from w3lib.html import remove_tags, remove_tags_with_content, remove_entities
-from w3lib.html import replace_escape_chars, unquote_markup, strip_html5_whitespace
-import re
+from w3lib.html import replace_escape_chars, unquote_markup
 
 class ScrapingprojectPipeline(object):
     def open_spider(self, spider):
@@ -24,7 +23,6 @@ class ScrapingprojectPipeline(object):
         temp = remove_entities(temp)
         temp = replace_escape_chars(temp)
         temp = unquote_markup(temp)
-        temp = strip_html5_whitespace(temp)
         temp = " ".join(temp.split())
         return temp
     

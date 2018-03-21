@@ -1,3 +1,5 @@
 .DS_Store
 scrapingProject/.DS_Store
 scrapingProject/scrapingProject/.DS_Store
+*.pyc
+scrapingProject/bloomberg_news.tsv
