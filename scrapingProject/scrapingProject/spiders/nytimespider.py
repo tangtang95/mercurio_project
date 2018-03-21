@@ -9,8 +9,6 @@ class NYTimesSpider(scrapy.Spider):
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']
     
-    
-    
     '''
         Filtering news based on the black_world_list.
         If black_world_list isn't defined, return true
@@ -38,7 +36,14 @@ class NYTimesSpider(scrapy.Spider):
             if self.filter_news(t.get_attribute("href")) == False:
                 out_file.write(t.get_attribute("href") + "\n")
         out_file.close()
-        
+    
+
+    '''
+        TO-DO: 
+        Nello scraping di tutti i link di articoli finanziari bisogna fermarsi
+        quando trova nella pagina la voce di marzo 2012, al posto del controllo
+        sulla variabile contatore i.
+    '''
     def parse(self, response):
         driver = webdriver.Firefox()
         driver.get(response.url)
