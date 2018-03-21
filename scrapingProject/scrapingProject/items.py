@@ -11,9 +11,8 @@ import scrapy
 class NewsItem(scrapy.Item):
     # define the fields for your item here like:
     title = scrapy.Field()
-    writer = scrapy.Field()
-    datetime = scrapy.Field()
+    author = scrapy.Field()
+    date = scrapy.Field()
+    time = scrapy.Field()
     content = scrapy.Field()
     
-    def print_csv(file):
-        pass
