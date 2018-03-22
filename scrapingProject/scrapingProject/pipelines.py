@@ -10,7 +10,7 @@ from w3lib.html import replace_escape_chars, unquote_markup
 
 class ScrapingprojectPipeline(object):
     def open_spider(self, spider):
-        self.file = open('bloomberg_news.tsv', 'w')
+        self.file = open('bloomberg_news' + spider.year + '.tsv', 'w')
         self.newswriter = csv.writer(self.file, delimiter='\t')
         self.newswriter.writerow(['title','author','date', 'time', 'content'])
 

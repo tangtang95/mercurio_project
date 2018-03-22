@@ -8,7 +8,6 @@ from scrapy.spiders import XMLFeedSpider
 from scrapy import Request
 from scrapingProject.items import NewsItem
 from scrapingProject.loaders import NewsLoader
-import time
 
 class BloombergSpider(XMLFeedSpider):
     name = "bloombergspider"
@@ -18,17 +17,17 @@ class BloombergSpider(XMLFeedSpider):
                   ('x', 'http://www.w3.org/1999/xhtml')]
     iterator = 'xml'
     itertag = 'n:sitemap'
+    year = '2001'
     
     def parse_node(self, response, node):
         sitemap_url = node.xpath('n:loc/text()').extract()[0]
-        if 'video' not in sitemap_url:
+        if 'video' not in sitemap_url and self.year in sitemap_url:
             yield Request(sitemap_url, callback = self.parse_month_sitemap)
         
     def parse_month_sitemap(self, response):
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
         news_url = response.xpath('n:url/n:loc/text()').extract()
         for url in news_url:
-            time.sleep(0.5)
             yield Request(url, callback = self.parse_news)
         
     def parse_news(self, response):
@@ -36,7 +35,6 @@ class BloombergSpider(XMLFeedSpider):
         l.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
         l.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
         l.add_xpath('title', '//h1[@class="not-quite-full-width-image-lede-text-above__hed"]/text()')
-        #self.logger.info("%s: %s", response.url, l.load_item()['title'])
         l.add_xpath('author', '//div[@class="author"][1]/text()')
         l.add_xpath('date', '//time[@class="article-timestamp"]/@datetime')
         l.add_xpath('time', '//time[@class="article-timestamp"]/@datetime')

@@ -9,10 +9,16 @@ import scrapy
 
 
 class NewsItem(scrapy.Item):
-    # define the fields for your item here like:
+    
     title = scrapy.Field()
     author = scrapy.Field()
     date = scrapy.Field()
     time = scrapy.Field()
     content = scrapy.Field()
+    
+    def __init__(self, *args, **kwargs):
+        super(NewsItem, self).__init__(*args, **kwargs)
+        self['title'] = 'default'
+        self['author'] = 'default'
+        
     
