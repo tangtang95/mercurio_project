@@ -8,34 +8,66 @@ class NYTimesSpider(scrapy.Spider):
     name = "nyspider"
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']
+    black_word_list = ["obituaries"]
+    allowed_word_list = ["business"]
     
     '''
         Filtering news based on the black_world_list.
-        If black_world_list isn't defined, return true
+        If black_world_list isn't defined, return the original list
         
         TO DO
-        Implementare tutto
-        Probabilmente sia questa che la write file sono da spostare in un
-        file di libreria di funzioni, dato che non sono per nulla legate
-        alla classe (? non del tutto sicuro di questa affermazione). 
+        Da verificare il passaggio di parametri alle funzioni
     ''' 
-    def filter_news(self, link, black_word_list = None):
-        pass
+    def filter_news_blacklist(self, links):
+        if self.black_word_list == None:
+            return links
+        
+        for item in links:
+            for word in self.black_word_list:
+                if word in item:
+                    links.remove(item)
+                    break
+        return links            
+        
+    '''
+        Filtering news based on a list of allowed word.
+        If allowed_word_list is not defined, return an empty list
+
+        TO DO
+        Da verificare i parametri delle funzioni
+    '''
+    def filter_news_allowed_section(self, links):
+        if self.allowed_word_list == None:
+            return []
+        
+        flag = False
+        for item in links:
+            flag = False
+            for word in self.allowed_word_list:
+                if word in item:
+                    flag = True
+            if flag == False:
+                links.remove(item)
+        return links                     
+        
     
     '''
         Write on file the list of the scraped sites 
-    
-        TO FIX: chiusura del file se eccezioni presenti
     '''
-    def write_file(self, file_name, list1, list2):
-        out_file = open(file_name, 'w')
-        for t in list1:
-            if self.filter_news(t.get_attribute("href")) == False:
-                out_file.write(t.get_attribute("href") + "\n")
-        for t in list2:
-            if self.filter_news(t.get_attribute("href")) == False:
-                out_file.write(t.get_attribute("href") + "\n")
-        out_file.close()
+    def write_file(self, file_name, list1):
+        try:
+            out_file = open(file_name, 'w')
+        except:
+            self.logger.error("Error opening file: " + file_name)
+            return
+        try:        
+            for t in list1:
+                if self.filter_news(t.get_attribute("href")) == False:
+                    out_file.write(t.get_attribute("href") + "\n")
+        except: 
+            self.logger.error("Error writing file: " + file_name)
+        finally: 
+            out_file.close()
     
 
     '''
@@ -43,6 +75,10 @@ class NYTimesSpider(scrapy.Spider):
         Nello scraping di tutti i link di articoli finanziari bisogna fermarsi
         quando trova nella pagina la voce di marzo 2012, al posto del controllo
         sulla variabile contatore i.
+        Questa è una pessima strategia, l'operazione di ricerca in una pagine
+        molto grande è troppo costosa
+        
+        https://michaeljsanders.com/2017/05/12/scrapin-and-scrollin.html
     '''
     def parse(self, response):
         driver = webdriver.Firefox()
@@ -61,8 +97,12 @@ class NYTimesSpider(scrapy.Spider):
          
         story_links = driver.find_elements_by_xpath(".//section[@id = 'latest-panel']//a[@class='story-link']")
         
+        # Filtering links
+        headline_links = self.filter_news_allowed_section(headline_links)
+        story_links = self.filter_news_allowed_section(story_links)
+        
         # Writing file
-        self.write_file("nytimes_news", headline_links, story_links)    
+        self.write_file("nytimes_news", headline_links+story_links)    
     
             
         
