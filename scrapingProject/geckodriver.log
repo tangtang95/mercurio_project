@@ -1,0 +1,132 @@
+1521754160533	geckodriver	INFO	geckodriver 0.20.0
+1521754160540	geckodriver	INFO	Listening on 127.0.0.1:51918
+1521754163645	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.XkZZmfTSI0Vh"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521754164284	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521754165734	Marionette	INFO	Listening on port 51926
+1521754166840	Marionette	WARN	TLS certificate errors will be ignored for this session
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 10864, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11028, Chrome_ChildThread] W[Child 10716, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10716, Chrome_ChildThread][Child 1272, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1272, Chrome_Child[Child 5992, Chrome_[GPU 5704, Chrome_Chil
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1521755812378	geckodriver	INFO	geckodriver 0.20.0
+1521755812395	geckodriver	INFO	Listening on 127.0.0.1:64006
+1521755815430	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.zA7WXzg6w4Dj"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521755815980	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521755817322	Marionette	INFO	Listening on port 64015
+1521755817482	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 8060, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8060, Chrome_ChildThread] 1521755901310	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 400, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 400, Chrome_ChildThread] WAR[Parent 12208, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12500, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12500, Chrome_ChildThr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1521756193536	geckodriver	INFO	geckodriver 0.20.0
+1521756193555	geckodriver	INFO	Listening on 127.0.0.1:63887
+1521756196687	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.bBvEsuygMpMu"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756197244	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756198492	Marionette	INFO	Listening on port 63895
+1521756198732	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Child 8156, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1521756407260	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.eZwxO6x3mMk7"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756407900	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756409310	Marionette	INFO	Listening on port 52251
+1521756410454	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 13340, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8980, Chrome_ChildThre[Parent 13340, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5388, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5388, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/[GPU 5604, Chrome_ChildThread] WARNING: p
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756554682	Marionette	INFO	Listening on port 58219
+1521756555540	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-121316/WSFolders/11937438_15//js/dco_advanced_block.js, line 45: ReferenceError: trackOnce is not defined
+[Child 8076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8076, Chrome_ChildThread[GPU 11848, Chrome_ChildThread] WARNING: pipe error: 109: file 
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ead VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756655050	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756656342	Marionette	INFO	Listening on port 57062
+1521756656544	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 12076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12076, Chrome_ChildThread] WAR[Parent 11004, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_chann[Child 1544, Chrome_ChildThr*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 2420, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1521756871361	geckodriver	INFO	geckodriver 0.20.0
+1521756871372	geckodriver	INFO	Listening on 127.0.0.1:59457
+1521756874469	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.myxVZ48IANtV"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756875070	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1521756876312	Marionette	INFO	Listening on port 59465
+1521756876524	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 13568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13568, Chrome_Chil[Parent 5936, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14256, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src[Parent 5936, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9764, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9764, Chrome_ChildThrea[GPU 8612, C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
