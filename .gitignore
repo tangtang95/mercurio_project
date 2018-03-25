@@ -1,7 +1,7 @@
 .DS_Store
-scrapingProject/.DS_Store
-scrapingProject/scrapingProject/.DS_Store
 *.pyc
-scrapingProject/scrapingProject/__pycache__
-scrapingProject/scrapingProject/spiders/__pycache__
-scrapingProject/geckodriver.logs
+__pycache__/
+scrapingProject/*.log
+scrapingProject/.scrapy
+scrapingProject/*.tsv
+crawlingFinished

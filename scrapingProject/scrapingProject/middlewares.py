@@ -7,6 +7,67 @@
 
 from scrapy import signals
 
+import logging
+from fake_useragent import UserAgent
+
+logger = logging.getLogger(__name__)
+# A Tor IP will be reused only after 10 different IPs were used.
+
+
+class RandomUserAgentMiddleware(object):
+    """
+    This middleware change the user agent for each request or for every time the
+    Ip changed
+    """
+    
+    
+    #This list indicates which spider want to use the rotation user agent,
+    #Remember to add a variable current_ip to the spider
+    spiderList = ['bloombergspider']
+    
+    def __init__(self, crawler):
+        super(RandomUserAgentMiddleware, self).__init__()
+
+        fallback = crawler.settings.get('FAKEUSERAGENT_FALLBACK', None)
+        self.ua = UserAgent(fallback=fallback)
+        self.per_ip = crawler.settings.get('RANDOM_UA_PER_IP', True)
+        self.ua_type = crawler.settings.get('RANDOM_UA_TYPE', 'random')
+        self.ip2ua = {}
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler)
+
+    def process_request(self, request, spider):
+        def get_ua():
+            '''Gets random UA based on the type setting (random, firefox…)'''
+            return getattr(self.ua, self.ua_type)
+        
+        if spider.name in self.spiderList:
+            if self.per_ip:
+                ip = spider.current_ip
+                if ip is None:
+                    ip = "127.0.0.1"
+                if ip not in self.ip2ua:
+                    self.ip2ua[ip] = get_ua()
+                    logger.debug('Assign User-Agent %s to ip %s'
+                                 % (self.ip2ua[ip], ip))
+                request.headers.setdefault('User-Agent', self.ip2ua[ip])
+            else:
+                request.headers.setdefault('User-Agent', get_ua())
+
+class ProxyMiddleware(object):
+    """
+    This middleware add a metatag proxy to each request you send, to use the ip proxy.
+    Need privoxy and tor running
+    """
+    
+    #This list indicates which spider want to use the rotation ip proxy
+    spiderList = ['bloombergspider']
+
+    def process_request(self, request, spider):
+        if spider.name in self.spiderList:
+            request.meta['proxy'] = 'http://127.0.0.1:8118'
 
 class ScrapingprojectSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -54,6 +115,7 @@ class ScrapingprojectSpiderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+        
 
 
 class ScrapingprojectDownloaderMiddleware(object):
