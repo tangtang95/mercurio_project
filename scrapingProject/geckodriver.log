@@ -880,3 +880,1867 @@ Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local
 [Child 9008, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buil
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1522001427467	geckodriver	INFO	geckodriver 0.20.0
+1522001427475	geckodriver	INFO	Listening on 127.0.0.1:54772
+1522001430620	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.i2VRHzowibtO"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522001431462	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522001433166	Marionette	INFO	Listening on port 54780
+1522001433804	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-121316/WSFolders/11937438_15//js/dco_advanced_block.js, line 45: ReferenceError: trackOnce is not defined
+[Child 2528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2528, Chrome_ChildTh1522002096659	geckodriver	INFO	geckodriver 0.20.0
+1522002096670	geckodriver	INFO	Listening on 127.0.0.1:61723
+1522002099780	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.lCHKKZS7NKsB"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002100704	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002102192	Marionette	INFO	Listening on port 61731
+1522002102956	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 12800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12800, Chrome_ChildThread] WARNING[Parent 11784, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1[GPU 15132, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522002498682	geckodriver	INFO	geckodriver 0.20.0
+1522002498690	geckodriver	INFO	Listening on 127.0.0.1:57918
+1522002501803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.5wCmhYxYYz8s"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002502322	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002503592	Marionette	INFO	Listening on port 57926
+1522002503868	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 13572, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9944, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9944, Chrome_ChildThread] WARNING: pipe error: [[GPU 6628, Chrome_ChildThread] WARNING: pipe er
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+e
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002561618	Marionette	INFO	Listening on port 53419
+1522002562640	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 10032, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7292, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7292, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buil[Child 7952, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7952, Chrome_ChildThread] WARNING[Child 11656, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11656, Chrome_ChildThr[GPU 8292, Chrome_Ch
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522002674810	geckodriver	INFO	geckodriver 0.20.0
+1522002674826	geckodriver	INFO	Listening on 127.0.0.1:65506
+1522002677915	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.R0T4QwfukhRX"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002678732	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002680286	Marionette	INFO	Listening on port 65514
+1522002681096	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 14964, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/co1522002729024	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.Xs3jtjhhq7Jb"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002729848	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002731234	Marionette	INFO	Listening on port 56975
+1522002732214	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 7816, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522002914938	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Fire[Parent 2148, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_chanUnable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002915644	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002917072	Marionette	INFO	Listening on port 54990
+1522002918112	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 3884, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522002948804	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.ucynPPxM35ij"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002949690	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522002951120	Marionette	INFO	Listening on port 53145
+1522002951984	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 4856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9580, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9580, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 4856, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15168, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15168, Chrome_ChildThread] WARNING: pipe error: 109: file z:/[GPU 9088, Chrome_ChildThread] WARNING: pi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003021854	Marionette	INFO	Listening on port 54222
+1522003021966	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 10056, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/co1522003103980	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.5h44JogDOBnx"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003104884	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003106300	Marionette	INFO	Listening on port 58170
+1522003107174	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 9320, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10776, Chrome_ChildThread] WARNING: pipe error: 109: [Parent 9320, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14276, Chrome_Chi*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 2348, Chrome_ChildThread] WARNING: pipe error: 109
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522003139430	geckodriver	INFO	geckodriver 0.20.0
+1522003139446	geckodriver	INFO	Listening on 127.0.0.1:52946
+1522003142528	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.NqZyGgvrz2GV"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003143068	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003144378	Marionette	INFO	Listening on port 52954
+1522003144578	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 5192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5192, Chrome_ChildThread] WAR[Parent 1492, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10160, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 1492, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2796, Chrome_ChildThread] WARNING: pipe er*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1522003171716	geckodriv
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+1522003174848	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.em87sfqQMEM3"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003175438	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003176872	Marionette	INFO	Listening on port 58381
+1522003176908	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11132, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7804, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7804, Chrome_ChildThread] WARNING: pipe error: 109: fi[Parent 11132, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5840, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 11132, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 9988, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522003419035	geckodriver	INFO	geckodriver 0.20.0
+1522003419058	geckodriver	INFO	Listening on 127.0.0.1:49379
+1522003422163	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.rqoeh5OzIwy4"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003422690	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003423890	Marionette	INFO	Listening on port 49387
+1522003424206	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 2016, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/c[Child 14924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14924, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13556, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13556, Chrome_ChildThread[GPU 10564, Chrome_ChildTh
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522003835712	geckodriver	INFO	geckodriver 0.20.0
+1522003835729	geckodriver	INFO	Listening on 127.0.0.1:51332
+1522003838826	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.B6Ny25U541QK"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003839570	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522003840918	Marionette	INFO	Listening on port 51340
+1522003842038	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 15348, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15348, Chrome_ChildThread[Child 8796, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8796, Chrome_ChildThread] WAR[Child 10096, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10096, Chrome_ChildThr[GPU 8972, Chrome_ChildThread
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522004088534	geckodriver	INFO	geckodriver 0.20.0
+1522004088543	geckodriver	INFO	Listening on 127.0.0.1:55483
+1522004091680	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.E2hNmsG9UoW6"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004092500	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004093824	Marionette	INFO	Listening on port 55492
+1522004094854	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 15152, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15152, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 5640, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build[Parent 5640, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6700, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6700, Chrome_ChildThrea
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+h
+[Parent 9160, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13640, Chrome_ChildThread] WARNIN[Parent 9160, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 392, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 392, Chrome_ChildThread] WARNING: pipe err
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522004319901	geckodriver	INFO	geckodriver 0.20.0
+1522004319908	geckodriver	INFO	Listening on 127.0.0.1:52661
+1522004323000	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.B2ceQ82Fw1E5"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004323722	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004325094	Marionette	INFO	Listening on port 52669
+1522004326212	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 6716, C[Child 14488, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14488, Chrome_ChildThread] WARNING: pipe error: 109:[GPU 13008, Chrom
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522004405834	geckodriver	INFO	geckodriver 0.20.0
+1522004405842	geckodriver	INFO	Listening on 127.0.0.1:50150
+1522004408940	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.9AUNQpzbCAc8"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004409454	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522004410742	Marionette	INFO	Listening on port 50158
+1522004410998	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 6212, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522005007970	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.HZl9YhVqCg4I"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005008578	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005009976	Marionette	INFO	Listening on port 49490
+1522005010002	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 9852, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common1522005458998	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.UI8GyweULq4m"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005459544	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005460820	Marionette	INFO	Listening on port 56951
+1522005461068	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-121316/WSFolders/11937496_13//js/dco_advanced_block.js, line 45: ReferenceError: trackOnce is not defined
+[Child 9360, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9360, Chrome_ChildThread[Parent 14852, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11692, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11692, Chrome_ChildThread] WARNING: pi[Child 6944, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6944, Chrome_ChildThread] WARN[GPU 13448, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522005597601	geckodriver	INFO	geckodriver 0.20.0
+1522005597617	geckodriver	INFO	Listening on 127.0.0.1:64466
+1522005600706	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.aSrTOWLhSmCq"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005601248	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005602504	Marionette	INFO	Listening on port 64474
+1522005602758	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7520, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common1522005640062	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.wMfEk6pBG2jc"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005640600	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005641924	Marionette	INFO	Listening on port 49991
+1522005642098	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 13244, Chrome_ChildTh[Child 5868, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5868, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13592, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13592, Chrome_ChildT*** UTM:SVC TimerManager:registerTimer called afte1522005682204	geckodriver	INFO	Listening on 127.0.0.1:54049
+1522005685307	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.iGITpQobLrKM"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005686678	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522005687896	Marionette	INFO	Listening on port 54057
+1522005688496	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 2548, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2548, Chrome_ChildThr
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 9852, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9852, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 14296, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5084, Chrome_ChildThread] WARNING: p[GPU 12252, Chrome_ChildThre
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522007261481	geckodriver	INFO	geckodriver 0.20.0
+1522007261496	geckodriver	INFO	Listening on 127.0.0.1:58770
+1522007264513	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.3iGA0A1PbPlb"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522007264958	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522007266154	Marionette	INFO	Listening on port 58778
+1522007266552	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 8132, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522007988601	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.reabz05I39ug"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522007989156	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522007990348	Marionette	INFO	Listening on port 53354
+1522007990638	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-121316/WSFolders/11937438_15//js/dco_advanced_block.js, line 45: ReferenceError: trackOnce is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://secure-ds.serving-sys.com/BurstingRes/Site-121316/WSFolders/11937438_15//js/dco_advanced_block.js, line 45: ReferenceError: trackOnce is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-36116321-2&l=dataLayer, line 70: unreachable code after return statement
+[Parent 10820, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13996, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13996, Chrome_ChildThread] WARNING[Parent 10820, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2992, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2992, Chrome_ChildThread] WARNING: pipJavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Parent 10820, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8608, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8608, Chrome_Child[Child 1592, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 1592, Chrome_ChildThread][Child 12984, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+istry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522008599322	Marionette	INFO	Listening on port 60545
+1522008599402	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 7292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4980, Chrome_ChildThread] WA[Parent 7292, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12108, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12108, Chrome_ChildThread] WARNING: pipe erro[GPU 11408, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522008995749	geckodriver	INFO	geckodriver 0.20.0
+1522008995765	geckodriver	INFO	Listening on 127.0.0.1:57019
+1522008998801	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.AvZlXTjoq4sX"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522008999258	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522009000508	Marionette	INFO	Listening on port 57027
+1522009000884	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3981: TypeError: this.tabs is undefined
+[Child 8480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/bJavaScript error: https://rs.adledge.com/aleagypkg?cltid=3933&ntwid=dcm&advid=4923516&cpgid=11104070&pctid=148424583&adid=319653779&ctvid=95606731&steid=1713182&stenm=N1238.1568091AFFIPERF.CO.UK&ckeid=CAESEFXS7-atiFvFg7ZSCqu5sRM&csz=300x600&rvd=1&bs=1&fw=0&data=dsp%3D,bid%3D,adv%3D,cpg%3D,str%3D,ste=%3D,exc=%3D,pub=%3D,sit=%3D,pag%3D,cre%3D,pag%3D&, line 1: NetworkError: A network error occurred.
+JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 218: TypeError: this._mm is null
+JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 218: TypeError: this._mm is null
+JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 218: TypeError: this._mm is null
+JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 218: TypeError: this._mm is null
+JavaScript error: resource:///modules/FormSubmitObserver.jsm, line 218: TypeError: this._mm is null
+JavaScript error: https://rs.adledge.com/aleagypkg?cltid=3933&ntwid=dcm&advid=4923516&cpgid=11104070&pctid=148424583&adid=319653779&ctvid=95606731&steid=1713182&stenm=N1238.1568091AFFIPERF.CO.UK&ckeid=CAESEFXS7-atiFvFg7ZSCqu5sRM&csz=300x600&rvd=1&bs=1&fw=0&data=dsp%3D,bid%3D,adv%3D,cpg%3D,str%3D,ste=%3D,exc=%3D,pub=%3D,sit=%3D,pag%3D,cre%3D,pag%3D&, line 1: NetworkError: A network error occurred.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 904
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+, Chrome_Chi
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ldThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/c
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+hrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Child 904, Chrome_ChildThrea
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+d] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+mon/ipc_channel_
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+win.cc, line 
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+346
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x47000E,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[Parent 12500, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10672, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10672, Chrome_Child*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 12932, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522010255910	geckodriver	INFO	geckodriver 0.20.0
+1522010255910	geckodriver	INFO	Listening on 127.0.0.1:59469
+1522010258994	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.YjKdAtsAceCd"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522010259546	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522010260770	Marionette	INFO	Listening on port 59477
+1522010261066	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: 
+  Message: [Exception... "Unexpected error"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/styles.js :: getUsedFontFaces :: line 273"  data: no]
+  Stack:
+    getUsedFontFaces@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/styles.js:273:17
+handler@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1106:19
+onPacket@resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js:1788:15
+receiveMessage@resource://devtools/shared/base-loader.js -> resource://devtools/shared/transport/transport.js:761:7
+
+getUsedFontFaces@resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/styles.js:273:17
+handler@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1106:19
+onPacket@resource://devtools/shared/base-loader.js -> resource://devtools/server/main.js:1788:15
+receiveMessage@resource://devtools/shared/base-loader.js -> resource://devtools/shared/transport/transport.js:761:7
+console.error: 
+  Could not get the list of font families
+  unknownError
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/tab.js, line 1420: TypeError: this._tabPool is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://de[Child 6912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, lin[Child 14980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14980, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14288, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14288, Chrome_ChildThread] WARNING: pipe er
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+tils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:441:5
+Line: 1875, column: 0
+console.error: 
+  Protocol error (noSuchActor): No such actor for ID: server1.conn1.child1/highlighter78
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:600:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7
+Line: 1875, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:600:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7
+Line: 1875, column: 0
+[Parent 12028, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 9568, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/s[Child 912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 912, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 11336, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522010803081	geckodriver	INFO	geckodriver 0.20.0
+1522010803081	geckodriver	INFO	Listening on 127.0.0.1:59365
+1522010806150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.yJsi3Sgs5eVT"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522010806594	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522010807868	Marionette	INFO	Listening on port 59373
+1522010808188	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: this._containers is null
+Full stack: getContainer@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:481:5
+showNode/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:1141:30
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+
+*************************
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: this._containers is null
+Full stack: getContainer@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:481:5
+showNode/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:1141:30
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+
+*************************
+console.error: 
+  Message: TypeError: this._containers is null
+  Stack:
+    getContainer@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:481:5
+showNode/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:1141:30
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+
+console.error: 
+  Message: TypeError: this._containers is null
+  Stack:
+    getContainer@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:481:5
+showNode/<@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/markup/markup.js:1141:30
+process@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:922:23
+walkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:806:7
+scheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:742:11
+
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: resource://devtools/shared/base-loader.js -> resource://devtools/server/actors/inspector.js, line 1045: TypeError: this._refMap is null
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+[Child 7228, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7228, Chrome_ChildThread] WARNING: pipe error: 10[Child 12352, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12352, Chrome_ChildThread] WA[[Child 14888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chr[GPU 2620, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ip
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+ionette	INFO	Listening on port 49612
+1522011079892	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 4132, Chrome_ChildT[Child 3448, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3448, Chrome_ChildThread] WARNING: pipe error: 10[Parent 12968, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14724, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14724, Chrome_ChildThrea
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522011161952	Marionette	INFO	Listening on port 63769
+1522011162296	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Parent 8868, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/buil[Parent 8868, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14796, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14796, Chrome_ChildThrea[GPU 7832, Chrome_Chi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522069646471	geckodriver	INFO	geckodriver 0.20.0
+1522069646478	geckodriver	INFO	Listening on 127.0.0.1:56901
+1522069649643	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.LNwD9sGzBA4T"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522069650636	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522069652138	Marionette	INFO	Listening on port 56909
+1522069652836	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://g1.nyt.com/assets/collection/20180309-151747/js/foundation/lib/framework.js, line 1: Error: Script error
+http://requirejs.org/docs/errors.html#scripterror
+[Parent 10848, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11796, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11796, Chrome_Child[Parent 10848, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2428, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2428, Chrome_Chi*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 8176, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522069680898	geckodriver	INFO	geckodriver 0.20.0
+1522069680908	geckodriver	INFO	Listening on 127.0.0.1:65082
+1522069683955	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.8wmb9UOi0Q8t"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522069684466	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522069685844	Marionette	INFO	Listening on port 65102
+1522069685990	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+[Parent 11180, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 776, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 776, Chrome_ChildThre[Child 15284, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 15284, Chrome_ChildThread] WAR[Parent 11180, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 4028, Chrome_ChildThread] WA[Child 14848, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14848, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/[GPU 5340, Chrome_Chi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
