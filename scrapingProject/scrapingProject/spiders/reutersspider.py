@@ -16,6 +16,9 @@ class ReutersSpider(Spider):
     start_urls = [ ]
     
     def __init__(self, *args, **kwargs):
+        """
+        Set up every url for each year to crawl
+        """
         super(ReutersSpider, self).__init__(*args, **kwargs)
         prefix_url = "https://www.reuters.com/resources/archive/us/"
         suffix_url = ".html"
@@ -23,11 +26,17 @@ class ReutersSpider(Spider):
         [ self.start_urls.append(prefix_url + str(year) + suffix_url) for year in range(2007, now_year + 1) ]
     
     def parse(self, response):
+        """
+        Parse each year archive to get the url for each day of that year
+        """
         day_urls = response.xpath('//div[@class="moduleBody"]/p/a/@href').extract()
         for url in day_urls:
             yield Request("https://www.reuters.com" + url, callback = self.parse_news)
             
     def parse_news(self, response):
+        """
+        Parse all the news inside the page (N.B. inside the content there is only the url)
+        """
         list_of_news = response.xpath('//div[@class="headlineMed"]').extract()
         for news in list_of_news:
             item = NewsItem()

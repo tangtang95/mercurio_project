@@ -43,7 +43,7 @@ class BloombergSpider(XMLFeedSpider):
    
     def parse_node(self, response, node):
         """
-        This method is called when the iterator encounters an itertag='n:sitemap'
+        Called everytime the iterator encounters a tag: 'n:sitemap'
         and extract every url that isn't video with the SITEMAP_YEAR in it
         """
         
@@ -54,7 +54,7 @@ class BloombergSpider(XMLFeedSpider):
        
     def parse_month_sitemap(self, response):
         """
-        This method makes a HTTP request for every news inside the month sitemap
+        Send an HTTP request for every news inside the month sitemap
         """ 
         
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
@@ -65,7 +65,7 @@ class BloombergSpider(XMLFeedSpider):
             
     def parse_news(self, response):
         """
-        This method extract the data from the news page and if the page is not in cache,
+        Extract the data from the news page and if the page is not in cache,
         this HTML request is counted, so the ip should be updated if necessary.
         The update ip needs to stay here unless you don't want HTTPCACHE
         """

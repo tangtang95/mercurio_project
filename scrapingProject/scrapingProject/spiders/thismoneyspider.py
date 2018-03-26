@@ -42,18 +42,27 @@ class ThisMoneySpider(Spider):
         
     
     def parse(self, response):
+        """
+        Parse the sitemap of a specific year and send a request of each day_urls
+        """
         response.selector.register_namespace('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')
         urls = response.xpath("//n:sitemap/n:loc/text()").extract()
         for url in urls:
             yield Request(url, callback = self.parse_day_sitemap)
             
     def parse_day_sitemap(self, response):
+        """
+        Send a request for each news inside the sitemap from the parse method
+        """
         response.selector.register_namespace('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')
         news_urls = response.xpath("//n:url/n:loc/text()").extract()
         for url in news_urls:
             yield Request(url, callback = self.parse_news)
         
     def parse_news(self, response):
+        """
+        Return a News item with all the content inside the page
+        """
         if 'cached' not in response.flags:
             self.update_ip()
         loader = NewsLoader(item=NewsItem(), response=response)

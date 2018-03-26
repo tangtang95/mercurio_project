@@ -58,7 +58,7 @@ class RandomUserAgentMiddleware(object):
 
 class ProxyMiddleware(object):
     """
-    This middleware add a metatag proxy to each request you send, to use the ip proxy.
+    Adds a metatag proxy to each request that need to be sent (for the ip proxy)
     Need privoxy and tor running
     """
     

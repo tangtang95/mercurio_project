@@ -27,6 +27,9 @@ class ScrapingprojectPipeline(object):
         return temp
     
     def process_item(self, item, spider):
+        """
+        Clean the content and write the item on the file
+        """
         item['content'] = self.clean_content(item['content'])
         try:
             self.newswriter.writerow([item['title'], item['author'], 
