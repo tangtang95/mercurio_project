@@ -8,29 +8,70 @@ from scrapy.spiders import XMLFeedSpider
 from scrapy import Request
 from scrapingProject.items import NewsItem
 from scrapingProject.loaders import NewsLoader
+from scrapingProject.toripchanger import TorIpChanger
+
+NUMBER_OF_REQUEST_PER_IP = 30
+SITEMAP_YEAR = '2008'
+IP_CHANGER = TorIpChanger(reuse_threshold=10)
 
 class BloombergSpider(XMLFeedSpider):
     name = "bloombergspider"
-    allowed_domains = ['bloomberg.com']
+    allowed_domains = ['bloomberg.com', 'icanhazip.com']
     start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']
     namespaces = [('n', 'http://www.sitemaps.org/schemas/sitemap/0.9'),
                   ('x', 'http://www.w3.org/1999/xhtml')]
     iterator = 'xml'
     itertag = 'n:sitemap'
-    year = '2001'
     
+    current_ip = '127.0.0.1'
+    
+    _requests_count = 0
+    
+    def __init__(self, *args, **kwargs):
+        super(BloombergSpider, self).__init__(*args, **kwargs)
+        self.current_ip = IP_CHANGER.get_new_ip()
+
+    def update_ip(self):
+        """
+        Every NUMBER_OF_REQUEST_PER_IP the spider asks for a new IP
+        """
+        
+        self._requests_count += 1
+        if self._requests_count > NUMBER_OF_REQUEST_PER_IP:
+            self._requests_count = 0
+            self.current_ip = IP_CHANGER.get_new_ip()
+    
+   
     def parse_node(self, response, node):
+        """
+        This method is called when the iterator encounters an itertag='n:sitemap'
+        """
+        
         sitemap_url = node.xpath('n:loc/text()').extract()[0]
-        if 'video' not in sitemap_url and self.year in sitemap_url:
+        if 'video' not in sitemap_url and SITEMAP_YEAR in sitemap_url:
             yield Request(sitemap_url, callback = self.parse_month_sitemap)
         
+       
     def parse_month_sitemap(self, response):
+        """
+        This method makes a HTTP request for every news inside the month sitemap
+        """ 
+        
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
+        self.update_ip()
         news_url = response.xpath('n:url/n:loc/text()').extract()
         for url in news_url:
             yield Request(url, callback = self.parse_news)
-        
+            
     def parse_news(self, response):
+        """
+        This method extract the data from the news page and if the page is not in cache,
+        this HTML request is counted, so the ip should be updated if necessary.
+        The update ip needs to stay here unless you don't want HTTPCACHE
+        """
+        
+        if 'cached' not in response.flags:
+            self.update_ip()
         l = NewsLoader(item=NewsItem(), response=response)
         l.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
         l.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
