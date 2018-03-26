@@ -21,4 +21,4 @@ class NewsLoader(ItemLoader):
     time_out = TakeFirst()
     
     #content_in = MapCompose(remove_tags_with_content, which_ones = ('style', ))
-    #content_out = MapCompose(remove_tags)
+    #content_out = MapCompose(Join)

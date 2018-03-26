@@ -11,19 +11,18 @@ from scrapingProject.loaders import NewsLoader
 from scrapingProject.toripchanger import TorIpChanger
 
 NUMBER_OF_REQUEST_PER_IP = 30
-SITEMAP_YEAR = '2008'
+SITEMAP_YEAR = '2017'
 IP_CHANGER = TorIpChanger(reuse_threshold=10)
 
 class BloombergSpider(XMLFeedSpider):
     name = "bloombergspider"
-    allowed_domains = ['bloomberg.com', 'icanhazip.com']
+    allowed_domains = ['bloomberg.com']
     start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']
-    namespaces = [('n', 'http://www.sitemaps.org/schemas/sitemap/0.9'),
-                  ('x', 'http://www.w3.org/1999/xhtml')]
+    namespaces = [('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')]
     iterator = 'xml'
     itertag = 'n:sitemap'
     
-    current_ip = '127.0.0.1'
+    current_ip = 'localhost'
     
     _requests_count = 0
     
@@ -33,7 +32,7 @@ class BloombergSpider(XMLFeedSpider):
 
     def update_ip(self):
         """
-        Every NUMBER_OF_REQUEST_PER_IP the spider asks for a new IP
+        After every NUMBER_OF_REQUEST_PER_IP, the spider asks for a new IP
         """
         
         self._requests_count += 1
@@ -45,6 +44,7 @@ class BloombergSpider(XMLFeedSpider):
     def parse_node(self, response, node):
         """
         This method is called when the iterator encounters an itertag='n:sitemap'
+        and extract every url that isn't video with the SITEMAP_YEAR in it
         """
         
         sitemap_url = node.xpath('n:loc/text()').extract()[0]
@@ -72,14 +72,15 @@ class BloombergSpider(XMLFeedSpider):
         
         if 'cached' not in response.flags:
             self.update_ip()
-        l = NewsLoader(item=NewsItem(), response=response)
-        l.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
-        l.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
-        l.add_xpath('title', '//h1[@class="not-quite-full-width-image-lede-text-above__hed"]/text()')
-        l.add_xpath('author', '//div[@class="author"][1]/text()')
-        l.add_xpath('date', '//time[@class="article-timestamp"]/@datetime')
-        l.add_xpath('time', '//time[@class="article-timestamp"]/@datetime')
-        l.add_xpath('content', '//div[@class="body-copy fence-body"]')
-        return l.load_item()
+        loader = NewsLoader(item=NewsItem(), response=response)
+        loader.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
+        loader.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
+        loader.add_xpath('title', '//h1[@class="not-quite-full-width-image-lede-text-above__hed"]/text()')
+        loader.add_xpath('author', '//div[@class="author"][1]/text()')
+        datetime = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
+        loader.add_value('date', datetime[:10])
+        loader.add_value('time', datetime[11:19])
+        loader.add_xpath('content', '//div[@class="body-copy fence-body"]')
+        return loader.load_item()
         
     

@@ -26,17 +26,12 @@ class ScrapingprojectPipeline(object):
         temp = " ".join(temp.split())
         return temp
     
-    def get_date(self, text):
-        return text[:10]
-    
-    def get_time(self, text):
-        return text[11:19]
-    
     def process_item(self, item, spider):
         item['content'] = self.clean_content(item['content'])
-        item['date'] = self.get_date(item['date'])
-        item['time'] = self.get_time(item['time'])
-        self.newswriter.writerow([item['title'], item['author'], 
-                                 item['date'], item['time'], item['content']])
+        try:
+            self.newswriter.writerow([item['title'], item['author'], 
+                                     item['date'], item['time'], item['content']])
+        except csv.Error as ex:
+            self.logger.error(ex)
         self.file.flush()
         return item

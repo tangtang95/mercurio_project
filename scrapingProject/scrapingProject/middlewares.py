@@ -23,7 +23,7 @@ class RandomUserAgentMiddleware(object):
     
     #This list indicates which spider want to use the rotation user agent,
     #Remember to add a variable current_ip to the spider
-    spiderList = ['bloombergspider']
+    spiderList = ['bloombergspider', 'thismoneyspider']
     
     def __init__(self, crawler):
         super(RandomUserAgentMiddleware, self).__init__()
@@ -63,7 +63,7 @@ class ProxyMiddleware(object):
     """
     
     #This list indicates which spider want to use the rotation ip proxy
-    spiderList = ['bloombergspider']
+    spiderList = ['bloombergspider', 'thismoneyspider']
 
     def process_request(self, request, spider):
         if spider.name in self.spiderList:

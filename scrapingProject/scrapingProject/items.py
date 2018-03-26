@@ -18,7 +18,7 @@ class NewsItem(scrapy.Item):
     
     def __init__(self, *args, **kwargs):
         super(NewsItem, self).__init__(*args, **kwargs)
-        self['title'] = 'default'
-        self['author'] = 'default'
-        
+        self['title'] = 'NotFound'
+        self['author'] = 'Anonymous'
+        self['content'] = 'NotFound'
     

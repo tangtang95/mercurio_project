@@ -1,5 +1,6 @@
 import scrapy
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 import time
 
 SCROLL_PAUSE_TIME = 2
@@ -13,8 +14,8 @@ class NYTimesSpider(scrapy.Spider):
     NUM_YEAR = 6
     AVG_DAY_PER_SCROLL = 3
     CORRECTIVE_FACTOR = 0.95
-    MAX_ITERATION = NUM_YEAR / AVG_DAY_PER_SCROLL * CORRECTIVE_FACTOR * 365
-    #MAX_ITERATION = 150
+    #MAX_ITERATION = NUM_YEAR / AVG_DAY_PER_SCROLL * CORRECTIVE_FACTOR * 365
+    MAX_ITERATION = 5
     
     '''
         Filtering news based on the black_world_list.
@@ -84,7 +85,7 @@ class NYTimesSpider(scrapy.Spider):
     
     
     def parse(self, response):
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.get(response.url)
         driver.find_element_by_xpath(".//button[@class='button load-more-button']").click()
         driver.execute_script("return document.body.scrollHeight")
@@ -96,7 +97,7 @@ class NYTimesSpider(scrapy.Spider):
         flag = False
         i = 0
         try:   
-            while flag == False or i < self.MAX_ITERATION: 
+            while flag == False and i < self.MAX_ITERATION: 
                 # Handling infinite scroll with both method
                 last_count = page_len
                 time.sleep(SCROLL_PAUSE_TIME)
