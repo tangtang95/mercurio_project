@@ -2744,3 +2744,39 @@ Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local
 [Child 14848, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/[GPU 5340, Chrome_Chi
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1522070474425	geckodriver	INFO	geckodriver 0.20.0
+1522070474440	geckodriver	INFO	Listening on 127.0.0.1:50512
+1522070477567	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.ZVJLRHuP1kOb"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522070478080	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522070479358	Marionette	INFO	Listening on port 50520
+1522070479634	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 11076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11076, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build[Parent 6936, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 6752, Chrome_ChildThread] WARNING: pipe error: 232: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 513
+
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+[Child 6752, Chrome
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+_Child
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+Thread] WARNING: pipe er
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+ror: 109: fil
+###!!! [Child][RunMessage] Error: Channel error: cannot send/recv
+
+e z:/build/build/src/ipc/chromium/src/chrome/common/ipc_[Parent 6936, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 10376, Chrome_ChildThread] *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522070514462	geckodriver::marionette	ERROR	Failed to stop browser process

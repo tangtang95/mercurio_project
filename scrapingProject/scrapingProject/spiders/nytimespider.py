@@ -13,9 +13,8 @@ class NYTimesSpider(scrapy.Spider):
     NUM_YEAR = 6
     AVG_DAY_PER_SCROLL = 3
     CORRECTIVE_FACTOR = 0.95
-    #MAX_ITERATION = NUM_YEAR / AVG_DAY_PER_SCROLL * CORRECTIVE_FACTOR * 365
-    MAX_ITERATION = 150
-    year = "0" #fix scrauso dovuto al codice di tang tang
+    MAX_ITERATION = NUM_YEAR / AVG_DAY_PER_SCROLL * CORRECTIVE_FACTOR * 365
+    #MAX_ITERATION = 150
     
     '''
         Filtering news based on the black_world_list.
@@ -84,37 +83,6 @@ class NYTimesSpider(scrapy.Spider):
             out_file.close()
     
     
-    '''
-        TO-DO: 
-        Nello scraping di tutti i link di articoli finanziari bisogna fermarsi
-        quando trova nella pagina la voce di marzo 2012, al posto del controllo
-        sulla variabile contatore i.
-        Questa è una pessima strategia, l'operazione di ricerca in una pagine
-        molto grande è troppo costosa
-        
-        https://michaeljsanders.com/2017/05/12/scrapin-and-scrollin.html
-    
-        Tuttavia questo metodo proposto, a volte non funziona, quando ad esempio
-        si hanno problemi di connessione e la richiesta non carica nulla sul browser
-        al momento del controllo. Per quello è stato introdotto anche il metodo
-        della stima del numero di iterazioni. Probabilmente è il migliore da
-        tenere in considerazione, dato che l'altro consente di eseguire
-        uno script piu compatto.
-        
-        
-        STATO DELL'ARTE E ALTERNATIVE PERCORSE
-        Essenzialmente per rimuovere elementi bisogna utilizzare degli script 
-        javascript, tuttavia i vari articoli sono identificati solamente dall'id
-        di conseguenza (oppure dal tag name, tuttavia, avendo provato affermo
-        che non ha senso rimuovere per tag name in quanto poi non è piu' possibile
-        continuare nello scroll). Di conseguenza la strada che qui si tenta è
-        quella di rimuovere tutti gli articoli tramite il loro id, ottenuto tramite
-        una query con xpath. 
-        Resta un problema sul latest-page-marker che a volte viene cancellato 
-        e rimosso dal DOM impedendo di scrollare ancora piu in basso.
-    
-        Cancellare l'article potrebbe non essere sufficiente
-    '''
     def parse(self, response):
         driver = webdriver.Firefox()
         driver.get(response.url)
@@ -124,12 +92,11 @@ class NYTimesSpider(scrapy.Spider):
         # Scraping all the links of financial articles avaible in the section Dealbook 
         headline_links = driver.find_elements_by_xpath(".//h2[@class = 'headline']//a")
         
-        delete_list = None
         page_len = driver.execute_script("window.scrollTo(0, document.body.scrollHeight);var page_len=document.body.scrollHeight;return page_len;")
         flag = False
         i = 0
         try:   
-            while flag == False or i < self.MAX_ITERATION: #to_change_with: or in non debug case
+            while flag == False or i < self.MAX_ITERATION: 
                 # Handling infinite scroll with both method
                 last_count = page_len
                 time.sleep(SCROLL_PAUSE_TIME)
@@ -138,65 +105,16 @@ class NYTimesSpider(scrapy.Spider):
                     flag = True
                     self.logger.info("End of page reached")
                 i = i + 1 
-                
-                # deleting articles
-                articles_list = driver.find_elements_by_xpath(".//article[@class='story theme-summary']")
-                driver.execute_script('var element = document.getElementsByClassName("story theme-summary"), index;for (index = element.length - 1; index >= 0; index--) {element[index].parentNode.removeChild(element[index]);}')
-                
-                # every twenty iteration remove the id tag
-                if i % 10 == 0 and i >= 20:
-                    id_list = driver.find_elements_by_xpath('.//ol[@id="story-menu-additional-set-latest"]/*')
-                    id_list = id_list[:int(len(id_list)/3*2)]
-                    for item in id_list:
-                        id_value = item.get_attribute("id")
-                        driver.execute_script('x=document.getElementById(\"'+id_value+'\"); x.parentNode.removeChild(x);')
-                '''
-                LEGGI STATO NELL'ARTE NEL COMMENTO SOPRA
-                '''
-                '''
-                # Trying to implement html code remove
-                # Retriving and writing articles' link
-                articles_added = driver.find_elements_by_xpath(".//section[@id = 'latest-panel']//a[@class='story-link']")
-                self.write_file("nytimes_news", articles_added)
-                
-                # Retriving articles' id to remove
-                id_list = driver.find_elements_by_xpath('.//ol[@id="story-menu-additional-set-latest"]/*')
-                latest_page_marker = None
-                
-                # Removing articles from the page by their id
-                for item in id_list:
-                    # if the current WebElement doesn't contain an <li> tag with it latest-page-marker, it gets removed
-                    try:
-                        id_value = item.get_attribute("id")
-                    
-                        self.logger.info(item)
-                    
-                        if id_value == "latest-page-marker":
-                            self.logger.info("FOUND_ELEM:" + str(i))    
-                        else:
-                            #driver.execute_script('x=document.getElementById(\"'+item+'\"); x.parentNode.removeChild(x);')   
-                            
-                    except Exception as internal_e:
-                        self.logger.error("Exception in the for loop")
-                        self.logger.error(internal_e)
-                self.logger.info("A CYCLE HAS BEEN DONE: "+str(i))
-                '''
         except Exception as e:
             self.logger.error("Error scraping dealbook section of nytimes.com")
             self.logger.error(e)
         finally:    
-            #story_links = driver.find_elements_by_xpath(".//section[@id = 'latest-panel']//a[@class='story-link']")
-            # Stupid action in order to keep 'finally' not commented
-            story_links = None
-            self.logger.info("Num of iteration " + str(i))
+            story_links = driver.find_elements_by_xpath(".//section[@id = 'latest-panel']//a[@class='story-link']")
             
             # Filtering links
-            #self.filter_news_allowed_section(headline_links)
-            #self.filter_news_allowed_section(story_links)
+            self.filter_news_allowed_section(headline_links)
+            self.filter_news_allowed_section(story_links)
             
             # Writing file
-            #self.write_file("nytimes_news", headline_links)
-            #self.write_file("nytimes_news", story_links)
-        
-            
-        
+            self.write_file("nytimes_news", headline_links)
+            self.write_file("nytimes_news", story_links)
