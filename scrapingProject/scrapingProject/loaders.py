@@ -12,7 +12,7 @@ class NewsLoader(ItemLoader):
     title_out = TakeFirst()
 
     author_in = MapCompose(strip_html5_whitespace, replace_escape_chars, remove_tags)
-    author_out = TakeFirst()
+    author_out = Join(separator = ',')
     
     date_in = MapCompose(remove_tags)
     date_out = TakeFirst()
@@ -22,3 +22,6 @@ class NewsLoader(ItemLoader):
     
     #content_in = MapCompose(remove_tags_with_content, which_ones = ('style', ))
     #content_out = MapCompose(Join)
+    
+class BriefLoader(ItemLoader):
+    default_output_processor = TakeFirst()

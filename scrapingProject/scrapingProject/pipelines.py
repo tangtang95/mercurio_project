@@ -10,6 +10,10 @@ from w3lib.html import replace_escape_chars, unquote_markup
 
 class ScrapingprojectPipeline(object):
     def open_spider(self, spider):
+        """
+        
+        """
+        
         self.file = open(spider.name + '_news.tsv', 'w')
         self.newswriter = csv.writer(self.file, delimiter='\t')
         self.newswriter.writerow(['title','author','date', 'time', 'content'])
@@ -30,6 +34,7 @@ class ScrapingprojectPipeline(object):
         """
         Clean the content and write the item on the file
         """
+        
         item['content'] = self.clean_content(item['content'])
         try:
             self.newswriter.writerow([item['title'], item['author'], 

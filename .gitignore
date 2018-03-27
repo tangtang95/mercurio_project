@@ -5,3 +5,4 @@ scrapingProject/*.log
 scrapingProject/.scrapy
 scrapingProject/*.tsv
 crawlingFinished
+scrapingProject/nytimes_news

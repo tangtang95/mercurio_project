@@ -21,6 +21,11 @@ class BloombergSpider(XMLFeedSpider):
     namespaces = [('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')]
     iterator = 'xml'
     itertag = 'n:sitemap'
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'scrapingProject.pipelines.ScrapingprojectPipeline': 300
+        }
+    }
     
     current_ip = 'localhost'
     
@@ -77,9 +82,9 @@ class BloombergSpider(XMLFeedSpider):
         loader.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
         loader.add_xpath('title', '//h1[@class="not-quite-full-width-image-lede-text-above__hed"]/text()')
         loader.add_xpath('author', '//div[@class="author"][1]/text()')
-        datetime = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
-        loader.add_value('date', datetime[:10])
-        loader.add_value('time', datetime[11:19])
+        date_time = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
+        loader.add_value('date', date_time[:10])
+        loader.add_value('time', date_time[11:19])
         loader.add_xpath('content', '//div[@class="body-copy fence-body"]')
         return loader.load_item()
         

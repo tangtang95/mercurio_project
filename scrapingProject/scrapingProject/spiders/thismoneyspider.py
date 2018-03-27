@@ -20,7 +20,7 @@ class ThisMoneySpider(Spider):
     start_urls = []
     current_ip = "localhost"
     
-    _request_count = 0
+    _requests_count = 0
     
     def update_ip(self):
         """
@@ -45,6 +45,7 @@ class ThisMoneySpider(Spider):
         """
         Parse the sitemap of a specific year and send a request of each day_urls
         """
+        
         response.selector.register_namespace('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')
         urls = response.xpath("//n:sitemap/n:loc/text()").extract()
         for url in urls:
@@ -54,6 +55,7 @@ class ThisMoneySpider(Spider):
         """
         Send a request for each news inside the sitemap from the parse method
         """
+        
         response.selector.register_namespace('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')
         news_urls = response.xpath("//n:url/n:loc/text()").extract()
         for url in news_urls:
@@ -63,15 +65,16 @@ class ThisMoneySpider(Spider):
         """
         Return a News item with all the content inside the page
         """
+        
         if 'cached' not in response.flags:
             self.update_ip()
         loader = NewsLoader(item=NewsItem(), response=response)
-        loader.add_xpath('title', '//div[@itemprop="articleBody"]/h1/text()')
-        loader.add_xpath('author', '//div[@itemprop="articleBody"]//a[@class="author"]/text()')
-        datetime = response.xpath('//meta[@property="article:published_time"][1]/@content')[0]
-        loader.add_value('date', datetime[:10])
-        loader.add_value('time', datetime[11:19])
-        list_of_contents = response.xpath('//div[@itemprop="articleBody"]//p/text()').extract()
+        loader.add_xpath('title', '//div[@id="js-article-text"]//h1/text()')
+        loader.add_xpath('author', '//div[@id="js-article-text"]//a[@class="author"]/text()')
+        date_time = response.xpath('//meta[@property="article:published_time"][1]/@content').extract()[0]
+        loader.add_value('date', date_time[:10])
+        loader.add_value('time', date_time[11:19])
+        list_of_contents = response.xpath('//div[@itemprop="articleBody"]/p/text()').extract()
         content = ' '.join(list_of_contents)
         loader.add_value('content', content)
         return loader.load_item()
