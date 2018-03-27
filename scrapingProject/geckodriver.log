@@ -2780,3 +2780,555 @@ e z:/build/build/src/ipc/chromium/src/chrome/common/ipc_[Parent 6936, Gecko_IOTh
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
 1522070514462	geckodriver::marionette	ERROR	Failed to stop browser process
+1522081731758	geckodriver	INFO	geckodriver 0.20.0
+1522081731758	geckodriver	INFO	Listening on 127.0.0.1:62560
+1522081734776	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.N9esZTg3GmK6"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522081735226	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522081736576	Marionette	INFO	Listening on port 62568
+1522081736830	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3981: TypeError: this.tabs is undefined
+[Child 7692, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7692, Chrome_ChildThread] WARNINGJavaScript error: https://www.marketwatch.com/newsviewer, line 33: NS_ERROR_NOT_INITIALIZED: 
+[Child [Parent 6232, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2120, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 2120, Chrome_ChildThread] WA*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 2948, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522081788813	geckodriver	INFO	geckodriver 0.20.0
+1522081788813	geckodriver	INFO	Listening on 127.0.0.1:62845
+1522081791886	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.YpxVAMT2WWi3"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522081792330	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522081794554	Marionette	INFO	Listening on port 62854
+1522081795060	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3981: TypeError: this.tabs is undefined
+[Child 13276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/buildHandler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:441:5
+Line: 1875, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addSecurityInfo threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+NetworkResponseListener.prototype._getSecurityInfo<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:521:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+onStartRequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:441:5
+Line: 1875, column: 0
+Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:608:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7
+Line: 1875, column: 0
+console.error: 
+  Handler function NetworkEventActorProxy.addResponseContent threw an exception: [Exception... "Component returned failure code: 0xc1f30001 (NS_ERROR_NOT_INITIALIZED) [nsIMessageSender.sendAsyncMessage]"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js :: NetworkEventActorProxy.methodFactory/< :: line 1875"  data: no]
+Stack: NetworkEventActorProxy.methodFactory/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:1875:5
+exports.makeInfallible/<@resource://devtools/shared/base-loader.js -> resource://devtools/shared/ThreadSafeDevToolsUtils.js:109:14
+_onComplete@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:651:5
+onStreamClose@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:608:7
+onInputStreamReady@resource://devtools/shared/base-loader.js -> resource://devtools/shared/webconsole/network-monitor.js:702:7
+Line: 1875, column: 0
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+[Child 13472, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13472, Chrome_ChildThread] WARNI[Child 516, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 516, Chrome_ChildThread] WARNING: pipe err[GPU 9712, Chrome_C
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522097661296	geckodriver	INFO	geckodriver 0.20.0
+1522097661296	geckodriver	INFO	Listening on 127.0.0.1:64936
+1522097664322	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.sOIbQREqE92e"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522097664930	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522097666286	Marionette	INFO	Listening on port 64944
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522097666364	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Child 7624, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522097803047	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.agMXgFVcEJqb"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522097803598	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522097804798	Marionette	INFO	Listening on port 65204
+1522097805102	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3981: TypeError: this.tabs is undefined
+[Parent 10064, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 3276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/buJavaScript error: https://www.marketwatch.com/newsviewer, line 33: NS_ERROR_NOT_INITIALIZED: 
+[Parent 10064, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Chil
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+d 8480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8480, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build[Parent 10064, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 7604, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+cript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Child 9376, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/com1522098328800	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.lDAnklDayGwS"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098329362	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098330740	Marionette	INFO	Listening on port 49423
+1522098330866	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://mw2.wsj.net/MW5/content/combined/combined-tail-min-1.0.8173.js, line 1122: TypeError: primeConnection is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/Ban1522098362036	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.HLj29zlrFHLw"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098362510	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098363786	Marionette	INFO	Listening on port 49674
+1522098364112	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8944, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 8944, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13440, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Parent 8944, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14088, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14088, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098472358	Marionette	INFO	Listening on port 49946
+1522098472684	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Child 11596, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 11596, Chrome_ChildThread] WAR[Parent 11632, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 192, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 192, Chrome_ChildThread] WARNING: [Parent 11632, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[GPU 13324, Chrome
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+7H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098646296	Marionette	INFO	Listening on port 50319
+1522098646386	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Parent 12952, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/commo1522098684876	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.dXf8dfKfENCG"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098685386	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522098686628	Marionette	INFO	Listening on port 50571
+1522098686906	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 814: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+[Parent 10312, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5028, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5028, Chrome_ChildThread[Child 7472, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7472, Chrome_ChildThre[Parent 10312, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522149326414	geckodriver	INFO	geckodriver 0.20.0
+1522149326423	geckodriver	INFO	Listening on 127.0.0.1:52143
+1522149329565	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.gm7Vk5Y0LBv7"
+1522149489928	geckodriver	INFO	geckodriver 0.20.0
+1522149489937	geckodriver	INFO	Listening on 127.0.0.1:52203
+1522149493001	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.wBSUfHMynLTm"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522149493922	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522149495630	Marionette	INFO	Listening on port 52219
+1522149496224	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://mw2.wsj.net/MW5/content/combined/combined-tail-min-1.0.8173.js, line 1122: TypeError: primeConnection is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 706: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15698301656273594660/BanICMarkets_300x250_290517.js, line 403: ReferenceError: play is not defined
+JavaScript error: chrome://browser/content/tabbrowser.xml, line 3981: TypeError: this.tabs is undefined
+[Child 13044, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13044, Chrome_ChildTJavaScript error: https://www.marketwatch.com/newsviewer, line 33: NS_ERROR_NOT_INITIALIZED: 
+[Parent 2428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Ch
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ild 14696, Chrome
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14696, Chrome_ChildThread] WARN[Parent 2428, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12800, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 12800, Chrome_ChildThread] WARN[GPU 12724, Chr
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522149650359	geckodriver	INFO	geckodriver 0.20.0
+1522149650370	geckodriver	INFO	Listening on 127.0.0.1:52728
+1522149653456	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.ueSncXgv1N03"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522149654054	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522149655442	Marionette	INFO	Listening on port 52736
+1522149655538	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+[Child 13728, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 13728, Chrome_ChildThread] WA[Child 7216, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 7216, Chrome_ChildThread] WARNING: pipe error: 109: file z[Child 14692, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 14692, Chrome_ChildThread][GPU 11752, Chro
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1522151248520	geckodriver	INFO	geckodriver 0.20.0
+1522151248528	geckodriver	INFO	Listening on 127.0.0.1:53561
+1522151251630	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\USER~1.LAP\\AppData\\Local\\Temp\\rust_mozprofile.Zpvni3UBJcSV"
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522151252200	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\User.LAPTOP-FG37H74P\AppData\Local\openvr\openvrpaths.vrpath
+1522151253522	Marionette	INFO	Listening on port 53569
+1522151253708	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://mw2.wsj.net/MW5/content/combined/combined-tail-min-1.0.8173.js, line 1122: TypeError: primeConnection is undefined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 836: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 425: ReferenceError: play is not defined
+JavaScript error: https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/10297181698601619079/BanICMarkets_300x600_290517.js, line 728: ReferenceError: play is not defined
