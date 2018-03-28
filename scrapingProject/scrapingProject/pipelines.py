@@ -7,16 +7,16 @@
 import csv
 from w3lib.html import remove_tags, remove_tags_with_content, remove_entities
 from w3lib.html import replace_escape_chars, unquote_markup
+from scrapingProject.spiders.marketwatchspider import MarketWatchSpider
 
 class ScrapingprojectPipeline(object):
     def open_spider(self, spider):
-        """
-        
-        """
-        
         self.file = open(spider.name + '_news.tsv', 'w')
         self.newswriter = csv.writer(self.file, delimiter='\t')
-        self.newswriter.writerow(['title','author','date', 'time', 'content'])
+        if isinstance(spider, MarketWatchSpider):
+            self.newswriter.writerow(['title', 'url', 'date', 'time'])
+        else:
+            self.newswriter.writerow(['title','author','date', 'time', 'content'])
 
     def close_spider(self, spider):
         self.file.close()
@@ -34,11 +34,14 @@ class ScrapingprojectPipeline(object):
         """
         Clean the content and write the item on the file
         """
-        
-        item['content'] = self.clean_content(item['content'])
         try:
-            self.newswriter.writerow([item['title'], item['author'], 
-                                     item['date'], item['time'], item['content']])
+            if isinstance(spider, MarketWatchSpider):
+                self.newswriter.writerow([item['title'], item['url'], item['date'],
+                                          item['time']])
+            else:
+                item['content'] = self.clean_content(item['content'])
+                self.newswriter.writerow([item['title'], item['author'], 
+                                          item['date'], item['time'], item['content']])
         except csv.Error as ex:
             self.logger.error(ex)
         self.file.flush()
