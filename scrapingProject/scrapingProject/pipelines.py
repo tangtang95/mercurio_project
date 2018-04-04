@@ -10,10 +10,13 @@ from w3lib.html import replace_escape_chars, unquote_markup
 from scrapingProject.spiders.marketwatchspider import MarketWatchSpider
 
 class ScrapingprojectPipeline(object):
+    
+    useBriefItemSpider = ['marketwatchspider', 'mktwspider']
+    
     def open_spider(self, spider):
         self.file = open(spider.name + '_news.tsv', 'w')
         self.newswriter = csv.writer(self.file, delimiter='\t')
-        if isinstance(spider, MarketWatchSpider):
+        if spider.name in self.useBriefItemSpider:
             self.newswriter.writerow(['title', 'url', 'date', 'time'])
         else:
             self.newswriter.writerow(['title','author','date', 'time', 'content'])
@@ -35,7 +38,7 @@ class ScrapingprojectPipeline(object):
         Clean the content and write the item on the file
         """
         try:
-            if isinstance(spider, MarketWatchSpider):
+            if spider.name in self.useBriefItemSpider:
                 self.newswriter.writerow([item['title'], item['url'], item['date'],
                                           item['time']])
             else:

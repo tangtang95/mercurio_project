@@ -6,3 +6,4 @@ scrapingProject/.scrapy
 scrapingProject/*.tsv
 crawlingFinished
 scrapingProject/nytimes_news
+*.swp

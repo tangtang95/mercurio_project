@@ -22,8 +22,11 @@ class BloombergSpider(XMLFeedSpider):
     iterator = 'xml'
     itertag = 'n:sitemap'
     custom_settings = {
-        'ITEM_PIPELINES': {
-            'scrapingProject.pipelines.ScrapingprojectPipeline': 300
+        'DOWNLOADER_MIDDLEWARES' : {
+            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+            'scrapingProject.middlewares.ProxyMiddleware' : 400
         }
     }
     

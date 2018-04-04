@@ -39,7 +39,7 @@ class ReutersSpider(Spider):
             
     def parse_news(self, response):
         """
-        Parse all the news inside the page (N.B. inside the content there is only the url)
+        Parse all the news inside the page
         """
         list_of_news = response.xpath('//div[@class="headlineMed"]').extract()
         item = BriefItem()
@@ -49,7 +49,8 @@ class ReutersSpider(Spider):
             item['date'] = response.url[45:49] + "-" + response.url[49:51] + "-" + response.url[51:53]
             time_text = Selector(text=news).xpath('//div/text()').extract()[0]
             time_text = " ".join(time_text.split())
-            item['time'] = time_text[0:5] + ":00"
+            #TODO FIX the time
+            item['time'] = time_text
             item['url'] = Selector(text=news).xpath('//a/@href').extract()[0]
             yield item
     

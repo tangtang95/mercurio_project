@@ -1,10 +1,22 @@
-var controls_cont = $('#mktwcontrols');
-var nv_cont_list = $('#mktwheadlines').find('ol');
+var controls_cont = $('#thirdpartycontrols');
+var nv_cont_list = $('#thirdpartyheadlines').find('ol');
 var filter_criteria = controls_cont.find('.tabs a.selected').attr('name');
-var headline_url = '/newsviewer/mktwheadlines'
-var older_items_pullcount = 1000;
+var headline_url = '/newsviewer/thirdpartyheadlines'
+//var headline_url = '/newsviewer/mktwheadlines'
+var older_items_pullcount = arguments[0];
 
-var mkt_page_params = function(criteria) {			
+var tp_page_params = function(criteria) {            
+    return {
+        wsj: (criteria=='wsj'),
+        barrons: (criteria=='barrons'),
+        nyt: false,
+        wallstreet247: false,
+        upi: false,
+        bankrate: false        
+    };            
+};
+
+var mkt_page_params = function(criteria) {            
     return  {
         topstories: (criteria=='topstories' || criteria=='latest'),
         rtheadlines: (criteria=='rtheadlines' || criteria=='latest'),
@@ -14,11 +26,11 @@ var mkt_page_params = function(criteria) {
         zmgVideo: (criteria=='latest'),
         premium: (criteria=='latest'),
         blogs: (criteria=='blogs' || criteria=='latest'),
-        topic: 'All Topics'	
-    };			
+        topic: 'All Topics'    
+    };            
 };
 
-var get_params = mkt_page_params;
+var get_params = tp_page_params;
 
 
 var getItem = function (selector) {
@@ -78,7 +90,6 @@ var loadIndicator = function () {
 };
 
 var ResetLoadIndicator = function () {
-    loadIndicator().remove();
     lastHeadline().after("<li class='loading'><img src='../Content/images/ajax-loader.gif' />Loading more headlines...</li>");
 };
 
@@ -88,6 +99,7 @@ var InitializeViewPort = function (highlight_default, enforce_max, init_bluegras
     //    getItem('li:gt(' + (max_viewer_items - 1) + ')').remove();
     ResetLoadIndicator();
 
-};
+};	
 
+//Method to use for pulling new items
 GetOlderHeadlines();

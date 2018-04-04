@@ -19,6 +19,14 @@ class ThisMoneySpider(Spider):
     allowed_domains = ['thisismoney.co.uk']
     start_urls = []
     current_ip = "localhost"
+    custom_settings = {
+        'DOWNLOADER_MIDDLEWARES' : {
+            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+            'scrapingProject.middlewares.ProxyMiddleware' : 400
+        }
+    }
     
     _requests_count = 0
     
