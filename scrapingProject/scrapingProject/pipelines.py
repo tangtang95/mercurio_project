@@ -11,7 +11,7 @@ from scrapingProject.spiders.marketwatchspider import MarketWatchSpider
 
 class ScrapingprojectPipeline(object):
     
-    useBriefItemSpider = ['marketwatchspider', 'mktwspider']
+    useBriefItemSpider = ['marketwatchspider', 'mktwspider', 'nytimespider_m']
     
     def open_spider(self, spider):
         self.file = open(spider.name + '_news.tsv', 'w')
