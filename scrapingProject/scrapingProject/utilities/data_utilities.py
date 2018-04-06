@@ -5,9 +5,9 @@ import pytz
 #DEPRECATED
 def zero_pad_timestamp(timestamp):
     '''
-    Given a timestamp in the format
-    month/day/year hour:minute:second AM/PM
-    add a zero pad where needed to month and hour only.
+        Given a timestamp in the format
+        month/day/year hour:minute:second AM/PM
+        add a zero pad where needed to month and hour only.
     '''
     x = timestamp.split(" ")
     x[0] = x[0].split("/")
@@ -41,8 +41,12 @@ def normalize_timestamp(date, hasTimezone = False, timezone = 'UTC', output_form
 
 def compare_time(ts1, ts2):
     '''
-    Compare timestamp ts1 and ts2. 
-    If ts1 < ts2 then return True; false otherwise.
+        Compare timestamp ts1 and ts2. 
+        If ts1 < ts2 then return True; false otherwise.
+        ts1 and ts2 format must be:
+            
+        3/27/2018 4:01:29 PM
+
     '''
     ts1 = normalize_timestamp(ts1)
     ts2 = normalize_timestamp(ts2)
@@ -52,4 +56,21 @@ def compare_time(ts1, ts2):
     if t1 < t2:
         return True
     return False
+
+def getCurrentDate():
+    '''
+        Return current date in the format month:day:year
+    '''
+    now = datetime.now()
+    return now.strftime("%m:%d:%y")
     
+
+def isAgoFormat(s):
+    '''
+        Given a string that rapresents a data or in a normal format or in
+        something like hour/minute ago
+    '''
+    x = s.split(" ")
+    if x[2] == "ago":
+        return True
+    return False

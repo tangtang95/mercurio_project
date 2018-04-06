@@ -9,13 +9,15 @@ import scrapy
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from scrapingProject.items import BriefItem
+
 
 class NyTimesSpider(scrapy.Spider):
     #scrapy crawl name
     name = "nytimespider_m"
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']
-
+        
     def parse(self, response):
         
         chrome_options = Options()
@@ -64,12 +66,34 @@ class NyTimesSpider(scrapy.Spider):
                 )
         #//*[@id="story-menu-additional-set-latest"]
         #.//*[@id = 'story-menu-additional-set-latest']//a[@class = 'story-link']
-        time.sleep(10)
-        i = 0
+        time.sleep(1)
+        
+        item = BriefItem()
         try:   
-            while i < 80:
+            while True:
+                
+                storylinks = driver.find_elements_by_xpath("//*[@id='story-menu-additional-set-latest']//a[@class = 'story-link']")
+                
+                for url in storylinks:
+                    if "/business/" in url.get_attribute("href"):
+                        time.sleep(0.1)
+                        item["title"] = url.get_attribute("href")[43:]
+                        item["date"] = url.get_attribute("href")[24:34]
+                        item["time"] = ""
+                        item["url"] = url.get_attribute("href")
+                        yield item
+                
+                if storylinks[0].get_attribute("href")[24:28] == "2018":
+                    break
+                else:
+                    driver.execute_script(
+                        'var element = document.evaluate(".//li", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null),index;'
+                        'for (index = element.length - 1; index >= 0; index--){'
+                        'element[index].parentNode.removeChild(element[index]);}'
+                        )
+                
                 driver.find_element_by_xpath(".//button[@class='button load-more-button']").click()
-                i = i + 1 
+                time.sleep(0.2)
                 
                 # deleting article
                 #driver.execute_script('var element = document.getElementsByClassName("story theme-summary"), index;for (index = element.length - 1; index >= 0; index--) {element[index].parentNode.removeChild(element[index]);}')
@@ -79,6 +103,7 @@ class NyTimesSpider(scrapy.Spider):
             self.logger.error(e)
         finally:
             storylinks = driver.find_elements_by_xpath("//*[@id='story-menu-additional-set-latest']//a[@class = 'story-link']")
-            self.logger.info("Num of links " + str(len(storylinks)))
-            self.logger.info("Num of iteration " + str(i))
+            #self.logger.info("Num of links " + str(len(storylinks)))
             driver.close()
+    
+    
