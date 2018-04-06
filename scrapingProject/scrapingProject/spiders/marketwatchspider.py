@@ -3,6 +3,7 @@ from selenium import webdriver
 import time
 from scrapingProject.items import BriefItem
 import scrapingProject.utilities.data_utilities as du
+from datetime import datetime
 
 SCROLL_PAUSE_TIME = 0.5
 
@@ -27,7 +28,7 @@ class MarketWatchSpider(scrapy.Spider):
         driver.execute_script('x=document.getElementById("chrome"); x.parentNode.removeChild(x);')
         
         i = 0
-        last_timestamp_scraped = "04/29/2020 04:15:15 PM"  #to set to tomorrow date
+        last_timestamp_scraped = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         # Infinite scrolling
         try:   
             while i < self.MAX_ITERATION: 
@@ -42,25 +43,24 @@ class MarketWatchSpider(scrapy.Spider):
                     item = BriefItem()
                     for elem in elements:
                         try:
-                            element_data = elem.get_attribute("timestamp")
-                            
-                            if du.compareTime(element_data, last_timestamp_scraped) :
+                            timestamp = elem.get_attribute("timestamp")
+                            timestamp = du.normalize_timestamp(timestamp, timezone = 'US/Eastern')
+                            if du.compare_time(timestamp, last_timestamp_scraped) :
                                 item['title'] = elem.find_element_by_xpath('.//div[@class="nv-text-cont"]').text
                                 try:
                                     item['url'] = elem.find_element_by_xpath('.//a[@class="read-more"]').get_attribute("href")
                                 except Exception as e:
                                     item['url'] = ""
-                                temp = element_data.split(" ")
-                                item['date'] = temp[0]
-                                item['time'] = temp[1] + " " + temp[2]
-                                last_timestamp_scraped = element_data
+                                item['date'] = timestamp.split(' ')[0]
+                                item['time'] = timestamp.split(' ')[1]
+                                last_timestamp_scraped = timestamp
                             
                             yield item        
                         except Exception as e:
                             self.logger.error(e)
                     driver.execute_script('var element = document.getElementsByTagName("li"); var index;for (index = 0; index <= element.length - 2; index++) {element[0].parentNode.removeChild(element[0]);}')
         except Exception as e:
-            self.logger.error("Error scraping dealbook section of nytimes.com")
+            self.logger.error("Error scraping dealbook section of marketwatch.com")
             self.logger.error(e)
         finally:    
             # need to close the driver

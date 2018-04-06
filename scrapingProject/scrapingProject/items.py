@@ -7,9 +7,12 @@
 
 import scrapy
 
-#date format: yyyy-MM-dd
-#time format: whatever
 
+'''
+date format: yyyy-MM-dd
+time format: hh-mm-ss
+with hh in 24 hours and timezone UTC
+'''
 class NewsItem(scrapy.Item):
     
     title = scrapy.Field()

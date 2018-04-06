@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from scrapingProject.items import BriefItem
 import scrapingProject.utilities.data_utilities as du
+from datetime import datetime
 import time
 
 ITEMS_TO_PULL = 100
@@ -41,6 +42,8 @@ class MKTWSpider(Spider):
             'loader.parentNode.removeChild(loader);'
         )
         
+        last_timestamp_scraped = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
+        
         for i in range(ITERATION):
             time.sleep(1)
             driver.execute_script(self.js_script, ITEMS_TO_PULL)
@@ -58,24 +61,19 @@ class MKTWSpider(Spider):
             )
             elements = driver.find_elements_by_xpath('.//div[@id="thirdpartyheadlines"]//ol[@class="viewport"]/li[not(contains(@class, "loading"))]')
             item = BriefItem()
-            last_timestamp_scraped = elements[0].get_attribute("timestamp")
             for elem in elements:
                 try:
-                    element_data = elem.get_attribute("timestamp")
-                    if not(element_data is None) and du.compareTime(element_data, last_timestamp_scraped) :
-                        try:
-                            item['title'] = elem.find_element_by_xpath('.//div[@class="nv-text-cont"]').text
-                        except Exception as e:
-                            item['title'] = "#NotFound Title#"
-                            
+                    timestamp = elem.get_attribute("timestamp")
+                    timestamp = du.normalize_timestamp(timestamp, timezone = 'US/Eastern')
+                    if du.compare_time(timestamp, last_timestamp_scraped):
+                        item['title'] = elem.find_element_by_xpath('.//div[@class="nv-text-cont"]').text
                         try:
                             item['url'] = elem.find_element_by_xpath('.//a[@class="read-more"]').get_attribute("href")
                         except Exception as e:
                             item['url'] = ""   
-                        temp = element_data.split(" ")
-                        item['date'] = temp[0]
-                        item['time'] = temp[1] + " " + temp[2]
-                        last_timestamp_scraped = element_data
+                        item['date'] = timestamp.split(' ')[0]
+                        item['time'] = timestamp.split(' ')[1]
+                        last_timestamp_scraped = timestamp
                         yield item
                 except Exception as e:
                     self.logger.error(e)
@@ -87,7 +85,6 @@ class MKTWSpider(Spider):
                 'var elements = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0].getElementsByTagName("li");'
                 'var list = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0];'
                 'while(list.childNodes.length > arguments[0]){'
-                'list.removeChild(list.firstChild);}', ITEMS_TO_PULL
-      )
+                'list.removeChild(list.firstChild);}', 30)
             
         

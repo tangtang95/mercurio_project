@@ -44,7 +44,7 @@ class ReutersSpider(Spider):
         list_of_news = response.xpath('//div[@class="headlineMed"]').extract()
         item = BriefItem()
         for news in list_of_news:
-            time.sleep(0.1)
+            time.sleep(0.01)
             item['title'] = Selector(text=news).xpath('//a/text()').extract()[0]
             item['date'] = response.url[45:49] + "-" + response.url[49:51] + "-" + response.url[51:53]
             time_text = Selector(text=news).xpath('//div/text()').extract()[0]
