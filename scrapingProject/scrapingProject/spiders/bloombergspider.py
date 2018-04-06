@@ -4,23 +4,18 @@ Created on Sat 17 March 2018
 @author: Tang-tang Zhou
 """
 
-from scrapy.spiders import XMLFeedSpider
+from scrapy import Spider
 from scrapy import Request
 from scrapingProject.items import NewsItem
 from scrapingProject.loaders import NewsLoader
-from scrapingProject.toripchanger import TorIpChanger
+import scrapingProject.utilities.data_utilities as du
 
-NUMBER_OF_REQUEST_PER_IP = 30
 SITEMAP_YEAR = '2017'
-IP_CHANGER = TorIpChanger(reuse_threshold=10)
 
-class BloombergSpider(XMLFeedSpider):
+class BloombergSpider(Spider):
     name = "bloombergspider"
     allowed_domains = ['bloomberg.com']
-    start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']
-    namespaces = [('n', 'http://www.sitemaps.org/schemas/sitemap/0.9')]
-    iterator = 'xml'
-    itertag = 'n:sitemap'
+    start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']  
     custom_settings = {
         'DOWNLOADER_MIDDLEWARES' : {
             'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
@@ -30,34 +25,17 @@ class BloombergSpider(XMLFeedSpider):
         }
     }
     
-    current_ip = 'localhost'
-    
-    _requests_count = 0
-    
-    def __init__(self, *args, **kwargs):
-        super(BloombergSpider, self).__init__(*args, **kwargs)
-        self.current_ip = IP_CHANGER.get_new_ip()
-
-    def update_ip(self):
-        """
-        After every NUMBER_OF_REQUEST_PER_IP, the spider asks for a new IP
-        """
-        
-        self._requests_count += 1
-        if self._requests_count > NUMBER_OF_REQUEST_PER_IP:
-            self._requests_count = 0
-            self.current_ip = IP_CHANGER.get_new_ip()
-    
    
-    def parse_node(self, response, node):
+    def parse(self, response):
         """
         Called everytime the iterator encounters a tag: 'n:sitemap'
         and extract every url that isn't video with the SITEMAP_YEAR in it
         """
-        
-        sitemap_url = node.xpath('n:loc/text()').extract()[0]
-        if 'video' not in sitemap_url and SITEMAP_YEAR in sitemap_url:
-            yield Request(sitemap_url, callback = self.parse_month_sitemap)
+        response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
+        sitemap_urls = response.xpath('//n:loc/text()').extract()
+        for sitemap_url in sitemap_urls:
+            if 'video' not in sitemap_url and SITEMAP_YEAR in sitemap_url:
+                yield Request(sitemap_url, callback = self.parse_month_sitemap)
         
        
     def parse_month_sitemap(self, response):
@@ -66,8 +44,7 @@ class BloombergSpider(XMLFeedSpider):
         """ 
         
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
-        self.update_ip()
-        news_url = response.xpath('n:url/n:loc/text()').extract()
+        news_url = response.xpath('//n:url/n:loc/text()').extract()
         for url in news_url:
             yield Request(url, callback = self.parse_news)
             
@@ -78,17 +55,17 @@ class BloombergSpider(XMLFeedSpider):
         The update ip needs to stay here unless you don't want HTTPCACHE
         """
         
-        if 'cached' not in response.flags:
-            self.update_ip()
         loader = NewsLoader(item=NewsItem(), response=response)
         loader.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
         loader.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
-        loader.add_xpath('title', '//h1[@class="not-quite-full-width-image-lede-text-above__hed"]/text()')
-        loader.add_xpath('author', '//div[@class="author"][1]/text()')
-        date_time = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
-        loader.add_value('date', date_time[:10])
-        loader.add_value('time', date_time[11:19])
+        loader.add_xpath('title', '//article//h1/text()')
+        loader.add_xpath('author', '//div[@class="author"]/text()')
+        timestamp = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
+        timestamp = du.normalize_timestamp(timestamp, hasTimezone = True)
+        loader.add_value('date', timestamp.split(' ')[0])
+        loader.add_value('time', timestamp.split(' ')[1])
         loader.add_xpath('content', '//div[@class="body-copy fence-body"]')
+        loader.add_xpath('tags', '//meta[@name="keywords"]/@content')
         return loader.load_item()
         
     

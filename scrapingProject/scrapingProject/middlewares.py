@@ -9,9 +9,9 @@ from scrapy import signals
 
 import logging
 from fake_useragent import UserAgent
+from scrapingProject.toripchanger import TorIpChanger
 
 logger = logging.getLogger(__name__)
-# A Tor IP will be reused only after 10 different IPs were used.
 
 
 class RandomUserAgentMiddleware(object):
@@ -20,10 +20,6 @@ class RandomUserAgentMiddleware(object):
     Ip changed
     """
     
-    
-    #This list indicates which spider want to use the rotation user agent,
-    #Remember to add a variable current_ip to the spider
-    spiderList = ['bloombergspider', 'thismoneyspider']
     
     def __init__(self, crawler):
         super(RandomUserAgentMiddleware, self).__init__()
@@ -43,31 +39,32 @@ class RandomUserAgentMiddleware(object):
             '''Gets random UA based on the type setting (random, firefox…)'''
             return getattr(self.ua, self.ua_type)
         
-        if spider.name in self.spiderList:
-            if self.per_ip:
-                ip = spider.current_ip
-                if ip is None:
-                    ip = "127.0.0.1"
-                if ip not in self.ip2ua:
-                    self.ip2ua[ip] = get_ua()
-                    logger.debug('Assign User-Agent %s to ip %s'
-                                 % (self.ip2ua[ip], ip))
-                request.headers.setdefault('User-Agent', self.ip2ua[ip])
-            else:
-                request.headers.setdefault('User-Agent', get_ua())
+        if self.per_ip:
+            ip = spider.current_ip
+            if ip is None:
+                ip = "127.0.0.1"
+            if ip not in self.ip2ua:
+                self.ip2ua[ip] = get_ua()
+                logger.debug('Assign User-Agent %s to ip %s'
+                             % (self.ip2ua[ip], ip))
+            request.headers.setdefault('User-Agent', self.ip2ua[ip])
+        else:
+            request.headers.setdefault('User-Agent', get_ua())
 
 class ProxyMiddleware(object):
     """
     Adds a metatag proxy to each request that need to be sent (for the ip proxy)
+    and update ip if necessary, depends on ip_changer
     Need privoxy and tor running
     """
     
-    #This list indicates which spider want to use the rotation ip proxy
-    spiderList = ['bloombergspider', 'thismoneyspider']
-
+    ip_changer = TorIpChanger(reuse_threshold=10)
+    
     def process_request(self, request, spider):
-        if spider.name in self.spiderList:
-            request.meta['proxy'] = 'http://127.0.0.1:8118'
+        request.meta['proxy'] = 'http://127.0.0.1:8118'
+        current_ip = self.ip_changer.update_ip()
+        if not (current_ip is None):
+            spider.current_ip = current_ip
 
 class ScrapingprojectSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,

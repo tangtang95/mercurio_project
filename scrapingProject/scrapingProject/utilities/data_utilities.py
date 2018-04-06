@@ -21,16 +21,21 @@ def zero_pad_timestamp(timestamp):
 
 
 
-def normalize_timestamp(date, timezone = 'UTC', output_format = '%Y-%m-%d %H:%M:%S'):
+def normalize_timestamp(date, hasTimezone = False, timezone = 'UTC', output_format = '%Y-%m-%d %H:%M:%S'):
     '''
     Return a normalized date string with:
     - a standard format: output_format
-    - a standard timezone: UTC
+    - a standard timezone: convert date from "timezone" into utc timezone
+    - hasTimezone indicates if the date has or not an indicated timezone (e.g. 2010-03-30T10:21:06+0100)
     '''
-    other_tz = pytz.timezone(timezone)
+    
     utc = pytz.timezone('UTC')
     timestamp = parser.parse(date)
-    timestamp = other_tz.localize(timestamp).astimezone(utc)
+    if hasTimezone:
+        timestamp = timestamp.astimezone(utc)
+    else:
+        other_tz = pytz.timezone(timezone)
+        timestamp = other_tz.localize(timestamp).astimezone(utc)
     return timestamp.strftime(output_format)
     
 
