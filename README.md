@@ -38,12 +38,18 @@ curl -x 127.0.0.1:8118 http://icanhazip.com/
 ```
 - for a more detailed information go to this [link](https://gist.github.com/DusanMadar/8d11026b7ce0bce6a67f7dd87b999f6b)
 
-Sites:
+#Deployment
+- https://stackoverflow.com/questions/45750739/scrapyd-client-command-not-found
+- https://github.com/scrapy/scrapyd-client
+- https://scrapyd.readthedocs.io/en/latest/overview.html
+
+
+#Sites:
 - [Bloomberg](https://www.bloomberg.com) (scrapy)
 - [New York Times](https://www.nytimes.com) (dealbook exist from Feb 2012 -> scrapy + selenium)
 - [Forbes](https://www.forbes.com) (selenium)
 - [This is Money](https://www.thisismoney.co.uk) (scrapy)
 
-Datasets:
+#Datasets:
 - https://github.com/philipperemy/financial-news-dataset
 - https://github.com/philipperemy/Reuters-full-data-set
