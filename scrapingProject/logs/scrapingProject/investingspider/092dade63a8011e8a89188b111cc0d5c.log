@@ -1,0 +1,1957 @@
+2018-04-07 18:23:45 [scrapy.utils.log] INFO: Scrapy 1.5.0 started (bot: scrapingProject)
+2018-04-07 18:23:45 [scrapy.utils.log] INFO: Versions: lxml 4.1.1.0, libxml2 2.9.7, cssselect 1.0.3, parsel 1.4.0, w3lib 1.19.0, Twisted 17.5.0, Python 3.6.4 |Anaconda, Inc.| (default, Jan 16 2018, 10:22:32) [MSC v.1900 64 bit (AMD64)], pyOpenSSL 17.5.0 (OpenSSL 1.0.2n  7 Dec 2017), cryptography 2.1.4, Platform Windows-10-10.0.16299-SP0
+2018-04-07 18:23:45 [scrapy.crawler] INFO: Overridden settings: {'AUTOTHROTTLE_ENABLED': True, 'AUTOTHROTTLE_START_DELAY': 1, 'BOT_NAME': 'scrapingProject', 'CONCURRENT_REQUESTS': 8, 'CONCURRENT_REQUESTS_PER_DOMAIN': 4, 'COOKIES_ENABLED': False, 'DOWNLOAD_DELAY': 1, 'HTTPCACHE_IGNORE_HTTP_CODES': [400, 404, 503], 'LOG_FILE': 'logs\\scrapingProject\\investingspider\\092dade63a8011e8a89188b111cc0d5c.log', 'NEWSPIDER_MODULE': 'scrapingProject.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['scrapingProject.spiders']}
+2018-04-07 18:23:45 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2018-04-07 18:23:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-04-07 18:23:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-04-07 18:23:45 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapingProject.pipelines.ScrapingprojectPipeline']
+2018-04-07 18:23:45 [scrapy.core.engine] INFO: Spider opened
+2018-04-07 18:23:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-04-07 18:23:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-04-07 18:23:46 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/robots.txt> from <GET http://www.investing.com/robots.txt>
+2018-04-07 18:23:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/robots.txt> (referer: None)
+2018-04-07 18:23:48 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/> from <GET http://www.investing.com/news/stock-market-news/>
+2018-04-07 18:23:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/> (referer: None)
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Iran hit by global cyber attack that left U.S. flag on screens',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Deutsche Bank chairman to hold call with board over CEO - sources',
+ 'url': ''}
+2018-04-07 18:23:50 [investingspider] ERROR: list index out of range
+2018-04-07 18:23:50 [investingspider] ERROR: list index out of range
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "What's the Best Way to Allocate Funds in My 401(k)",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Cloud Peak Energy: Equity Has Little Appeal',
+ 'url': ''}
+2018-04-07 18:23:50 [investingspider] ERROR: list index out of range
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Recommended Reading: Does Facebook need to be regulated?',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How Can a Couple Plan When Their Retirement Money Will Only Be '
+          'There for One of Them?',
+ 'url': ''}
+2018-04-07 18:23:50 [investingspider] ERROR: list index out of range
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Market Snapshot: Stock-market bulls are looking for earnings to '
+          'ride to the rescue',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Trump Organization’s Online Gift Store Doesn’t Collect Sales '
+          'Tax in Most States',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'These S&P Stocks Jumped 50% in the 1st Quarter',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "There's a Lot to Like in Lululemon Athletica's Most Recent Quarter",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Lawsuit Over SolarCity Buyout a Distraction Tesla Doesn't Need",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'If This Metric Is Correct, Canadian Pot Stocks Are in For an '
+          'Unpleasant Surprise',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Key Chart Patterns In FX',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Better Buy: Eli Lilly and Co. vs. GlaxoSmithKline',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Pay-TV Providers Are Signing Up a Lot of Netflix Subscribers',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2 US Army soldiers killed in Apache helicopter crash at Fort '
+          'Campbell',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Wendy McElroy: Do Not Passively Nationalize Your Privacy',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Why President Trump's War of Words Against Amazon Could Backfire",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Top 5 Copper Stocks for 2018',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Best Non-Car Stuff to Buy From Bentley, Porsche, and BMW',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': ' Bitcoin Magazine’s Week in Review: Lightning and Sparks Fly',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Is Philip Morris International Inc. a Buy?',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'What Siri can learn from Google Assistant ',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Saturday's Best Deals: Travel Pillow, Crabby Wallets, Eneloop "
+          'Batteries, and More',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Cutera's Torrid Run Seems To Leave Little Room For More Upside",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How David Giroux Delivers With Much Less Risk',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Saudi Crown Prince hung out this week with Google execs Sergey '
+          'Brin and Sundar Pichai',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '3 Ways Universal Orlando Will Fill All of Those New Hotel Rooms',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Larson Electronics LLC Releases Explosion Proof 10 Amp Momentary '
+          'Push Button Switch',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How Bargain Hunting for a Home Can Backfire',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Couple Awarded $37 Million In Johnson & Johnson Baby Powder Cancer '
+          'Lawsuit',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'These are the 15 safest cars money can buy for 2018',
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Sberbank to own biggest single stake in Croatia's Agrokor - report",
+ 'url': ''}
+2018-04-07 18:23:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Philippines regulator orders pushback in Uber's shutdown amid "
+          'ongoing review',
+ 'url': ''}
+2018-04-07 18:23:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/2> from <GET http://www.investing.com/news/stock-market-news/2>
+2018-04-07 18:24:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/2> (referer: None)
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Is Opko Health, Inc. a Buy?',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Playstation 5 News: Release Date Expected At The End Of This Year',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Crowdsourced Safety App Vizsafe Uses Blockchain to Reward Users for '
+          'Doing Good',
+ 'url': ''}
+2018-04-07 18:24:07 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'General Electric Doesn’t Relinquish Rank as Dow’s Worst Performing '
+          'Stock',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'A 10% Yield, 20 Straight Distribution Hikes, Big Deal Adding More '
+          'Growth In 2018',
+ 'url': ''}
+2018-04-07 18:24:07 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Credit Suisse Has 8 Top Stock Picks With at Least 50% Implied '
+          'Upside',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Boeing Reclaims Spot as Best Performing Dow Stock of 2018',
+ 'url': ''}
+2018-04-07 18:24:07 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Royal Caribbean's CEO says passengers would stop getting norovirus "
+          'if they would just wash their hands',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Apple Watch Series 4 vs Samsung Gear S4: Specs, Price, Release Date',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'These 5 Stocks Could Be in Big Trouble If Interest Rates Go Higher',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Expectations Seem Low For Swiss Re, But Not Without Cause',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'REPORT: Aston Martin set to hire Goldman Sachs, JPMorgan, and '
+          'Deutsche Bank to lead a $7 billion IPO',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Dude, where’s my car? Check out the best Android Auto apps',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Why Trump Tweets Make Amazon.com, Inc. Stock a Hot Bargain',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Apple Could Be Working on a Curved iPhone, Is Ramping Up Siri '
+          'Hiring',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'SHAREHOLDER ALERT:  Pomerantz Law Firm Reminds Shareholders with '
+          'Losses on their Investment WageWorks, Inc. of Class Action Lawsuit '
+          'and Upcoming Deadline – WAGE',
+ 'url': ''}
+2018-04-07 18:24:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/2>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Sony Xperia XZ2 Compact review: A smaller flagship without '
+          'compromises',
+ 'url': ''}
+2018-04-07 18:24:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/3> from <GET http://www.investing.com/news/stock-market-news/3>
+2018-04-07 18:24:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/3> (referer: None)
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'SHAREHOLDER ALERT:  Pomerantz Law Firm Reminds Shareholders with '
+          'Losses on their Investment Foot Locker, Inc. of Class Action '
+          'Lawsuit and Upcoming Deadline – FL',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Boeing Lands Major 787 Order From American Airlines',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How I Learned to Stop Worrying and Buy (Not Trade) Apple',
+ 'url': ''}
+2018-04-07 18:24:24 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'What Analysts Are Saying After NetApp’s Buyback and Dividend Hikes',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Is Cellectis SA Stock a Buy Now?',
+ 'url': ''}
+2018-04-07 18:24:24 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Closed-End Fund UTG - A Utility Fund To Buy Today',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Best Buy Buries Comments on Cyberattack',
+ 'url': ''}
+2018-04-07 18:24:24 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Decentralized Value Based Healthcare Platform Digipharm Teams With '
+          'Heavyweight Swisscom Blockchain',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The 2018 Audi RS5: Effortless speed and a magic carpet ride',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook Announces Ads Will Be ‘More Transparent’',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Carnival Adds Even More Cruises to Cuba in the Coming Years',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Your Daily Pharma Scoop: Major Setback For Incyte, Aclaris '
+          'Agreement, MannKind Offering',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How to Force Quit on a Mac',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Find the Best National Beer Day Deals and Events Near You',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "3 Things In Biotech, April 6: Bristol's Kidney Coup, Astra's "
+          "Advanced Antibody, Eleven's Mysterious Presentation",
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hospital CEO forced to pay hackers in bitcoin now teaches others '
+          'how to prepare for the worst',
+ 'url': ''}
+2018-04-07 18:24:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/3>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Japan activates first marines since WW2 to bolster defenses against '
+          'China',
+ 'url': ''}
+2018-04-07 18:24:34 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/4> from <GET http://www.investing.com/news/stock-market-news/4>
+2018-04-07 18:24:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/4> (referer: None)
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'SHAREHOLDER ALERT:  Pomerantz Law Firm Reminds Shareholders with '
+          'Losses on their Investment in Facebook, Inc. of Class Action '
+          'Lawsuit and Upcoming Deadline – FB',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Deutsche Bank is said under pressure to resolve CEO fate ',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Is The S&P 500 Entering A Bear Market? (SPY)',
+ 'url': ''}
+2018-04-07 18:24:44 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Don't Get Greedy With Nucor Corporation Stock",
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2 FTSE 100 stocks with sustainable 5%+ dividend yields',
+ 'url': ''}
+2018-04-07 18:24:44 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Presidential Cycle Spells Trouble For Dow Jones Industrial Average',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '4 Altcoins With Major Events for Week of April 7, 2018 (IOST, XES, '
+          'KMD, and PRL)',
+ 'url': ''}
+2018-04-07 18:24:44 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'This Code May Point To An Exclusive Google Pixel 3 Feature',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The best fitness trackers',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "China's Tariffs on Boeing Aircraft: Much Ado About Nothing?",
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Yes Chrome is scanning your Windows PC, but it might be a bug',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'An $11,625 Investment in This Dividend Stock Could Generate More '
+          'Than $1,200 in Annual Income Within 5 Years',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Here's Why Netflix, Inc. May Bid $300 Million for a Manager of "
+          'Californian Billboards',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Where Are Our Robot Butlers?',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "These 3 Stocks Helped Cushion the Dow's 1st-Quarter Drop",
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Should Facebook, Inc. Launch a Paid Service? Absolutely!',
+ 'url': ''}
+2018-04-07 18:24:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/4>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2 Dividend Stocks to Stay Away From -- and 1 Worth Buying',
+ 'url': ''}
+2018-04-07 18:24:45 [scrapy.extensions.logstats] INFO: Crawled 5 pages (at 5 pages/min), scraped 85 items (at 85 items/min)
+2018-04-07 18:24:49 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/5> from <GET http://www.investing.com/news/stock-market-news/5>
+2018-04-07 18:24:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/5> (referer: None)
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2 inflation-busting FTSE 100 dividend stocks I’d buy',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07', 'time': '', 'title': 'FREED ICO Review', 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Should You Claim Social Security at 70?',
+ 'url': ''}
+2018-04-07 18:24:56 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Barron's: With its Finish Line buyout, this company’s stock ‘offers "
+          'excellent value’',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The secret to beating almost everyone in the markets',
+ 'url': ''}
+2018-04-07 18:24:56 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How to make sure you avoid the next Conviviality or Carillion',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Watch your lawn mower cut your grass – while you sit on your front '
+          'porch sipping a beer',
+ 'url': ''}
+2018-04-07 18:24:56 [investingspider] ERROR: list index out of range
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Worst Student Loan Servicers Going Into 2018',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Why It’s Time To Invest In Europe',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Deutsche Bank CEO replacement reportedly could be discussed by '
+          'chairman on a call on Sunday',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2 FTSE 250 bargain dividend stocks I’d buy today',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'MannKind Modeling And Afrezza Scripts',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Titan witnesses good growth in, watches in FY18',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook suspends Canadian firm AggregateIQ after it may have '
+          "'improperly' had access to user data",
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Why Aviva plc isn’t the only FTSE 100 6% yielder I’d buy today',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Videocon loan case: CBI questions Chanda Kochhar’s brother-in-law '
+          'for 3rd consecutive day',
+ 'url': ''}
+2018-04-07 18:24:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/5>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Proxy adviser ISS recommends vote for all Wells Fargo board '
+          'nominees',
+ 'url': ''}
+2018-04-07 18:24:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/6> from <GET http://www.investing.com/news/stock-market-news/6>
+2018-04-07 18:25:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/6> (referer: None)
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The new symbiosis between automakers and ride-hailing companies',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Is the BT share price finally low enough to make the stock a '
+          'bargain?',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'In your 40s? Consider buying these two FTSE 100 stocks',
+ 'url': ''}
+2018-04-07 18:25:03 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Warren Buffett advice that could put you on the path to beating the '
+          'FTSE 100',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'H-1B visa: US says 65,000 visa cap reached for fiscal year 2019',
+ 'url': ''}
+2018-04-07 18:25:03 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'AkzoNobel India to buyback shares worth Rs235.20 crore',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Seritage Growth Properties: Selloff Provides Attractive Opportunity '
+          'To Invest Alongside Warren Buffett',
+ 'url': ''}
+2018-04-07 18:25:03 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'S&P 500 has significant week, as we find support below.',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Scott Pruitt's staff asked for a bulletproof vehicle and $70,000 in "
+          'bulletproof furniture for his office — the request was denied',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Teenage Girl From India Sells Crypto App to California Firm',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'S&P 500 falls initially on Friday, but show signs of support '
+          'underneath',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook suspends Canadian firm AggregateIQ over data scandal',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'ISS recommends against Goldman pay plan, worried on costs',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'China trade dispute could slam U.S. retailers',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Venezuela hurts its own with Copa airline suspension: Panama's "
+          'Varela',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Saudi Aramco eyes new petrochemical plant in Texas: sources',
+ 'url': ''}
+2018-04-07 18:25:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/6>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook suspends second firm under probes for data-leak scandal',
+ 'url': ''}
+2018-04-07 18:25:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/7> from <GET http://www.investing.com/news/stock-market-news/7>
+2018-04-07 18:25:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/7> (referer: None)
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook suspends another data firm: AggregateIQ',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'S&P 500, DAX & FTSE - Global Markets at Risk of Another Swoon',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How Much Farther Will NVIDIA Corporation Stock Drop?',
+ 'url': ''}
+2018-04-07 18:25:09 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'This Sector Of The Chinese Economy Is Booming',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Buy the Dip in Shopify Inc Stock',
+ 'url': ''}
+2018-04-07 18:25:09 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'RIOT BLOCKCHAIN SHAREHOLDER ALERT: CLAIMSFILER REMINDS INVESTORS '
+          'WITH LOSSES IN EXCESS OF $100,000 of Lead Plaintiff Deadline in '
+          'Class Action Lawsuit Against Riot Blockchain, Inc. - RIOT',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'FACEBOOK SHAREHOLDER ALERT: CLAIMSFILER Reminds Investors with '
+          'Losses in Excess of $100,000 of Lead Plaintiff Deadline in Class '
+          'Action Lawsuit Against Facebook, Inc. - FB',
+ 'url': ''}
+2018-04-07 18:25:09 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'QUANTUM CORPORATION SHAREHOLDER ALERT: CLAIMSFILER REMINDS '
+          'INVESTORS WITH LOSSES IN EXCESS OF $100,000 of Lead Plaintiff '
+          'Deadline in Class Action Lawsuit Against Quantum Corporation - QTM',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'MIMEDX SHAREHOLDER ALERT BY FORMER LOUISIANA ATTORNEY GENERAL: KAHN '
+          'SWICK & FOTI, LLC REMINDS INVESTORS WITH LOSSES IN EXCESS OF '
+          '$100,000 of Lead Plaintiff Deadline in Class Action Lawsuit Against '
+          'MiMedx Group Inc. - MDXG',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'WELLS FARGO SHAREHOLDER ALERT: CLAIMSFILER REMINDS INVESTORS WITH '
+          'LOSSES IN EXCESS OF $100,000 of Lead Plaintiff Deadline in Class '
+          'Action Lawsuit Against Wells Fargo & Company - WFC',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'SYNACOR SHAREHOLDER ALERT BY FORMER LOUISIANA ATTORNEY GENERAL: '
+          'KAHN SWICK & FOTI, LLC REMINDS INVESTORS WITH LOSSES IN EXCESS OF '
+          '$100,000 of Lead Plaintiff Deadline in Class Action Lawsuit Against '
+          'Synacor, Inc. - SYNC',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Snap Inc Stock Still Isn’t Cheap Enough',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Boeing wins American Airlines' widebody jet order",
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'CBS nominates former Time Warner CEO to its board amid Viacom talks',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Levi Strauss sues LVMH's Kenzo over jeans pocket tab",
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Morgan Stanley CEO James Gorman pay up 20 percent in 2017',
+ 'url': ''}
+2018-04-07 18:25:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/7>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Powell, Williams See More Gradual Fed Hikes Despite Trade Uproar',
+ 'url': ''}
+2018-04-07 18:25:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/8> from <GET http://www.investing.com/news/stock-market-news/8>
+2018-04-07 18:25:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/8> (referer: None)
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Snap Inc Stock Still Isn’t Cheap Enough',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "2 Things You Need to Know About Intel Corp.'s New Laptop Chips",
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Nova Oculus Envisions a Bright Future Ahead',
+ 'url': ''}
+2018-04-07 18:25:14 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Walmart is adding 500 more 'Pickup Towers' to stores this year",
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'BlackRock® Canada Completes Reclassification of Advisor Class Units '
+          'to Common Units',
+ 'url': ''}
+2018-04-07 18:25:14 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Sanctions on Russian tycoon Deripaska will create global ripples',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Powell, Williams See More Gradual Fed Hikes Despite Trade Uproar',
+ 'url': ''}
+2018-04-07 18:25:14 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Peru stocks lower at close of trade; S&P Lima General down 0.48%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Trump administration mulls stiffer rules for imported cars',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Top 5 Things That Moved Markets This Past Week',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Trump to mull U.S. biofuels policy options in cabinet meeting '
+          'Monday',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Mexico stocks lower at close of trade; S&P/BMV IPC down 0.05%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Brazil stocks lower at close of trade; Bovespa down 0.46%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Canada stocks lower at close of trade; S&P/TSX Composite down 0.62%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'U.S. stocks lower at close of trade; Dow Jones Industrial Average '
+          'down 2.34%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Colombia stocks higher at close of trade; COLCAP up 1.15%',
+ 'url': ''}
+2018-04-07 18:25:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/8>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Mexico Stocks Are Having a Great Week, But Itau Sees Risks Ahead',
+ 'url': ''}
+2018-04-07 18:25:15 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/9> from <GET http://www.investing.com/news/stock-market-news/9>
+2018-04-07 18:25:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/9> (referer: None)
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Eligma Is the AI Project to Impact the Online Shopping as We Know '
+          'It',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Crown Point Announces Filing of Amended and Restated Preliminary '
+          'Prospectus for Rights Offering',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Top VC deals: Spotify goes public, Mobike sells for $2.7 billion '
+          'and Tesla investor Steve Jurvetson has a new fund',
+ 'url': ''}
+2018-04-07 18:25:17 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Gainey McKenna & Egleston Announces A Class Action Lawsuit Has Been '
+          'Filed Against Cancer Genetics, Inc. (CGIX)',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Gainey McKenna & Egleston Announces A Class\xa0Action Lawsuit Has '
+          'Been Filed Against Synacor, Inc. (SYNC)',
+ 'url': ''}
+2018-04-07 18:25:17 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Canadian Tech Firm Purchases Cryptocurrency Mining Firm in '
+          'All-stock Deal',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Tim Cook outlines Apple's view on privacy, encryption in MSNBC "
+          'interview',
+ 'url': ''}
+2018-04-07 18:25:17 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook suspends second firm under probes for data-leak scandal',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Razer’s Mamba Hyperflux and Firefly charging mat could redefine '
+          'gaming accessories forever',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '3 High-Yield Stocks at Rock-Bottom Prices',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'CWB announces election of directors',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Practicalities and Probabilities of Reversals: CAD, Dollar and S&P '
+          '500',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Twitter to Test a New Strategy to Stop Proliferation of Nastiness',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Longfin says it will cooperate with Nasdaq, SEC on requests',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'S&P 500 Tumbles as Trade War Headlines Revived, Dollar Range '
+          'Resists NFPs',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'As China ties up global lithium, Asian rivals must bet big on South '
+          'America',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/9>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Eletrobras shares plunge on shakeup at Brazil energy ministry',
+ 'url': ''}
+2018-04-07 18:25:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/10> from <GET http://www.investing.com/news/stock-market-news/10>
+2018-04-07 18:25:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/10> (referer: None)
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Best Buy may also have had customer data exposed',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Energy Recap: U.S. Climate Finance Budget A 'Mixed Bag'",
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Strongbow Exploration Inc.: Corporate Announcement',
+ 'url': ''}
+2018-04-07 18:25:20 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'American Airlines buying $12 billion in 787s from Boeing',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Vornado has 'handshake' to sell stake in Kushner building; shares "
+          '+5.6%',
+ 'url': ''}
+2018-04-07 18:25:20 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Early Retirement: How to Make Your Wealth Last',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'American Airlines orders 47 new Boeings, ending Airbus order',
+ 'url': ''}
+2018-04-07 18:25:20 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Basics of Algorithmic Trading: Concepts and Examples',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Pros And Cons Of Target-Date Funds',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Closed-End vs. Open-End Funds',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Which Mutual Fund Market Cap Suits You?',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Investing $100 a Month in Stocks for 30 Years',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Twitter will show users its rules to discourage abuse',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Northern Dynasty, First Quantum extend deadline for Pebble option '
+          'deal',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Incyte's Horrible News Derails a Promising Class of Cancer Drugs",
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Rival banks applauded U.S. watchdog on 2016 Wells Fargo settlement: '
+          'emails',
+ 'url': ''}
+2018-04-07 18:25:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/10>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'CP rail conductors and locomotive engineers authorize strike: union',
+ 'url': ''}
+2018-04-07 18:25:21 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/11> from <GET http://www.investing.com/news/stock-market-news/11>
+2018-04-07 18:25:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/11> (referer: None)
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Comfort Systems names Sandbrook to board',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Know Your Shareholder Rights',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'American Airlines Expands Boeing 787 Fleet',
+ 'url': ''}
+2018-04-07 18:25:23 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'FBB holds online fashion show in fresh e-commerce push',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Sigma Labs Announces Closing of $1.0 Million Private Placement '
+          'Financing',
+ 'url': ''}
+2018-04-07 18:25:23 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Comcast sets multi-year partnership with Chicago Cubs',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Should You Trade Forex or Stocks?',
+ 'url': ''}
+2018-04-07 18:25:23 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Using Interest Rate Parity to Trade Forex',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How much does it charge an hour? Google patents ‘digital '
+          'babysitter’',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Indian Air Force begins process to procure 110 fighter jets worth '
+          '$15 billion',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Trump’s “America-First Offshore Energy Strategy” blows on',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'NW Natural Schedules Conference Call to Review First Quarter 2018 '
+          'Results on Tuesday, May 8',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Triumph Bancorp Announces Schedule for 1st Quarter 2018 Earnings '
+          'Release and Conference Call',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Windows 10’s Mail app may display an Office 365 ad for some users',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Nigeria stocks higher at close of trade; NSE 30 up 0.02%',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Turtle Beach announces stock split',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/11>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Morocco stocks higher at close of trade; Moroccan All Shares up '
+          '0.31%',
+ 'url': ''}
+2018-04-07 18:25:23 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/12> from <GET http://www.investing.com/news/stock-market-news/12>
+2018-04-07 18:25:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/12> (referer: None)
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'NASA, Boeing signal delay for regular missions to space station',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How to Assess a Real Estate Investment Trust (REIT)',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Comparing The P/E, EPS And Earnings Yield',
+ 'url': ''}
+2018-04-07 18:25:25 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Value Line Is Great Value',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Don’t Let Stock Prices Fool You',
+ 'url': ''}
+2018-04-07 18:25:25 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Q1 2018 Global Venture Liquidity Report: Improving M&A And IPO '
+          'Markets Spark Optimism',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Pot Stocks, ETFs, Top News And Data From The Cannabis Industry This '
+          'Week',
+ 'url': ''}
+2018-04-07 18:25:25 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Palamina Announces Grant of Options',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '4 Stocks You Can Buy and Hold Forever',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Pacira Announces FDA Approval of Supplemental New Drug Application '
+          'for EXPAREL®  as a Nerve Block to Produce Regional Analgesia',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Portugal stocks lower at close of trade; PSI 20 down 1.25%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Denmark stocks lower at close of trade; OMX Copenhagen 20 down '
+          '0.10%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Finland stocks lower at close of trade; OMX Helsinki 25 down 1.00%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Italy stocks lower at close of trade; Investing.com Italy 40 down '
+          '0.25%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Russia stocks lower at close of trade; MOEX Russia down 0.65%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'France stocks lower at close of trade; CAC 40 down 0.35%',
+ 'url': ''}
+2018-04-07 18:25:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/12>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Spain stocks lower at close of trade; IBEX 35 down 0.60%',
+ 'url': ''}
+2018-04-07 18:25:26 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/13> from <GET http://www.investing.com/news/stock-market-news/13>
+2018-04-07 18:25:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/13> (referer: None)
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'After Hours Gainers / Losers (04/06/2018)',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The Tile Shop to Host First Quarter 2018 Earnings Conference Call',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Trump Directs U.S. Agencies To Find Ways to Protect Domestic '
+          'Automakers',
+ 'url': ''}
+2018-04-07 18:25:28 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "NVIDIA's 6 Biggest Revelations at GTC 2018",
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '2018 iPad review: Content creation with compromises',
+ 'url': ''}
+2018-04-07 18:25:28 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hagens Berman Updates Facebook Investors About the Expanded Class '
+          'Period and Reminds Investors of the May 21, 2018 Lead Plaintiff '
+          'Deadline',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Northland Announces Date for 2018 First Quarter Financial Results '
+          'Release and Details of Investor Call',
+ 'url': ''}
+2018-04-07 18:25:28 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Dividend Facts You May Not Know',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Home BancShares, Inc. to Present at the 2018 Gulf South Bank '
+          'Conference',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Netherlands stocks lower at close of trade; AEX down 0.22%',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Exclusive: Ukraine's largest airline may sue again in tussle with "
+          'Ryanair',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Amazon.com, FDA in 10-year spat over food-storage rules',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Belgium stocks lower at close of trade; BEL 20 down 0.78%',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'McDermott-CB&I merger challenged by dissenting shareholder',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'U.K. stocks lower at close of trade; Investing.com United Kingdom '
+          '100 down 0.22%',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Poland stocks higher at close of trade; WIG30 up 0.67%',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/13>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Germany stocks lower at close of trade; DAX down 0.52%',
+ 'url': ''}
+2018-04-07 18:25:28 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/14> from <GET http://www.investing.com/news/stock-market-news/14>
+2018-04-07 18:25:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/14> (referer: None)
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Bitcoin Price Watch: Down Another $100, but Trends in Asia Show '
+          'Promise',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Deutsche closed-end funds declare monthly distributions',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Income, Value and Growth Stocks',
+ 'url': ''}
+2018-04-07 18:25:31 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Nanotech Security Corp. Announces Shareholder Meeting Results',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Facebook Is Notifying 87 Million Users Their Data May Have Been '
+          'Compromised By Cambridge Analytica. Here’s What to Know If You’re '
+          'One of Them',
+ 'url': ''}
+2018-04-07 18:25:31 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Introduction To Currency Futures',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'ADT Stock Stumbles Out of the Gate -- What Investors Need to Know',
+ 'url': ''}
+2018-04-07 18:25:31 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Don't count on Amazon winning the $10 billion Defense Department "
+          "deal -- it's still wide open",
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Unity Biotechnology Files For $85 Million IPO',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'This near-full-display smartphone takes out the bezel and notch in '
+          'a very 2010 way —\xa0and it actually looks pretty cool',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Wish you could fly? Here are the best drones on the market right '
+          'now',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'NewsWatch: Stock guru who called S&P 500 gains sees no new market '
+          'high before October',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Solar Alliance amends Warrant Terms',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Sweden stocks lower at close of trade; OMX Stockholm 30 down 1.04%',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Turkey stocks lower at close of trade; BIST 100 down 0.18%',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Norway stocks lower at close of trade; Oslo OBX down 0.54%',
+ 'url': ''}
+2018-04-07 18:25:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/14>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'LatAm currencies down as global trade tensions escalate',
+ 'url': ''}
+2018-04-07 18:25:32 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/15> from <GET http://www.investing.com/news/stock-market-news/15>
+2018-04-07 18:25:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/15> (referer: None)
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Red Pine Exploration Closes $1.0 Million Private Placement With '
+          'Institutional Investor',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Anoto Group AB (publ) publishes its Annual Report for 2017',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Trump attacked Amazon over taxes — but his own online store '
+          'reportedly collects sales tax from only 2 states',
+ 'url': ''}
+2018-04-07 18:25:33 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Bearer Bonds: From Popular To Prohibited',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Lomography’s Neptune lens system now goes as wide as 15mm',
+ 'url': ''}
+2018-04-07 18:25:33 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Cesca readies equity offering',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Natuzzi S.p.A. reports Q4 results',
+ 'url': ''}
+2018-04-07 18:25:33 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The best deals you can find at Costco, according to employees',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The 10 Best Deals of April 6, 2018',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '3 Warren Buffett Stocks to Buy in April',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Why Square, U.S. Steel, and Conn's Slumped Today",
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'AppRiver is Ready to Help Nonprofits Upgrade Technology',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Franklin Street Properties declares $0.09 dividend',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Why SUPERVALU, GOL, and Pacira Pharmaceuticals Jumped Today',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hagens Berman Alerts Funko, Inc. Investors to the June 4, 2018 Lead '
+          'Plaintiff Deadline in the IPO Securities Class Action',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hagens Berman Reminds WageWorks Investors of the May 8, 2018 Lead '
+          'Plaintiff Deadline in the Pending Securities Class Action',
+ 'url': ''}
+2018-04-07 18:25:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/15>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': "Union at Volkswagen's Skoda Auto accepts 12 percent wage increase "
+          'offer',
+ 'url': ''}
+2018-04-07 18:25:35 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/16> from <GET http://www.investing.com/news/stock-market-news/16>
+2018-04-07 18:25:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/16> (referer: None)
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hagens Berman Reminds MiMedx Group Investors of the April 25, 2018 '
+          'Lead Plaintiff Deadline in the Pending Securities Class Action',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Brookfield Business Partners L.P.\xa02018 First Quarter Conference '
+          'Call and Webcast\xa0for Investors and Analysts',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Flexion Therapeutics Reports Inducement Grants Under NASDAQ Listing '
+          'Rule 5635(c)(4)',
+ 'url': ''}
+2018-04-07 18:25:36 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Aon Announces First Quarter 2018 Earnings Release and Conference '
+          'Call',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Hagens Berman Alerts Investors in Celgene Corporation to the May '
+          '29, 2018 Lead Plaintiff Deadline in the Pending Securities Class '
+          'Action and to the Abrupt Departure of Celgene’s President',
+ 'url': ''}
+2018-04-07 18:25:36 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Artesian Resources Corporation 2017 Annual Report\xa0Available '
+          'Electronically to Shareholders',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Consumer Groups Plan Complaint Over Facebook’s Facial Recognition',
+ 'url': ''}
+2018-04-07 18:25:36 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'BP Prudhoe Bay Royalty Trust declares $1.2748 dividend',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Prudential Short Duration High Yield Fund reports Q4 results',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'K2 Applies to Extend Warrants',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Brookfield Real Assets Income Fund\xa0 declares $0.199 dividend',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "MSNBC's interview with Apple CEO Tim Cook airs tonight at 8PM ET",
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Netflix in Talks to Pay $300M for Billboard Company',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Brookfield Funds' Monthly Distribution Declaration",
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Proteostasis registers $100M mixed shelf offering',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Gazprom CEO, Rusal among targets for new U.S. sanctions against '
+          'Russia',
+ 'url': ''}
+2018-04-07 18:25:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/16>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Gogo updates contracts for COO, CTO',
+ 'url': ''}
+2018-04-07 18:25:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/17> from <GET http://www.investing.com/news/stock-market-news/17>
+2018-04-07 18:25:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/17> (referer: None)
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Why Did Sears Holdings Corp. Shares Gain 10% in March?',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Brookfield Funds’ Monthly Distribution Declaration',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "'TrumpMania' Looks At The President's Relationship With WWE, Vince "
+          'McMahon',
+ 'url': ''}
+2018-04-07 18:25:38 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Bridge Bancorp declares $0.23 dividend',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Conatus: What's Next For This Small-Cap Potential NASH Play?",
+ 'url': ''}
+2018-04-07 18:25:38 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Schmitt Industries reports Q3 results',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Pzena Investment Management, Inc. Announces First-Quarter 2018 '
+          'Earnings Conference Call',
+ 'url': ''}
+2018-04-07 18:25:38 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Bridge Bancorp, Inc. Announces First Quarter 2018 Dividend',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Lantronix to Report Fiscal 2018 Third Quarter Results on April 26, '
+          '2018',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'What Are the Top U.S. Imports?',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Does Project Maven’s use of Google’s A.I. tech violate ‘Don’t Be '
+          'Evil’ credo?',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Working today? The mortgage REITs',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Dow transports bounces back out of Dow Theory 'sell' territory, "
+          'again',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Digital Ally, Inc. to Discuss Full Year and Fourth Quarter 2017 '
+          'Operating Results and the Status of Its Patent Litigation on '
+          'Friday, April 13, 2017 Conference Call',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'HealthEquity Appoints Angelique Hill as EVP of Operations',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Schmitt Industries Announces Third Quarter Fiscal 2018 Operating '
+          'Results',
+ 'url': ''}
+2018-04-07 18:25:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/17>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'GMS to acquire WSB Titan',
+ 'url': ''}
+2018-04-07 18:25:39 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/18> from <GET http://www.investing.com/news/stock-market-news/18>
+2018-04-07 18:25:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/18> (referer: None)
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Russia is weirdly obsessed with Sergei Skripal's dead cat",
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'THL Credit Senior Loan Fund declares $0.096 dividend',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "What's Wrong With Farmland Partners?",
+ 'url': ''}
+2018-04-07 18:25:42 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Eversource Energy says cyberattack may have affected some customers',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'E. coli outbreak in New Jersey could be tied to Panera Bread, '
+          'report says',
+ 'url': ''}
+2018-04-07 18:25:42 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Athabasca Oil Corporation Announces Results of Shareholders’ '
+          'Meeting',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Dow ends down over 550 points Friday; stocks suffer weekly losses',
+ 'url': ''}
+2018-04-07 18:25:42 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Incyte, NewLink Genetics Crash into Friday’s 52-Week Low Club',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Google is making it easier to use emoji in Chrome',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Caterpillar, Boeing Tank the Dow Friday',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Blue Cross Blue Shield Insurers may be afoul of antitrust law',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Stocks fall sharply on trade fears, ending lower for the week',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'What Would A Curved iPhone Do To Apple’s Valuation?',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Fortnite Raven Skin Now Available With Feathered Flyer Glider',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Navios Maritime Acquisition Corporation Announces Availability of '
+          'Its Form 20-F for the Year Ended December 31, 2017',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Monmouth Real Estate buys Daytona Beach industrial property',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/18>
+{'date': '2018-04-06',
+ 'time': '',
+ 'title': 'Deutsche honing in on two candidates for the CEO job - Bloomberg',
+ 'url': ''}
+2018-04-07 18:25:42 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/19> from <GET http://www.investing.com/news/stock-market-news/19>
+2018-04-07 18:25:45 [scrapy.extensions.logstats] INFO: Crawled 19 pages (at 14 pages/min), scraped 323 items (at 238 items/min)
+2018-04-07 18:25:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.investing.com/news/stock-market-news/19> (referer: None)
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How a Biotech Bummer Sent Nektar Therapeutics Stock South Today',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "Piper Jaffray sees 'Fortnite' risk overblown for Take-Two",
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'IIPR: High Risk And Trading At A Premium',
+ 'url': ''}
+2018-04-07 18:25:47 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'The growth of genetic testing and personalized medicine',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Consider Equity REITs For Your Next Investment: Iron Mountain, Inc.',
+ 'url': ''}
+2018-04-07 18:25:47 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'We’re Keeping Track of All of Facebook’s Scandals So You Don’t Have '
+          'To',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': '3 Reasons Mastercard and Visa Are Still Buys',
+ 'url': ''}
+2018-04-07 18:25:47 [investingspider] ERROR: list index out of range
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': ' Landec (LNDC) Q3 2018 Earnings Conference Call Transcript',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'How Does TripAdvisor, Inc. (TRIP) Stack Up Right Now?',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Checking the Overall Picture for Campbell Soup Company (CPB)',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Tiffany & Co. (TIF): What’s the Story?',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Brainstorm Health: Facebook Hospital Data, Incyte Stock, Yescarta '
+          'Price',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': "For the US dollar, it's a Tiger market or a bear market",
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'In Latest Hacking News, Best Buy Breached?',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Supervalu shares surge 8% on reports company is exploring a sale',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Social Feed: Fake tweets, more Facebook Stories, and required '
+          'hashtags',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.investing.com/news/stock-market-news/19>
+{'date': '2018-04-07',
+ 'time': '',
+ 'title': 'Taking a Look at the Data Behind Waddell & Reed Financial, Inc. '
+          '(WDR)',
+ 'url': ''}
+2018-04-07 18:25:47 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.investing.com/news/stock-market-news/20> from <GET http://www.investing.com/news/stock-market-news/20>

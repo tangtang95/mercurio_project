@@ -8,6 +8,9 @@
     - ``` pip install scrapy-fake-useragent ```
 - install stem from terminal of the environment using:
     - ``` pip install stem ```
+- install scrapyd for deploying and running scrapy Spider
+    - ``` pip install scrapyd ```
+    - ``` pip install git+https://github.com/scrapy/scrapyd-client ```
 ## Proxy IP Rotation Setup (only for Unix OS):
 - install tor from terminal (using apt or homebrew)
 - install privoxy from terminal (using apt or homebrew)
