@@ -25,7 +25,7 @@ class ScrapingprojectPipeline(object):
         self.file.close()
         
     def clean_content(self, text):
-        temp = remove_tags_with_content(text, which_ones=('style','script',))
+        temp = remove_tags_with_content(text, which_ones=('style','script', 'figcaption'))
         temp = remove_tags(temp)
         temp = remove_entities(temp)
         temp = replace_escape_chars(temp)

@@ -57,7 +57,7 @@ class MKTWSpider(Spider):
                 'loader = nv_cont_list.getElementsByClassName("loading")[0];'
                 'loader.parentNode.removeChild(loader);'
             )
-            elements = driver.find_elements_by_xpath('.//div[@id="thirdpartyheadlines"]//ol[@class="viewport"]/li[not(contains(@class, "loading"))]')
+            elements = driver.find_elements_by_xpath('.//div[@id="thirdpartyheadlines"]//ol[@class="viewport"]/li[not(@class="loading")]')
             item = BriefItem()
             for elem in elements:
                 try:

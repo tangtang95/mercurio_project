@@ -13,6 +13,7 @@ LOCAL_HTTP_PROXY = '127.0.0.1:8118'
 NEW_IP_MAX_ATTEMPTS = 10
 TOR_PASSWORD = 'password'
 TOR_PORT = 9051
+NUMBER_OF_REQUESTS_PER_IP = 30
 
 
 # Service to get current IP.
@@ -20,13 +21,15 @@ ICANHAZIP = 'http://icanhazip.com/'
 
 
 class TorIpChanger(object):
+    
     def __init__(
         self,
         reuse_threshold=1,
         local_http_proxy=LOCAL_HTTP_PROXY,
         tor_password=TOR_PASSWORD,
         tor_port=TOR_PORT,
-        new_ip_max_attempts=NEW_IP_MAX_ATTEMPTS
+        new_ip_max_attempts=NEW_IP_MAX_ATTEMPTS,
+        number_of_requests_per_ip=NUMBER_OF_REQUESTS_PER_IP
     ):
         """
         TorIpChanger - make sure requesting a new Tor IP address really does
@@ -62,6 +65,8 @@ class TorIpChanger(object):
         self.new_ip_max_attempts = new_ip_max_attempts
 
         self._real_ip = None
+        self._requests_count = number_of_requests_per_ip
+        self._number_of_requests_per_ip = number_of_requests_per_ip
 
     @property
     def real_ip(self):
@@ -117,6 +122,18 @@ class TorIpChanger(object):
             break
 
         return current_ip
+    
+    def update_ip(self):
+        """
+        After every NUMBER_OF_REQUEST_PER_IP, the spider asks for a new IP
+        """
+        
+        self._requests_count += 1
+        if self._requests_count > self._number_of_requests_per_ip:
+            self._requests_count = 0
+            current_ip = self.get_new_ip()
+            return current_ip
+        return None
 
     def _get_response_text(self, response):
         return response.text.strip()
