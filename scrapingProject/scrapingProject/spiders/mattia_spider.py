@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 27 14:05:02 2018
-
-@author: Mattia
-"""
-
 import scrapy
 import time
 from selenium import webdriver
@@ -13,7 +6,6 @@ from scrapingProject.items import BriefItem
 
 
 class NyTimesSpider(scrapy.Spider):
-    #scrapy crawl name
     name = "nytimespider_m"
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']

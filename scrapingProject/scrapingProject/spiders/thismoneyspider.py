@@ -1,9 +1,3 @@
-"""
-Created on Sat 26 March 2018
-
-@author: Tang-tang Zhou
-"""
-
 from scrapy import Spider, Request
 from scrapingProject.items import NewsItem
 from scrapingProject.loaders import NewsLoader

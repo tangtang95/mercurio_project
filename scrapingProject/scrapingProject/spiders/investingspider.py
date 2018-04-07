@@ -11,6 +11,11 @@ class InvestingSpider(Spider):
     i = 1
     
     def fixTimeFormat(self, date):
+        '''
+            Given a string that could represents a date in the format " - date_info"
+            remove the " - " at the start.
+        '''
+        date = date.replace(u'\xa0', ' ') # necessary because date contains \xa0 
         s = date.split(" ")
         if s[1] == '-':
             return " ".join(s[2:])    
@@ -29,12 +34,13 @@ class InvestingSpider(Spider):
                 if date == "":
                     date = ''.join(a.xpath(".//div[@class='textDiv']/div[@class='articleDetails']/span[@class='date']/text()").extract())
                 
-                # Date_time of the current time is expressed in minutes/hour ago
+                # date_time of the current day may be expressed in minutes/hour ago
                 if du.isAgoFormat(str(date)):
-                    item['date'] = du.getCurrentDate()
+                    item['date'] = du.normalize_timestamp(du.getCurrentDate(), output_format="%Y-%m-%d")
                 else:
                     # the date may start with a blank space followed by an '-'
                     date = self.fixTimeFormat(date)
+                    date = du.normalize_timestamp(date, output_format="%Y-%m-%d")
                     item['date'] = date
                 item['time'] = ""
                 item['url'] = ""

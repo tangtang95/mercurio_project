@@ -1,9 +1,3 @@
-"""
-Created on Sat 26 March 2018
-
-@author: Tang-tang Zhou
-"""
-
 import datetime
 from scrapy import Spider
 from scrapy.selector import Selector

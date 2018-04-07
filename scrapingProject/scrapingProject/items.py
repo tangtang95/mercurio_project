@@ -10,7 +10,7 @@ import scrapy
 
 '''
 date format: yyyy-MM-dd
-time format: hh-mm-ss
+time format: hh:mm:ss
 with hh in 24 hours and timezone UTC
 '''
 class NewsItem(scrapy.Item):
