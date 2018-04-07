@@ -1,2 +1,0 @@
-class TorIpError(Exception):
-    pass

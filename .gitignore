@@ -7,3 +7,9 @@ scrapingProject/*.tsv
 crawlingFinished
 scrapingProject/nytimes_news
 *.swp
+scrapingProject/dbs
+scrapingProject/project.egg-info
+**/logs
+build/
+dist/
+eggs/
