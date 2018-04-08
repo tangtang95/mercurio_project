@@ -1,4 +1,3 @@
-from scrapy.spiders import XMLFeedSpider
 from scrapy import Spider
 from scrapy import Request
 from scrapingProject.items import NewsItem
@@ -11,14 +10,14 @@ class BloombergSpider(Spider):
     name = "bloombergspider"
     allowed_domains = ['bloomberg.com']
     start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']  
-    custom_settings = {
-        'DOWNLOADER_MIDDLEWARES' : {
-            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
-            'scrapingProject.middlewares.ProxyMiddleware' : 400
-        }
-    }
+#    custom_settings = {
+#        'DOWNLOADER_MIDDLEWARES' : {
+#            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+#            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+#            'scrapingProject.middlewares.ProxyMiddleware' : 400
+#        }
+#    }
     
    
     def parse(self, response):

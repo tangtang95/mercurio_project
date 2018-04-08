@@ -8,7 +8,8 @@ import scrapingProject.utilities.data_utilities as du
 from datetime import datetime
 import time
 
-ITEMS_TO_PULL = 100
+ITEMS_TO_PULL_FOR_REQUEST = 100
+ITEMS_TO_KEEP = 30
 ITERATION = 10
 
 class MKTWSpider(Spider):
@@ -23,6 +24,10 @@ class MKTWSpider(Spider):
             self.js_script = file.read()
 
     def parse(self, response):
+        """
+        Parse the start_urls with selenium
+        """
+        
         driver = webdriver.Chrome()
         driver.get(response.url)
         
@@ -34,6 +39,7 @@ class MKTWSpider(Spider):
         driver.execute_script('x=document.getElementById("below"); x.parentNode.removeChild(x);')
         driver.execute_script('x=document.getElementById("chrome"); x.parentNode.removeChild(x);')
 
+        #remove the tag li:loading from the list
         driver.execute_script(
             'nv_cont_list = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0];'
             'loader = nv_cont_list.getElementsByClassName("loading")[0];'
@@ -44,19 +50,31 @@ class MKTWSpider(Spider):
         
         for i in range(ITERATION):
             time.sleep(1)
-            driver.execute_script(self.js_script, ITEMS_TO_PULL)
+            
+            #executes the script to get the news item and then append the tag 
+            #li:loading at the end of the list
+            driver.execute_script(self.js_script, ITEMS_TO_PULL_FOR_REQUEST)
             try:
+                #wait until the tag li:loading reappers
                 WebDriverWait(driver, 60).until(
                     EC.presence_of_element_located((By.CLASS_NAME, "loading"))
                 )
             except Exception as e:
                 self.logger.error(e)
-            driver.execute_script('x = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0];x.scrollTo(0,x.scrollHeight*3/4);')
+            #scroll the list <ul> to more than a half of its height to avoid
+            #the downloading of newer news
+            driver.execute_script(
+                    'x = document.getElementById("thirdpartyheadlines")'
+                                '.getElementsByTagName("ol")[0];'
+                    'x.scrollTo(0,x.scrollHeight*3/4);'
+            )
+            #remove the tag li:loading from the list
             driver.execute_script(
                 'nv_cont_list = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0];'
                 'loader = nv_cont_list.getElementsByClassName("loading")[0];'
                 'loader.parentNode.removeChild(loader);'
             )
+            #retrieving the list of news
             elements = driver.find_elements_by_xpath('.//div[@id="thirdpartyheadlines"]//ol[@class="viewport"]/li[not(@class="loading")]')
             item = BriefItem()
             for elem in elements:
@@ -75,14 +93,12 @@ class MKTWSpider(Spider):
                         yield item
                 except Exception as e:
                     self.logger.error(e)
-            #first get the oldest headline
-            #delete all headlines
-            #append the oldest headline to the list
+            #delete the newer headlines until remains "ITEMS_TO_KEEP" news
             self.logger.info(last_timestamp_scraped)
             driver.execute_script(
                 'var elements = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0].getElementsByTagName("li");'
                 'var list = document.getElementById("thirdpartyheadlines").getElementsByTagName("ol")[0];'
                 'while(list.childNodes.length > arguments[0]){'
-                'list.removeChild(list.firstChild);}', 30)
+                'list.removeChild(list.firstChild);}', ITEMS_TO_KEEP)
             
         

@@ -9,7 +9,7 @@ from scrapy import signals
 
 import logging
 from fake_useragent import UserAgent
-from scrapingProject.toripchanger import TorIpChanger
+from scrapingProject.utilities.toripchanger import TorIpChanger
 
 logger = logging.getLogger(__name__)
 

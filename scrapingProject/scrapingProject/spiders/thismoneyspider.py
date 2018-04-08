@@ -10,14 +10,14 @@ class ThisMoneySpider(Spider):
     name = "thismoneyspider"
     allowed_domains = ['thisismoney.co.uk']
     start_urls = []
-    custom_settings = {
-        'DOWNLOADER_MIDDLEWARES' : {
-            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
-            'scrapingProject.middlewares.ProxyMiddleware' : 400
-        }
-    }
+#    custom_settings = {
+#        'DOWNLOADER_MIDDLEWARES' : {
+#            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+#            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+#            'scrapingProject.middlewares.ProxyMiddleware' : 400
+#        }
+#    }
     
     def __init__(self, *args, **kwargs):
         super(ThisMoneySpider, self).__init__(*args, **kwargs)

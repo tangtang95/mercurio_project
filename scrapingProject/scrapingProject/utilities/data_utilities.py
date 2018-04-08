@@ -1,36 +1,17 @@
-from datetime import datetime
+from datetime import datetime as DT
 from dateutil import parser
 import pytz
 
-#DEPRECATED
-def zero_pad_timestamp(timestamp):
-    '''
-        Given a timestamp in the format
-        month/day/year hour:minute:second AM/PM
-        add a zero pad where needed to month and hour only.
-    '''
-    x = timestamp.split(" ")
-    x[0] = x[0].split("/")
-    x[1] = x[1].split(":")
-    i = 0
-    for i in range(0,2):
-        if int(x[i][0]) < 10 and "0" not in x[i][0]:
-            x[i][0] = "0"+x[i][0]   
-            
-    return ""+x[0][0]+"/"+x[0][1]+"/"+x[0][2]+" "+x[1][0]+":"+x[1][1]+":"+x[1][2]+" "+x[2]
-
-
-
-def normalize_timestamp(date, hasTimezone = False, timezone = 'UTC', output_format = '%Y-%m-%d %H:%M:%S'):
-    '''
+def normalize_timestamp(datetime, hasTimezone = False, timezone = 'UTC', output_format = '%Y-%m-%d %H:%M:%S'):
+    """
     Return a normalized date string with:
     - a standard format: output_format
     - a standard timezone: convert date from "timezone" into utc timezone
     - hasTimezone indicates if the date has or not an indicated timezone (e.g. 2010-03-30T10:21:06+0100)
-    '''
+    """
     
     utc = pytz.timezone('UTC')
-    timestamp = parser.parse(date)
+    timestamp = parser.parse(datetime)
     if hasTimezone:
         timestamp = timestamp.astimezone(utc)
     else:
@@ -43,34 +24,27 @@ def compare_time(ts1, ts2):
     '''
         Compare timestamp ts1 and ts2. 
         If ts1 < ts2 then return True; false otherwise.
-        ts1 and ts2 format must be:
-            
-        3/27/2018 4:01:29 PM
+        ts1 and ts2 format must be parseable by normalize_timestamp 
+        (it should parse everything unless the first value is the day)
 
     '''
     ts1 = normalize_timestamp(ts1)
     ts2 = normalize_timestamp(ts2)
-    t1 = datetime.strptime(ts1, '%Y-%m-%d %H:%M:%S')
-    t2 = datetime.strptime(ts2, '%Y-%m-%d %H:%M:%S')
+    time1 = DT.strptime(ts1, '%Y-%m-%d %H:%M:%S')
+    time2 = DT.strptime(ts2, '%Y-%m-%d %H:%M:%S')
         
-    if t1 < t2:
-        return True
-    return False
+    return time1 < time2
 
 def getCurrentDate():
     '''
         Return current date in the format month:day:year
     '''
-    now = datetime.now()
-    return now.strftime("%m:%d:%y")
+    return DT.now().strftime("%m:%d:%y")
     
 
-def isAgoFormat(s):
+def isAgoFormat(text):
     '''
         Given a string that rapresents a data or in a normal format or in
         something like hour/minute ago
     '''
-    x = s.split(" ")
-    if x[2] == "ago":
-        return True
-    return False
+    return 'ago' in text
