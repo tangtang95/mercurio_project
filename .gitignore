@@ -1,12 +1,10 @@
 .DS_Store
-*.pyc
 __pycache__/
-scrapingProject/*.log
-scrapingProject/.scrapy
-scrapingProject/*.tsv
-crawlingFinished
-scrapingProject/nytimes_news
+*.pyc
+*.log
+*.tsv
 *.swp
+scrapingProject/.scrapy
 scrapingProject/dbs
 scrapingProject/project.egg-info
 **/logs
