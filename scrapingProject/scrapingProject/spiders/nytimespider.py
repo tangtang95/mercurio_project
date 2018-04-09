@@ -3,10 +3,13 @@ import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from scrapingProject.items import BriefItem
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 
 class NyTimesSpider(scrapy.Spider):
-    name = "nytimespider_m"
+    name = "nytimespider"
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']
         
@@ -68,24 +71,29 @@ class NyTimesSpider(scrapy.Spider):
                 
                 for url in storylinks:
                     if "/business/" in url.get_attribute("href"):
-                        time.sleep(0.1)
                         item["title"] = url.get_attribute("href")[43:]
                         item["date"] = url.get_attribute("href")[24:34]
                         item["time"] = ""
                         item["url"] = url.get_attribute("href")
                         yield item
                 
-                if storylinks[0].get_attribute("href")[24:28] == "2018":
+                if storylinks[0].get_attribute("href")[24:28] == "2017":
                     break
                 else:
                     driver.execute_script(
-                        'var element = document.evaluate(".//li", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null),index;'
-                        'for (index = element.length - 1; index >= 0; index--){'
-                        'element[index].parentNode.removeChild(element[index]);}'
+                        'var list = document.getElementById("story-menu-additional-set-latest");'
+                        'while(list.childNodes.length > 0){'
+                        'list.removeChild(list.firstChild);}'
                         )
                 
                 driver.find_element_by_xpath(".//button[@class='button load-more-button']").click()
-                time.sleep(0.2)
+                try:
+                #wait until the tag li:loading reappers
+                    WebDriverWait(driver, 60).until(
+                            EC.presence_of_element_located((By.CLASS_NAME, "page-marker invisible-minimized"))
+                    )
+                except Exception as e:
+                    self.logger.error(e)
                 
                 # deleting article
                 #driver.execute_script('var element = document.getElementsByClassName("story theme-summary"), index;for (index = element.length - 1; index >= 0; index--) {element[index].parentNode.removeChild(element[index]);}')
@@ -97,5 +105,5 @@ class NyTimesSpider(scrapy.Spider):
             storylinks = driver.find_elements_by_xpath("//*[@id='story-menu-additional-set-latest']//a[@class = 'story-link']")
             #self.logger.info("Num of links " + str(len(storylinks)))
             driver.close()
-    
+            
     

@@ -11,7 +11,7 @@ from w3lib.html import replace_escape_chars, unquote_markup
 class ScrapingprojectPipeline(object):
     
     useBriefItemSpider = ['marketwatchspider', 'mktwspider', 
-                          "investingspider", 'nytimespider_m','reutersspider']
+                          "investingspider", 'nytimespider','reutersspider']
    
     def open_spider(self, spider):
         """
