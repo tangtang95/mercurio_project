@@ -15,7 +15,7 @@ class ScrapingprojectPipeline(object):
    
     def open_spider(self, spider):
         """
-        This method is scheduled after the spider is opened
+        Scheduled after the spider is opened and opens a file in write mode
         """
         
         self.file = open(spider.name + '_news.tsv', 'w')
@@ -23,18 +23,19 @@ class ScrapingprojectPipeline(object):
         if spider.name in self.useBriefItemSpider:
             self.newswriter.writerow(['title', 'url', 'date', 'time'])
         else:
-            self.newswriter.writerow(['title','author','date', 'time', 'content'])
+            self.newswriter.writerow(['title','author','date', 'time', 'content', 'tags'])
 
     def close_spider(self, spider):
         """
-        This method is scheduled after the spider is closed
+        Scheduled after the spider is closed and closes the file
         """
         
         self.file.close()
         
     def clean_content(self, text):
         """
-        Returns a string of text cleaned up
+        Return a string of text cleaned up by tags, entities,
+        escape chars, quotes and spaces
         """
         
         temp = remove_tags_with_content(text, which_ones=('style','script', 'figcaption'))
@@ -57,7 +58,7 @@ class ScrapingprojectPipeline(object):
             else:
                 item['content'] = self.clean_content(item['content'])
                 self.newswriter.writerow([item['title'], item['author'], 
-                                          item['date'], item['time'], item['content']])
+                                          item['date'], item['time'], item['content'], item['tags']])
         except csv.Error as ex:
             self.logger.error(ex)
         self.file.flush()
