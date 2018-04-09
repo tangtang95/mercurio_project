@@ -21,7 +21,7 @@ class NewsLoader(ItemLoader):
     time_out = TakeFirst()
     
     #content_in = MapCompose(remove_tags_with_content, which_ones = ('style', ))
-    #content_out = MapCompose(Join)
+    content_out = Join()
     
 class BriefLoader(ItemLoader):
     default_output_processor = TakeFirst()
