@@ -12,7 +12,7 @@ class NewsLoader(ItemLoader):
     title_out = TakeFirst()
 
     author_in = MapCompose(strip_html5_whitespace, replace_escape_chars, remove_tags)
-    author_out = Join(separator = ',')
+    author_out = Join(separator = u', ')
     
     date_in = MapCompose(remove_tags)
     date_out = TakeFirst()
