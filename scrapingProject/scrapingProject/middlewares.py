@@ -58,7 +58,7 @@ class ProxyMiddleware(object):
     Need privoxy and tor running
     """
     
-    ip_changer = TorIpChanger(reuse_threshold=10)
+    ip_changer = TorIpChanger(reuse_threshold=30, number_of_requests_per_ip=200)
     
     def process_request(self, request, spider):
         request.meta['proxy'] = 'http://127.0.0.1:8118'

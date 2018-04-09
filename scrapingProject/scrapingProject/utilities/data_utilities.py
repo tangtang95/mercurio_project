@@ -22,11 +22,10 @@ def normalize_timestamp(datetime, hasTimezone = False, timezone = 'UTC', output_
 
 def compare_time(ts1, ts2):
     '''
-        Compare timestamp ts1 and ts2. 
-        If ts1 < ts2 then return True; false otherwise.
-        ts1 and ts2 format must be parseable by normalize_timestamp 
-        (it should parse everything unless the first value is the day)
-
+    Compare timestamp ts1 and ts2. 
+    If ts1 < ts2 then return True; false otherwise.
+    ts1 and ts2 format must be parseable by normalize_timestamp 
+    (it should parse everything unless the first value is the day)
     '''
     ts1 = normalize_timestamp(ts1)
     ts2 = normalize_timestamp(ts2)
@@ -37,14 +36,6 @@ def compare_time(ts1, ts2):
 
 def getCurrentDate():
     '''
-        Return current date in the format month:day:year
+    Return current date in the format month:day:year
     '''
-    return DT.now().strftime("%m:%d:%y")
-    
-
-def isAgoFormat(text):
-    '''
-        Given a string that rapresents a data or in a normal format or in
-        something like hour/minute ago
-    '''
-    return 'ago' in text
+    return DT.UTCnow().strftime("%m:%d:%y")
