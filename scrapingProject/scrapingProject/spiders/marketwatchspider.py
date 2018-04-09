@@ -11,9 +11,11 @@ class MarketWatchSpider(scrapy.Spider):
     name = "marketwatchspider"
     allowed_domains = ['www.marketwatch.com/']
     start_urls = ['https://www.marketwatch.com/newsviewer']
-    MAX_ITERATION = 50
     
     def parse(self, response):
+        '''
+        Infinite scroll of market watch news from marketwatch.com/newsviewer
+        '''
         driver = webdriver.Firefox()
         driver.get(response.url)
         
@@ -31,7 +33,7 @@ class MarketWatchSpider(scrapy.Spider):
         last_timestamp_scraped = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         # Infinite scrolling
         try:   
-            while i < self.MAX_ITERATION: 
+            while True: 
                 time.sleep(SCROLL_PAUSE_TIME)
                 driver.execute_script("x = document.getElementById('mktwheadlines').getElementsByClassName('viewport')[0];x.scrollTo(0,x.scrollHeight);")
                 i = i + 1
@@ -54,7 +56,7 @@ class MarketWatchSpider(scrapy.Spider):
                                 item['date'] = timestamp.split(' ')[0]
                                 item['time'] = timestamp.split(' ')[1]
                                 last_timestamp_scraped = timestamp
-                            
+                                
                             yield item        
                         except Exception as e:
                             self.logger.error(e)
@@ -64,5 +66,5 @@ class MarketWatchSpider(scrapy.Spider):
             self.logger.error(e)
         finally:    
             # need to close the driver
-            #driver.close()
-            pass
+            driver.close()
+            

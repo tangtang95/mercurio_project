@@ -48,7 +48,7 @@ class MKTWSpider(Spider):
         
         last_timestamp_scraped = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         
-        for i in range(ITERATION):
+        while True:
             time.sleep(1)
             
             #executes the script to get the news item and then append the tag 
