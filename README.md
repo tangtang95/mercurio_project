@@ -12,6 +12,10 @@
     - ``` pip install scrapyd ```
     - ``` pip install git+https://github.com/scrapy/scrapyd-client ```
     
+## To read before writing report
+- Write each sentence on a separete line. This minimazes merge conflicts.
+- Split different chapters into their own files and call them with \include{file} command.
+    
 ## How to deploy the scrapy project:
 1. through the shell go to the scrapingProject folder inside mercurio_project
 2. run the server (check scrapy.cfg for the server ip) with the command "scrapyd"
@@ -77,3 +81,7 @@ curl -x 127.0.0.1:8118 http://icanhazip.com/
 ## Datasets:
 - https://github.com/philipperemy/financial-news-dataset
 - https://github.com/philipperemy/Reuters-full-data-set
+
+## Further info
+You can use this for search sites by sites similiraty. Good sites to search from are marketwatch and 4traders
+- http://www.moreofit.com/similar-to/www.marketwatch.com/Top_10_Sites_Like_Marketwatch/
