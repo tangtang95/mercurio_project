@@ -15,7 +15,8 @@
 ## To read before writing report
 - Write each sentence on a separete line. This minimazes merge conflicts.
 - Split different chapters into their own files and call them with \include{file} command.
-    
+- git config core.autocrlf true    
+
 ## How to deploy the scrapy project:
 1. through the shell go to the scrapingProject folder inside mercurio_project
 2. run the server (check scrapy.cfg for the server ip) with the command "scrapyd"
