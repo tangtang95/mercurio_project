@@ -3,21 +3,22 @@ from scrapy import Request
 from scrapingProject.items import NewsItem
 from scrapingProject.loaders import NewsLoader
 import scrapingProject.utilities.data_utilities as du
+from w3lib.html import replace_escape_chars, strip_html5_whitespace
 
-SITEMAP_YEAR = '2017'
+SITEMAP_YEAR = '2015'
 
 class BloombergSpider(Spider):
     name = "bloombergspider"
     allowed_domains = ['bloomberg.com']
     start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']  
-    custom_settings = {
-        'DOWNLOADER_MIDDLEWARES' : {
-            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
-            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
-            'scrapingProject.middlewares.ProxyMiddleware' : 400
-        }
-    }
+#    custom_settings = {
+#        'DOWNLOADER_MIDDLEWARES' : {
+#            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+#            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+#            'scrapingProject.middlewares.ProxyMiddleware' : 400
+#        }
+#    }
     
    
     def parse(self, response):
@@ -53,7 +54,12 @@ class BloombergSpider(Spider):
         loader.add_xpath('title', '//span[@class="lede-text-only__highlight"]/text()')
         loader.add_xpath('title', '//span[@class="lede-large-content__highlight"]/text()')
         loader.add_xpath('title', '//article//h1/text()')
-        loader.add_xpath('author', '//div[@class="author"]/text()')
+        authors = response.xpath('//div[@class="author"]/text()').extract()
+        for author in authors:
+            author = strip_html5_whitespace(author)
+            author = replace_escape_chars(author)
+            if len(author) != 0:
+                loader.add_value('author', author)
         timestamp = response.xpath('//time[@class="article-timestamp"]/@datetime').extract()[0]
         timestamp = du.normalize_timestamp(timestamp, hasTimezone = True)
         loader.add_value('date', timestamp.split(' ')[0])
