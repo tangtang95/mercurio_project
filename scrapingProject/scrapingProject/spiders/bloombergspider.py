@@ -5,20 +5,21 @@ from scrapingProject.loaders import NewsLoader
 import scrapingProject.utilities.data_utilities as du
 from w3lib.html import replace_escape_chars, strip_html5_whitespace
 
-SITEMAP_YEAR = '2015'
+SITEMAP_YEAR = '2017'
 
 class BloombergSpider(Spider):
     name = "bloombergspider"
     allowed_domains = ['bloomberg.com']
-    start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']  
+    start_urls = ['https://www.bloomberg.com/feeds/markets/sitemap_index.xml']
 #    custom_settings = {
-#        'DOWNLOADER_MIDDLEWARES' : {
-#            'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
-#            'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-#            'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
-#            'scrapingProject.middlewares.ProxyMiddleware' : 400
+#       'DOWNLOADER_MIDDLEWARES' : {
+#           'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware': 100,
+#           'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#           'scrapingProject.middlewares.RandomUserAgentMiddleware' : 500,
+#           'scrapingProject.middlewares.ProxyMiddleware' : 400
 #        }
 #    }
+    newspaper = 'Bloomberg'
     
    
     def parse(self, response):

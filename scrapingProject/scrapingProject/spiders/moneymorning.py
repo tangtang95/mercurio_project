@@ -15,6 +15,8 @@ class MoneyMorning(Spider):
     name = "moneymorningspider"
     allowed_domains = ['moneymorning.com']
     start_urls = ['https://moneymorning.com/sitemap_index.xml']  
+    
+    newspaper = 'MoneyMorning'
    
     def parse(self, response):
         

@@ -9,14 +9,16 @@ SCROLL_PAUSE_TIME = 0.5
 
 class MarketWatchSpider(scrapy.Spider):
     name = "marketwatchspider"
-    allowed_domains = ['www.marketwatch.com/']
+    allowed_domains = ['marketwatch.com']
     start_urls = ['https://www.marketwatch.com/newsviewer']
+    
+    newspaper = 'MarketWatch'
     
     def parse(self, response):
         '''
         Infinite scroll of market watch news from marketwatch.com/newsviewer
         '''
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.get(response.url)
         
         driver.execute_script("x = document.getElementById('mktwheadlines').getElementsByClassName('viewport')[0];")

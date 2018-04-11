@@ -6,12 +6,13 @@ from scrapy import Request
 import scrapingProject.utilities.data_utilities as du
 import time
 
-YEAR = '2007'
+#YEAR = '2007'
 
 class ReutersSpider(Spider):
     name = "reutersspider"
     allowed_domains = [ "reuters.com" ]
     start_urls = [ ]
+    newspaper = 'Reuters'
     
     def __init__(self, *args, **kwargs):
         """
@@ -22,8 +23,8 @@ class ReutersSpider(Spider):
         prefix_url = "https://www.reuters.com/resources/archive/us/"
         suffix_url = ".html"
         now_year = DT.now().year
-        #[ self.start_urls.append(prefix_url + str(year) + suffix_url) for year in range(2007, now_year + 1) ]
-        self.start_urls.append(prefix_url + YEAR + suffix_url)
+        [ self.start_urls.append(prefix_url + str(year) + suffix_url) for year in range(2007, now_year + 1) ]
+        #self.start_urls.append(prefix_url + YEAR + suffix_url)
     
     def parse(self, response):
         """

@@ -20,7 +20,7 @@ class CNNSpider(Spider):
 #            'scrapingProject.middlewares.ProxyMiddleware' : 400
 #        }
 #    }
-    
+    newspaper = 'CNNMoney'
     
     def __init__(self, *args, **kwargs):
         super(CNNSpider, self).__init__(*args, **kwargs)

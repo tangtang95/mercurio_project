@@ -12,6 +12,8 @@ class NyTimesSpider(scrapy.Spider):
     name = "nytimespider"
     allowed_domains = ['nytimes.com']
     start_urls = ['https://www.nytimes.com/section/business/dealbook']
+    
+    newspaper = 'NewYorkTimes'
         
     def parse(self, response):
         
