@@ -1,5 +1,23 @@
+% !TeX spellcheck = en_US
 \section{Web scraping}
+The first target that had to be accomplished to turn the Mercurio project and its analysis to an international version was the data collection of financial news from various sources by web scraping techniques. In particular, the sites that had been considered were: 
+\begin{itemize}
+\item \href{https://www.bloomberg.com}{bloomberg.com}
+\item \href{https://www.nytimes.com}{nytimes.com}
+\item \href{https://www.thisismoney.co.uk}{thisismoney.co.uk}
+\item \href{http://money.cnn.com}{money.cnn.com}
+\item \href{http://www.marketwatch.com}{marketwatch.com}
+\item \href{http://www.reuters.com}{reuters.com}
+\item \href{http://www.investing.com}{investing.com}
+\item \href{http://www.moneymorning.com}{moneymorning.com} 
+\item \href{http://www.4-traders.com/}{4-traders.com}
+\end{itemize}
+An important distinction among the sources mentioned above is whether or not is required an ajax/javascript interaction with the user in the web page that arranges the intended articles. The ones that do  not involve these interaction will be treated in the "static sites" section, the leftovers beneath "dynamic sites" section, with a focus on infinite scroll websites. \\ 
 
+% La gestione del progetto con scrapy, gli spider e la pipeline. 
+
+%   
 
 \input{webscrapingStatico}
 \input{webscrapingDinamico}
+\input{scrapyDeploy}
