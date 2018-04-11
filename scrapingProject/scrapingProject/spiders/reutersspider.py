@@ -12,6 +12,7 @@ class ReutersSpider(Spider):
     name = "reutersspider"
     allowed_domains = [ "reuters.com" ]
     start_urls = [ ]
+    newspaper = 'Reuters'
     
     def __init__(self, *args, **kwargs):
         """

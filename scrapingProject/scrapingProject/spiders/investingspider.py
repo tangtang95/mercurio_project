@@ -7,6 +7,9 @@ class InvestingSpider(Spider):
     name = "investingspider"
     allowed_domains = ['investing.com']
     start_urls = ['http://www.investing.com/news/stock-market-news/']
+    
+    newspaper = 'Investing'
+    
     page_number = 17027
     i = 1
     

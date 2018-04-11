@@ -4,9 +4,10 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import csv
 from w3lib.html import remove_tags, remove_tags_with_content, remove_entities
 from w3lib.html import replace_escape_chars, unquote_markup
+from scrapingProject.items import BriefItem, NewsItem
+from scrapingProject.utilities.writers import FileItemWriter, DBItemWriter
 
 class ScrapingprojectPipeline(object):
     
@@ -17,20 +18,18 @@ class ScrapingprojectPipeline(object):
         """
         Scheduled after the spider is opened and opens a file in write mode
         """
-        
-        self.file = open(spider.name + '_news.tsv', 'w')
-        self.newswriter = csv.writer(self.file, delimiter='\t')
         if spider.name in self.useBriefItemSpider:
-            self.newswriter.writerow(['title', 'url', 'date', 'time'])
+            item_type = BriefItem()
         else:
-            self.newswriter.writerow(['title','author','date', 'time', 'content', 'tags'])
+            item_type = NewsItem()
+        self.writer = DBItemWriter(item = item_type, newspaper = spider.newspaper)
 
     def close_spider(self, spider):
         """
         Scheduled after the spider is closed and closes the file
         """
         
-        self.file.close()
+        self.writer.close()
         
     def clean_content(self, text):
         """
@@ -50,16 +49,7 @@ class ScrapingprojectPipeline(object):
         '''
         Clean the content and write the item on the file
         '''
-        
-        try:
-            if spider.name in self.useBriefItemSpider:
-                self.newswriter.writerow([item['title'], item['url'], item['date'],
-                                          item['time']])
-            else:
-                item['content'] = self.clean_content(item['content'])
-                self.newswriter.writerow([item['title'], item['author'], 
-                                          item['date'], item['time'], item['content'], item['tags']])
-        except csv.Error as ex:
-            self.logger.error(ex)
-        self.file.flush()
+        if type(item) is NewsItem:
+            item['content'] = self.clean_content(item['content'])
+        self.writer.write_item(item)
         return item

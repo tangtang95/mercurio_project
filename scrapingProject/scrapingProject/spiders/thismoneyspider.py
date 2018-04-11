@@ -18,6 +18,8 @@ class ThisMoneySpider(Spider):
 #            'scrapingProject.middlewares.ProxyMiddleware' : 400
 #        }
 #    }
+    newspaper = 'ThisMoney'
+    
     
     def __init__(self, *args, **kwargs):
         super(ThisMoneySpider, self).__init__(*args, **kwargs)

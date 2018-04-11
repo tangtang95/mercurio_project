@@ -14,8 +14,10 @@ ITERATION = 10
 
 class MKTWSpider(Spider):
     name = "mktwspider"
-    allowed_domains = ['www.marketwatch.com/']
+    allowed_domains = ['marketwatch.com']
     start_urls = ['https://www.marketwatch.com/newsviewer']
+    
+    newspaper = 'WallStreetJournal'
     
     
     def __init__(self, *args, **kwargs):
@@ -27,7 +29,7 @@ class MKTWSpider(Spider):
         """
         Parse the start_urls with selenium
         """
-        driver = webdriver.Chrome()
+        driver = webdriver.Firefox()
         driver.get(response.url)
         
         #removing unncesserary stuff from the page

@@ -8,6 +8,8 @@ class TradersSpider(Spider):
     name = "tradersspider"
     allowed_domains = ['4-traders.com']
     start_urls = ['http://www.4-traders.com/news/companies/']
+    
+    newspaper = '4Traders'
 
     def parse(self, response):
         '''
