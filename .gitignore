@@ -4,6 +4,9 @@ __pycache__/
 *.log
 *.tsv
 *.swp
+*.pdf
+*.aux
+*.gz
 scrapingProject/.scrapy
 scrapingProject/dbs
 scrapingProject/project.egg-info
