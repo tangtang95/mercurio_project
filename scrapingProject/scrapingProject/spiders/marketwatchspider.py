@@ -18,7 +18,7 @@ class MarketWatchSpider(scrapy.Spider):
         '''
         Infinite scroll of market watch news from marketwatch.com/newsviewer
         '''
-        driver = webdriver.Firefox()
+        driver = webdriver.Chrome()
         driver.get(response.url)
         
         driver.execute_script("x = document.getElementById('mktwheadlines').getElementsByClassName('viewport')[0];")

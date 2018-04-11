@@ -8,9 +8,8 @@ import scrapingProject.utilities.data_utilities as du
 from datetime import datetime
 import time
 
-ITEMS_TO_PULL_FOR_REQUEST = 100
+ITEMS_TO_PULL_FOR_REQUEST = 1000
 ITEMS_TO_KEEP = 30
-ITERATION = 10
 
 class MKTWSpider(Spider):
     name = "mktwspider"
@@ -49,7 +48,7 @@ class MKTWSpider(Spider):
         
         last_timestamp_scraped = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         
-        for i in range(ITERATION):
+        while True:
             time.sleep(1)
             
             #executes the script to get the news item and then append the tag 

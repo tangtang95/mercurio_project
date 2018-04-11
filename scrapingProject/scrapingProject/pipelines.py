@@ -9,6 +9,8 @@ from w3lib.html import replace_escape_chars, unquote_markup
 from scrapingProject.items import BriefItem, NewsItem
 from scrapingProject.utilities.writers import FileItemWriter, DBItemWriter
 
+import MySQLdb
+
 class ScrapingprojectPipeline(object):
     
     useBriefItemSpider = ['marketwatchspider', 'mktwspider', 
@@ -23,13 +25,18 @@ class ScrapingprojectPipeline(object):
         else:
             item_type = NewsItem()
         self.writer = DBItemWriter(item = item_type, newspaper = spider.newspaper)
+        try:
+            self.writer.open_writer()
+        except Exception as err:
+            spider.logger.error(err)
+        
 
     def close_spider(self, spider):
         """
         Scheduled after the spider is closed and closes the file
         """
+        self.writer.close_writer()
         
-        self.writer.close()
         
     def clean_content(self, text):
         """
@@ -51,5 +58,8 @@ class ScrapingprojectPipeline(object):
         '''
         if type(item) is NewsItem:
             item['content'] = self.clean_content(item['content'])
-        self.writer.write_item(item)
+        try:
+           self.writer.write_item(item)
+        except Exception as err:
+            spider.logger.error(err)
         return item
