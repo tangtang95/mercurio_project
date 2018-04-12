@@ -16,6 +16,7 @@
 - Write each sentence on a separete line. This minimazes merge conflicts.
 - Split different chapters into their own files and call them with \include{file} command.
 - git config core.autocrlf true    
+- Do not write in first person (neither singolar or plural), use passive!!!!!!!
 
 ## How to deploy the scrapy project:
 1. through the shell go to the scrapingProject folder inside mercurio_project
