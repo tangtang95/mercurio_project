@@ -6,7 +6,7 @@ from scrapingProject.items import BriefItem
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-
+from pyvirtualdisplay import Display
 
 class NyTimesSpider(scrapy.Spider):
     name = "nytimespider"
@@ -16,6 +16,9 @@ class NyTimesSpider(scrapy.Spider):
     newspaper = 'NewYorkTimes'
         
     def parse(self, response):
+        
+        display = Display(visible=0, size=(480, 320))
+        display.start()
         
         chrome_options = Options()
         #chrome_options.add_argument("--headless")

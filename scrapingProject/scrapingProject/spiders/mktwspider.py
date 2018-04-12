@@ -7,6 +7,8 @@ from scrapingProject.items import BriefItem
 import scrapingProject.utilities.data_utilities as du
 from datetime import datetime
 import time
+from pyvirtualdisplay import Display
+import pkgutil
 
 ITEMS_TO_PULL_FOR_REQUEST = 1000
 ITEMS_TO_KEEP = 30
@@ -21,14 +23,17 @@ class MKTWSpider(Spider):
     
     def __init__(self, *args, **kwargs):
         super(MKTWSpider, self).__init__(*args,**kwargs)
-        with open('scrapingProject/JSscripts/getHeadlines.js', 'r') as file:
-            self.js_script = file.read()
+        self.js_script = pkgutil.get_data('scrapingProject','JSscripts/getHeadlines.js')
 
     def parse(self, response):
         """
         Parse the start_urls with selenium
         """
-        driver = webdriver.Firefox()
+        
+        display = Display(visible=0, size=(480, 320))
+        display.start()
+        
+        driver = webdriver.Chrome()
         driver.get(response.url)
         
         #removing unncesserary stuff from the page

@@ -14,7 +14,7 @@ import scrapingProject.utilities.data_utilities as du
 class MoneyMorning(Spider):
     name = "moneymorningspider"
     allowed_domains = ['moneymorning.com']
-    start_urls = ['https://moneymorning.com/sitemap_index.xml']  
+    start_urls = ['https://moneymorning.com/sitemap.xml']
     
     newspaper = 'MoneyMorning'
    
@@ -23,7 +23,7 @@ class MoneyMorning(Spider):
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
         sitemap_urls = response.xpath('//n:loc/text()').extract()
         for sitemap_url in sitemap_urls:
-            if 'video' not in sitemap_url:
+            if '-post-' in sitemap_url:
                 yield Request(sitemap_url, callback = self.parse_month_sitemap)
         
        
@@ -35,7 +35,8 @@ class MoneyMorning(Spider):
         response.selector.register_namespace('n','http://www.sitemaps.org/schemas/sitemap/0.9')
         news_url = response.xpath('//n:url/n:loc/text()').extract()
         for url in news_url:
-            yield Request(url, callback = self.parse_news)
+            if '/videos/' not in url:
+                yield Request(url, callback = self.parse_news)
             
     def parse_news(self, response):
         """

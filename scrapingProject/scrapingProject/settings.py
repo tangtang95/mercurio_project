@@ -14,6 +14,11 @@ BOT_NAME = 'scrapingProject'
 SPIDER_MODULES = ['scrapingProject.spiders']
 NEWSPIDER_MODULE = 'scrapingProject.spiders'
 
+# Define LOG LEVEL that can be set to DEBUG, INFO, WARNING, ERROR, CRITICAL
+LOG_LEVEL = 'WARNING'
+
+DOWNLOAD_TIMEOUT = 3600
+
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'scrapingProject (+http://www.yourdomain.com)'

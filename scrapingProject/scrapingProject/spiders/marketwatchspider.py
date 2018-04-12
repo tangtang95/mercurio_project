@@ -4,6 +4,7 @@ import time
 from scrapingProject.items import BriefItem
 import scrapingProject.utilities.data_utilities as du
 from datetime import datetime
+from pyvirtualdisplay import Display
 
 SCROLL_PAUSE_TIME = 0.5
 
@@ -18,6 +19,10 @@ class MarketWatchSpider(scrapy.Spider):
         '''
         Infinite scroll of market watch news from marketwatch.com/newsviewer
         '''
+
+        display = Display(visible=0, size=(480, 320))
+        display.start()
+        
         driver = webdriver.Chrome()
         driver.get(response.url)
         
