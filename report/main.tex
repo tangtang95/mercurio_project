@@ -1,23 +1,43 @@
 \documentclass[a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[italian]{babel}
+\usepackage[british,UKenglish,USenglish,english,american]{babel}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{makeidx}
 \graphicspath{ {images/} }
+% !TeX spellcheck = en_US
+\makeindex
 
 \begin{document}
 \title{Progetto Ingegneria Informatica (5 CFU) 2017/2018}
 \author{
         Riccardo Poiani, Mattia Tibaldi, Tang-Tang Zhou \\
         Politecnico di Milano\\  
-        Progetto Mercurio              
+        Mercurio              
 }
 \maketitle
+\newpage
+\tableofcontents
+\addcontentsline{toc}{section}{References}
 \newpage
 
 \input{introduzione}
 \input{webscraping}
+
+\clearpage
+\begin{thebibliography}{9}
+\bibitem{scrapyframework}
+Scrapy framewrok, URL: \url{https://scrapy.org/}
+
+\bibitem{scrapyspider}
+Scrapy spider, URL: \url{https://doc.scrapy.org/en/latest/topics/spiders.html}
+
+\bibitem{scrapypipeline}
+Scrapy pipeline, URL: \url{https://doc.scrapy.org/en/latest/topics/item-pipeline.html}
+
+\end{thebibliography}
 
 \end{document}
