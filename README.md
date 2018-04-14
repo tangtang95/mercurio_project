@@ -16,32 +16,55 @@
 - Write each sentence on a separete line. This minimazes merge conflicts.
 - Split different chapters into their own files and call them with \include{file} command.
 - git config core.autocrlf true    
-- Do not write in first person (neither singolar or plural), use passive!!!!!!!
+- Do not write in first person (neither singular or plural), use passive!!!!!!!
 
 ## How to deploy the scrapy project:
-1. through the shell go to the scrapingProject folder inside mercurio_project
-2. run the server (check scrapy.cfg for the server ip) with the command "scrapyd"
-3. in another shell go to the same folder and deploy the project:
+1. start the server (check scrapy.cfg for the server ip) with the command "scrapyd" wherever you want
+2. if your server is remote, then you should first make a port forwarding to the server
 ```bash
+ssh -L localport:localhost:serverport username@ipaddress
+#example: ssh -L 9000:localhost:6800 mercurio@192.168.0.2
+```
+3. first of all make sure you are on the parent folder of your project, then to deploy the project:
+```bash
+#this command will send your project on the url indicated on the scrapy.cfg file
 scrapyd-deploy -p scrapingProject
 ```
-4. then push the project to the server
-```bash
-scrapyd-client projects
-```
-5. if you want to check all the spiders available, use:
+4. if you want to check all the spiders available, use:
 ```bash
 scrapyd-client spiders -p scrapingProject
 ```
-6. to run a spider use:
+5. to run a spider use:
 ```bash
 scrapyd-client schedule -p scrapingProject spidername
+#you can also use the API of scrapyd:
+#curl http://localhost:9000/schedule.json -d project=scrapingProject -d spider=spidername
 ```
-   where spidername is a name shown in the list of spiders
+6. to cancel a spider:
+```bash
+curl http://localhost:9000/cancel.json -d project=scrapingProject -d job=jobstring
+#the value of jobstring can be found when the spider has just been scheduled or on the website localhost:9000
+```
 For more information check:
 - https://stackoverflow.com/questions/45750739/scrapyd-client-command-not-found
 - https://github.com/scrapy/scrapyd-client
 - https://scrapyd.readthedocs.io/en/latest/overview.html
+
+## How to interrogate the database through ssh
+- list of commands:
+```bash
+#access into the DB
+mysql -uroot -p
+
+#select a database
+use databasename;
+
+#show tables
+show tables;
+
+#query example
+select * from nametable where ....
+```
 
 ## Proxy IP Rotation Setup (only for Unix OS):
 - install tor from terminal (using apt or homebrew)
