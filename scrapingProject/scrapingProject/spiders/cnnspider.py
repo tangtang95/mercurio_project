@@ -50,12 +50,11 @@ class CNNSpider(Spider):
         
         loader = NewsLoader(item=NewsItem(), response=response)
         loader.add_xpath('title', '//header//h1/text()')
-        translator = str.maketrans('', '', string.punctuation)
         author = ''.join(response.xpath('//span[@class="byline"]').extract())
-        author = remove_tags(author).replace("by", '').translate(translator)
+        author = remove_tags(author).replace("by", '').replace(' and ', ', ')
         loader.add_value('author', author)
         timestamp = response.xpath('//meta[@name="DC.date.issued"][1]/@content').extract()[0]
-        timestamp = du.normalize_timestamp(timestamp, hasTimezone = True)
+        timestamp = du.normalize_timestamp(timestamp)
         loader.add_value('date', timestamp.split(' ')[0])
         loader.add_value('time', timestamp.split(' ')[1])
         list_of_contents = response.xpath(

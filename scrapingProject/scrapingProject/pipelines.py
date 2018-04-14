@@ -14,7 +14,7 @@ import MySQLdb
 class ScrapingprojectPipeline(object):
     
     useBriefItemSpider = ['marketwatchspider', 'mktwspider', 
-                          "investingspider", 'nytimespider','reutersspider']
+                          'investingspider', 'nytimespider','reutersspider']
    
     def open_spider(self, spider):
         """

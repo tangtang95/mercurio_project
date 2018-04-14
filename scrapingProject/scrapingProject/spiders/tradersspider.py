@@ -7,7 +7,7 @@ import scrapingProject.utilities.data_utilities as du
 class TradersSpider(Spider):
     name = "tradersspider"
     allowed_domains = ['4-traders.com']
-    start_urls = ['http://www.4-traders.com/news/companies/']
+    start_urls = ['http://www.4-traders.com/news/companies/?p5=456']
     
     newspaper = '4Traders'
 
