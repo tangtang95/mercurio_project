@@ -1,3 +1,5 @@
 \subsection{Dynamic sites}
-This regards dynamic sites.
+Marketwatch.com and nytimes.com are the two sources requiring javascript interactions with the client. In order to handle the interplays, Selenium Python \cite{selenium}, combined with Scrapy, has been used: scrapy alone may not be the optimal solution for these kind of issues \cite{scrapyvsselenium}. \\
+Basically, Selenium allows the programmer to get a WebDriver object, that is essentially a browser (it is possible to specify a preference here among Firefox, Chrome, Android, PhantomJS, Safari and Opera) from which it is feasible to execute javascript code. This is done, inside the Scrapy framework method "parse", once the page is specified and it's being scraped. \\
+% Maybe add something more on Selenium, nothing comes to mind now
 \input{webscrapingScrollInfinito}
