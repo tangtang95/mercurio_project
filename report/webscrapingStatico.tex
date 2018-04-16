@@ -4,3 +4,12 @@ Nytimes.com and marketwatch.com are the only sources considered that doesn't fal
 Investing.com and 4-traders.com are the sites that fall under the first of the two classes illustrated above. The parse method starts from a certain page number (zero) and retrieves the information require; after that, if necessary, another function that scrape the single articles is called (this happens in 4-traders.com). Finally, a request to the next page is done and the parse method will handle it.
 % XML and sitemap scraper
 \par 
+The easiest way to scrape data from a website is through a sitemap, but not every sites has these. The sitemap is a special page containing a list of every "core" information of the website like news, videos, stocks and so on. This index of data is important for the web company itself, because huge crawler like googlebot, yahoobot and other company's bot could use this to search for data and at the end the process can increase its goolge rank system (google also ranks web pages and not just websites). Of course, there are other benefits like:
+\begin{itemize}
+	\item make the day easier for the crawler
+	\item categorizing content easily
+	\item monitoring the visitors more easily
+\end{itemize}
+Another essential thing to look for is the file "robots.txt", which every sites has; this unique text contains all the rules a crawler should follow and sometimes there is also a sitemap. This is why before scraping everyone should examine this particular file. 
+\par 
+For this project, with the help of scrapy, a lot of websites (Bloomberg, CNN, This Money,...) has been scraped through sitemaps. Unlike the dynamic sites these are simpler to implement and that's why there are no particular ploy to use to increase the efficiency of the crawler. Though, there is a big problem when someone scrape data with nonchalance; the web company sometimes doesn't want every user agent to crawl its website, so they take countermeasures like temporary ban. For example Bloomberg, this kind of news company has decided to implement a system to detect crawlers to ban them; to solve this case it's necessary to implement a rotation of ip addresses synchronized with a rotation of user agents. This method can maybe avoid the system, but for Bloomberg it just increase the number of GET request before getting banned. Nevertheless the sitemap approach is still one of the best technique to scrape data.

@@ -30,19 +30,16 @@ class InvestingSpider(Spider):
         a Request for the next page.
         '''
         # retriving the list of articles for each page
-        articles = response.xpath(".//section[@id='leftColumn']/div[@class='largeTitle']/article")
+        articles = response.xpath("//article[@class='articleItem']")
         item = BriefItem()
         
-        for a in articles:
+        for article in articles:
             try:
                 # retriving the date
-                item['title'] = ''.join(a.xpath(".//div[@class='textDiv']/a/@title").extract())
-                date = ''.join(a.xpath(".//div[@class='textDiv']/span[@class='articleDetails']/span[@class='date']/text()").extract())
-                if date == "":
-                    date = ''.join(a.xpath(".//div[@class='textDiv']/div[@class='articleDetails']/span[@class='date']/text()").extract())
-                
+                item['title'] = article.xpath("//a[@class='title']/text()").extract()[0]
+                date = article.xpath("//span[@class='date']/text()").extract()[0]
                 # date_time of the current day may be expressed in minutes/hour ago
-                if 'ago' in str(date):
+                if 'ago' in date:
                     item['date'] = du.normalize_timestamp(du.getCurrentDate(), output_format="%Y-%m-%d")
                 else:
                     # the date may start with a blank space followed by an '-'
@@ -50,7 +47,10 @@ class InvestingSpider(Spider):
                     date = du.normalize_timestamp(date, output_format="%Y-%m-%d")
                     item['date'] = date
                 item['time'] = ""
-                item['url'] = ""
+                url = article.xpath("//a[@class='title']/@href").extract()[0]
+                if 'http' not in url:
+                    url = "https://www.investing.com" + url
+                item['url'] = url
                 yield item
             except Exception as e:
                 self.logger.error(e)

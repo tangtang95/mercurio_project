@@ -38,4 +38,4 @@ def getCurrentDate():
     '''
     Return current date in the format month:day:year
     '''
-    return DT.UTCnow().strftime("%m:%d:%y")
+    return DT.utcnow().strftime("%m:%d:%y")
