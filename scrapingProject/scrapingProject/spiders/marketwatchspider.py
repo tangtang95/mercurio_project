@@ -69,7 +69,7 @@ class MarketWatchSpider(scrapy.Spider):
                             self.logger.error(e)
                     driver.execute_script('var element = document.getElementsByTagName("li"); var index;for (index = 0; index <= element.length - 2; index++) {element[0].parentNode.removeChild(element[0]);}')
         except Exception as e:
-            self.logger.error("Error scraping dealbook section of marketwatch.com")
+            self.logger.error("Error scraping marketwatch.com")
             self.logger.error(e)
         finally:    
             # need to close the driver

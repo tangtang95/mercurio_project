@@ -1,2 +1,6 @@
 \subsection{Static sites}
-This regards static sites.
+Nytimes.com and marketwatch.com are the only sources considered that doesn't fall under this category: every other sites doesn't require any kind of interaction with the client. In particular, the remaining ones can be further split in the ones that needs to scraped by modifying a value in the URL (i.e. the page number of a certain section) and the ones for which their sitemap is used and analyzed to retrieve the links of the interested articles. 
+\par
+Investing.com and 4-traders.com are the sites that fall under the first of the two classes illustrated above. The parse method starts from a certain page number (zero) and retrieves the information require; after that, if necessary, another function that scrape the single articles is called (this happens in 4-traders.com). Finally, a request to the next page is done and the parse method will handle it.
+% XML and sitemap scraper
+\par 
