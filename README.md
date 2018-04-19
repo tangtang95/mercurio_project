@@ -102,6 +102,7 @@ curl -x 127.0.0.1:8118 http://icanhazip.com/
 - [Reuters](https://www.reuters.com)
 - [Investing](https://www.investing.com)
 - [Money Mourning](https://moneymorning.com)
+- [Traders](https://traders.com)
 
 ## Datasets:
 - https://github.com/philipperemy/financial-news-dataset

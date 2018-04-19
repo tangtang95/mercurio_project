@@ -82,7 +82,7 @@ class NyTimesSpider(scrapy.Spider):
                         item["url"] = url.get_attribute("href")
                         yield item
                 
-                if storylinks[0].get_attribute("href")[24:28] == "2017":
+                if storylinks[0].get_attribute("href")[24:28] == "2012":
                     break
                 else:
                     driver.execute_script(
