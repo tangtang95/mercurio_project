@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Apr 16 17:04:06 2018
-
-@author: Mattia
-"""
-
 from scrapy import Spider
 from scrapy import Request
 from scrapingProject.items import NewsItem
