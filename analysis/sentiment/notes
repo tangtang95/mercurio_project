@@ -1,0 +1,32 @@
+'''
+props = {'annotators': 'sentiment, dcoref','pipelineLanguage':'en','outputFormat':'text'}    
+print(nlp.annotate(sentence, properties=props))
+'''
+
+
+'''
+0) Retriving data from database (later) (coref are already solved)
+1) Identify words from a list of typical words. The more a sentence contains
+   keywords the more it weights.
+2) Identify subjects of the article: only sentences regarding the subject will weight
+3) Sentiment analysis for each sentence
+4) Calculate total weight (if the score is not clear, use title to decide)
+5) Store it to the database
+
+EXTRA TO-DO
+Modify column database column: add ones for sentiment
+Modify DAO and implements writing
+
+ha senso farlo di tutte le aziende?? Così forse sarebbe piu' facile  
+identificare i soggetti coinvolti nell'articolo. 
+Si potrebbe dividere la funzione di costo totale in due modalità diverse:
+    una quando il soggetto è identificato
+    una quando il soggetto non lo è (si usa soltanto il peso basato
+    sulle parole chiave)
+
+
+Calcolare il peso totale
+Per le parole chiave forse sarebbe bene usare la lemmatizzazione.
+E poi usare un approccio naive: 1 punto per ogni parola chiave presente per 
+il peso della frase. 
+'''

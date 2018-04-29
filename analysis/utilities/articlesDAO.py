@@ -54,15 +54,20 @@ class PartialArticleDAO(ArticleDAO):
         except Exception as err:
             raise Exception(err)
 
-    def getArticlesFromACertainDate(self, date):
+    def getArticlesFromACertainDate(self, date = None):
         '''
         Returns a list of articles starting from a specified date.
         Date must be given in format "Year-Month-Day".
+        If date is None, all the articles are retrieved
         '''
         try:
-            query = "SELECT * FROM %s WHERE date > %s"
             cursor = self.database.cursor()
-            return cursor.execute(query, [self.table, date])
+            if date == None:
+                query = "SELECT * FROM %s"
+                return cursor.execute(query, [self.table])
+            else:
+                query = "SELECT * FROM %s WHERE date > %s"
+                return cursor.execute(query, [self.table, date])
         except Exception as err:
             raise Exception(err)
 
