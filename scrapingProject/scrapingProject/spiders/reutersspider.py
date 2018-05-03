@@ -4,7 +4,6 @@ from scrapy.selector import Selector
 from scrapingProject.items import BriefItem
 from scrapy import Request
 import scrapingProject.utilities.data_utilities as du
-import time
 
 #YEAR = '2007'
 
