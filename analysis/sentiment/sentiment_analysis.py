@@ -25,3 +25,7 @@ result = sfu.analyze_article("", keywords, nlp)
 # Write result in DB
 
 
+partial_articles_dao.close_connection()
+full_articles_dao.close_connection()
+nlp.close()
+
