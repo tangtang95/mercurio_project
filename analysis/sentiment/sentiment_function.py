@@ -12,7 +12,6 @@ def analyze_article(content, financial_vocabulary, nlp_analyzer):
     This returns a string that can be: 'positive', 'very positive', 'very negative',
     'negative' or 'neutral'.
     '''
-    # This first line needs to be moved out from the function and passed as a parameter probably.
     # Setup
     props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}
     sentiments = {'positive': 0, 'very positive': 0, 'neutral': 0, 'negative':0, 'very negative':0}

@@ -78,4 +78,14 @@ def parse_lemma_xml(xml):
         soup = BeautifulSoup(xml)
         return soup.find("lemma").string
     except Exception as err:
-        return ""         
+        return ""              
+    
+def give_article_from_server():
+    #TODO
+    return ""
+
+def write_on_db(string):
+    #TODO
+    if string != "":
+        print(string)
+
