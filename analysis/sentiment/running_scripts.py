@@ -2,6 +2,8 @@
 '''
 Files used to run some temporary scripts regarding utilies, like files 
 operation that need to be done only once
+
+This is an example of how to use sentiment_function
 '''
 import utilities.functions as functions
 import sentiment.sentiment_function as sfu
