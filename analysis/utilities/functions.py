@@ -5,7 +5,7 @@ def getKeywords():
     '''
     Returns a list of financial keywords
     '''
-    return read_file_per_line("../resources/keywords.txt")
+    return read_file_per_line("resources/keywords.txt")
     
 def getCompanies():
     ''' 
@@ -58,9 +58,21 @@ def lemmatize_file(file_path_in, file_path_out):
         lemmatized_words.append(lemma)
     write_file_per_line(file_path_out, lemmatized_words)
 
+def parse_sentiment_xml(xml):
+    '''
+    Given an xml representing the result of corenlp sentiment annotator used
+    on a sentence, returns the sentiment
+    '''
+    try:
+        soup = BeautifulSoup(xml)
+        return soup.find("sentiment").string
+    except Exception as err:
+        return "neutral"
+
 def parse_lemma_xml(xml):
     '''
-    Given an xml containing a certain word, returns the lemma.
+    Given an xml representing the result of corenlp lemma annotator used on a 
+    single word, returns the lemma.
     '''
     try:
         soup = BeautifulSoup(xml)
@@ -76,16 +88,4 @@ def write_on_db(string):
     #TODO
     if string != "":
         print(string)
-
-
-
-
-
-
-
-
-
-
-
-
 
