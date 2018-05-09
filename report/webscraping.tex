@@ -14,10 +14,25 @@ The first target that had to be accomplished to turn the Mercurio project and it
 An important distinction among the sources mentioned above is whether or not is required an ajax/javascript interaction with the user in the web page that arranges the intended articles. The ones that do not involve these interaction will be treated in the "static sites" section, the leftovers beneath "dynamic sites" section, with a focus on infinite scroll websites. \\ 
 To manage this side of the project, the Scrapy open source framework \cite{scrapyframework} had been used. % Insert project creation here, but before check README % \\
 Once the project has been created, essentially, a single Spider \cite{scrapyspider} for each source has to be set up: they are the classes that define how a source will be scraped, and in particular, how to perform the crawl (i.e. follow links) and how to extract structured data from the page. The Spider's lifecycle varies a little between dynamic and static sites, but basically, it starts sending a request to links specified in starting\_url, afterwards it gets the data, writes it on some physical support (e.g. database, files) and finally crawls to another source or invokes some javascript commands and repeats. The single steps could be more or less complicated depending on the considered source. \\
-In order to make writing stage work, the Scrapy Item Pipeline \cite{scrapypipeline} has been used. It does a very simple stuff, once it receives an item that changes according to the source, it performs some action over it (i.e. store it). Until this moment, the type of items that can be written are two: "BriefItem", that contains a field for title, date, time, and an eventual url where the news is better specified, and "NewsItem", which carries a value for title, authors, date, time, content and keywords. The former has been used, when the use of the latter didn't make sense, due to a lack of information on the sites, or due to the impossibility of retrieving it: for example, some sites (e.g. Marketwatch) provide a list of links to financial articles from many different websites, making out of the question to get the more specified data from such different site formats.   
-% Insert strategy pattern for saving the data
-% Insert item loader here% 
-% Insert stuff regarding scroll pause time and robots.txt
+In order to make writing stage work, the Scrapy Item Pipeline \cite{scrapypipeline} has been used. It does a very simple stuff, once it receives an item that changes according to the source, it performs some action over it (i.e. store it). Until this moment, the type of items that can be written are two: "BriefItem", that contains a field for title, date, time, and an eventual url where the news is better specified, and "NewsItem", which carries a value for title, authors, date, time, content and keywords. The former has been used, when the use of the latter didn't make sense, due to a lack of information on the sites, or due to the impossibility of retrieving it: for example, some sites (e.g. Marketwatch) provide a list of links to financial articles from many different websites, making out of the question to get the more specified data from such different site formats.
+% image of scrapy architecture
+\subsection{Saving data}
+When it comes to saving data there is a multitude of possibilities, from the simple text file to a more complicated database. 
+At first for testing, the data has been saved with a text file in a format of tsv (e.g. tab separated values), then it has been memorized on a database. 
+Most likely everyone will replace the code, but if someone want to keep both they should use a strategy pattern or a factory pattern.
+\par
+As it is shown on the architecture, the item(i.e. BriefItem or NewsItem) is gone through a pipeline, but before that it must be loaded with data.
+The initialization of an item is done with two methods:
+\begin{itemize}
+	\item Creating an item with its constructor
+	\item Using an item loader to fill the field of the item\\
+	This kind of object define two preprocessing for each field of the item:
+	\begin{itemize}
+		\item input preprocessing, which defines a series of operations to be done when the data is filled inside the item loader (i.e. remove tags, remove escape characters, etc...)
+		\item output preprocessing, which defines an operation to be done when the item is created (i.e. taking only the first data of that specific field if there are a lot of data or concatenating those strings gotten through scraping)
+	\end{itemize}
+\end{itemize}
+% Insert stuff regarding scroll pause time and robots.txt (robots.txt already written in webscrapingStatico)
 % Insert stuff regarding the date here
 \par While structuring and developing the software, none design pattern has been identified and used, except the structure that Scrapy framework itself has. In fact the single steps that have to be performed have strong dependencies with sites' structure and the ways that they arrange the information. (Inserire qui un esempio). The only model came to mind is Template method pattern \cite{templatepattern}, but it only introduces redundancy with Scrapy framework structure. 
 \input{webscrapingStatico}
