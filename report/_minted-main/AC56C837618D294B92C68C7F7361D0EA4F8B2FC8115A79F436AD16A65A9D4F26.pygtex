@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{text} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}This is an example\PYGZdq{}}
+\PYG{n}{props} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}annotators\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}sentiment\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}pipelineLanguage\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}en\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}outputFormat\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}xml\PYGZsq{}}\PYG{p}{\PYGZcb{}}
+\PYG{n}{xml} \PYG{o}{=} \PYG{n}{nlp}\PYG{o}{.}\PYG{n}{annotate}\PYG{p}{(}\PYG{n}{text}\PYG{p}{,} \PYG{n}{properties}\PYG{o}{=}\PYG{n}{props}\PYG{p}{)}
+\PYG{n}{nlp}\PYG{o}{.}\PYG{n}{close}\PYG{p}{()}
+\end{Verbatim}

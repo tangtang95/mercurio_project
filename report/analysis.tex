@@ -1,0 +1,21 @@
+\section{Analysis}
+As said before, after the data collection project, the information has been analyzed and manipulated in different ways that are going to be explored in the following pages. In order to accomplish this task,
+Stanford CoreNLP \cite{stanfordcorenlp} has been used. In particular, a a python package that uses Stanford CoreNLP server, has been adopted \cite{corenlpwrapper}. \\
+This natural language software provides a set of human language technology tools that makes very easy to apply linguistic analysis to a piece of text (in this case the financial article). \\
+The python wrapper presents a simple API that allows the programmer to call the Stanford CoreNLP annotators \cite{annotators}, which basically processes a sentence in a certain language returning a response in a specified output format, e.g.: json, xml or text. The following example, performs the sentiment analysis of a given string and stores it into an xml variable.
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
+text = "This is an example"
+props = {'annotators': 'sentiment','pipelineLanguage':'en','outputFormat':'xml'}
+xml = nlp.annotate(text, properties=props)
+nlp.close()
+\end{minted}
+Among the available types of output, XML has been chosen: it get parsed with Beautiful Soup 4 \cite{bs4}. \par 
+Coreference resolution, lemmatization, sentiment analysis and open information extraction, are the main language tools that have been used. As a result of the fact that dcoref, which is the annotator that solves pronominal and nominal coreferences, and lemmatisation take significant amounts of time to run, their manipulated results are saved in two different fields of a new database table. Doing so allow to change the mechanisms of the scripts regarding sentiment analysis and open information extraction in future, and therefore re-run them without the time waste mentioned above.
+\input{coreference}
+\input{sentiment}
+\input{openie}
