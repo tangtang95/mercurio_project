@@ -6,6 +6,12 @@ def getKeywords():
     Returns a list of financial keywords
     '''
     return read_file_per_line("resources/keywords.txt")
+
+def getVocabulary():
+    '''
+    Returns a list of financial keywords
+    '''
+    return read_file_per_line("resources/lemmatized_vocabulary.txt")
     
 def getCompanies():
     ''' 

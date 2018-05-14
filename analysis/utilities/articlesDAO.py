@@ -96,3 +96,17 @@ class FullArticleDAO(PartialArticleDAO):
             return cursor.execute(query, [self.table])
         except Exception as err:
             raise Exception(err)
+            
+class CoreferencesArticleDAO(ArticleDAO):
+    table = 'articles_en_full'
+    
+    def getArticlesByNewsPaper(self, newspaper):
+        '''
+        Returns every articles published by a certain source
+        '''
+        try:
+            query = "SELECT * FROM %s WHERE Newspaper = %s"
+            cursor = self.database.cursor()
+            return cursor.execute(query, [self.table, newspaper])
+        except Exception as err:
+            raise Exception(err)         

@@ -6,11 +6,11 @@ Created on Wed May  9 10:47:18 2018
 """
 
 from stanfordcorenlp import StanfordCoreNLP
-import utilities.functions as fu
 from bs4 import BeautifulSoup
 import re
+from utilities import functions as fu
 
-def do_coreferences(article):
+def split_article(article):
     # Split the content in different sentences
     delimiters = ".","!","?"
     regexPattern = "|".join(map(re.escape, delimiters))
@@ -18,7 +18,6 @@ def do_coreferences(article):
     
     new_list = []
     for phrase in list_of_phrase:
-        #TODO coreference
         new_phrase = phrase
         new_list.append(new_phrase)
     return new_list        
@@ -48,13 +47,12 @@ def do_openie_analysis(list_of_phrase):
                       "\stanford-corenlp-full-2018-02-27")    
     props = {'annotators': 'openie','pipelineLanguage':'en','outputFormat':'xml'}
     
+    results = []
     for phrase in list_of_phrase:
-        fu.write_on_db(parse_openie_xml(nlp.annotate(phrase, properties = props)))
+        results.append(parse_openie_xml(nlp.annotate(phrase, properties = props)))
     nlp.close()
+    return results
     
-
-article = fu.give_article_from_server()
-do_openie_analysis(do_coreferences(article))
 
 
 
