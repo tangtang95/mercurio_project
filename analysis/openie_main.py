@@ -25,10 +25,17 @@ def main():
         content = IE.do_openie_analysis(IE.split_article(news['content']))
         if content != None:
             insertNewsAnalyzedOnDatabase(db.get_database, content)
+    
     cursor = db.cursor()        
-    query = "SELECT verb FROM %s"
-    print(cursor.execute(query, [table]))
-    subject = input("Choose a subject to analize")
+    query = "SELECT subject FROM %s"
+    list_of_subjects = cursor.execute(query, [table])
+    print("Subjects: "+ list_of_subjects)
+    subject = input("Choose a subject to analize: ")
+    if subject in list_of_subjects:
+        print_verbs_analyis(db, subject)
+    else:
+        print("Error")
+    
     db.close_connection()
         
 def insertNewsAnalyzedOnDatabase(database, new_content):
