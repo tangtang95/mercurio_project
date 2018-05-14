@@ -59,13 +59,19 @@ def get_sentiment(article_w):
 def get_article_weight(sentiments):
     '''
     Returns the weight of an article as a weighted medium based on the following fact:
-    neutral weights 0, positive and negative +1 and -1, very positive and very
-    negative +2 and -2
+    neutral weights 0, positive and negative 0.4 and -0.4, very positive and very
+    negative 0.8 and -0.8.
     '''
-    num = sentiments['positive'] - sentiments['negative'] + 2 * (sentiments['very positive']- sentiments['very negative'])
-    den = sentiments['neutral'] + sentiments['positive'] + sentiments['negative'] + 2 * (sentiments['very positive'] + sentiments['very negative'])
-    return num / den
-
+    wsum = sentiments['very negative'] * (-0.8)
+    wsum = wsum + sentiments['negative'] * (-0.4)
+    wsum = wsum + sentiments['positive'] * 0.4
+    wsum = wsum + sentiments['very positive'] * 0.8
+    for key in sentiments:
+        total = sentiments[key]
+    return wsum / total
+    
+    
+    
 def get_sentence_weight(sentence, word_list):
     '''
     Returns the weight of the sentence.

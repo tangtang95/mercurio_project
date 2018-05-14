@@ -1,0 +1,14 @@
+\subsection{Sentiment analysis}
+The purpose of this analysis is to give each article a sentiment, in order to allow pattern mining to forecast financial catastrophes. This approach has been implemented in the english version of the project because of the well-trained nlp libraries available and due to the fact the international press was thought to be more vigorous and less apathetic compared to the italian one. \\
+The sentiment tool provided by Stanford CoreNLP parses a sentence and returns "very negative", "negative", "neutral", "positive" or "very positive", depending on the deep learning model \cite{sentimentdeep} used in its implementation. So it's been necessary to find a way of weighting the results associated with each sentences presents in the article, paying attention to the fact that neutral values are relevant and not negligible \cite{neutralvalues}. Let's tackle this problem in two step.
+\begin{itemize}
+\item
+Clearly, not all of the phrases in an article have the same level of importance, thus some periods should weight more than others. The solution adopted to overcome this problem is creating a lemmatized vocabulary composed of financial nouns and keywords. When parsing  
+
+\item
+
+\end{itemize}
+
+% What have been made 
+
+% Conclusion
