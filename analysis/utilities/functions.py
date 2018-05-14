@@ -6,6 +6,12 @@ def getKeywords():
     Returns a list of financial keywords
     '''
     return read_file_per_line("resources/keywords.txt")
+
+def getVocabulary():
+    '''
+    Returns a list of financial keywords
+    '''
+    return read_file_per_line("resources/lemmatized_vocabulary.txt")
     
 def getCompanies():
     ''' 
@@ -57,6 +63,27 @@ def lemmatize_file(file_path_in, file_path_out):
                     lemma = parse_lemma_xml(xml)
         lemmatized_words.append(lemma)
     write_file_per_line(file_path_out, lemmatized_words)
+    
+def get_lemmatized_text(text):
+    '''
+    Given a string of text, lemmatizes each word and return the lemmatized text
+    '''
+    with StanfordCoreNLP(r'/Users/tangtang.zhou/Downloads/stanford-corenlp-full-2018-02-27') as nlp:
+        props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}    
+        words = text.split(r' ')
+        lemmatized_words = []
+        for word in words:
+            lemma = ""
+            word = word.split(" ")
+            for w in word:
+                if w != " ":
+                    xml = nlp.annotate(w, properties=props)
+                    if lemma != "":
+                        lemma = lemma+" "+parse_lemma_xml(xml)
+                    else:
+                        lemma = parse_lemma_xml(xml)
+            lemmatized_words.append(lemma)
+        return ' '.join(lemmatized_words)
 
 def parse_sentiment_xml(xml):
     '''
@@ -78,4 +105,18 @@ def parse_lemma_xml(xml):
         soup = BeautifulSoup(xml)
         return soup.find("lemma").string
     except Exception as err:
-        return ""         
+        return ""              
+    
+def give_article_from_server():
+    #TODO
+    return "Keith is the Chief Investment Strategist for Money Map Press. A seasoned market analyst and professional trader with more than 30 years of global experience, Keith is one of very few experts to correctly see both the dot.bomb crisis and the ongoing financial crisis coming ahead of time - and one of even fewer to help millions of investors around the world successfully navigate them both. Forbes.com recently hailed him as a Market Visionary. He is a regular on FOX Business, CNBC, and CNBC Asia, and his observations have been featured in Bloomberg, The Wall Street Journal, WIRED, Forbes, and MarketWatch. Keith has been leading The Money Map Report since 2008, our flagship newsletter with 80,000+ members. He's also the editor of the High Velocity Profits trading service. In his new weekly Total Wealth, Keith has taken everything he's learned over a notable career and distilled it down to just three steps for individual investors. Sign up is free at totalwealthresearch.com. Keith holds a BS in management and finance from Skidmore College and an MS in international finance (with a focus on Japanese business science) from Chaminade University. He regularly travels the world in search of investment opportunities others don't yet see or understand."
+
+def write_on_db(string):
+    #TODO
+    file_path = r"C:\Users\user\Documents\GitHub\mercurio_project\analysis\resources\openIE_reports.txt"
+    
+    if string != "":
+        file = open(file_path,"a")
+        file.write(string + "\n")
+        file.close()
+
