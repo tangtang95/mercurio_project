@@ -1,27 +1,12 @@
-# -*- coding: utf-8 -*-
-import MySQLdb
+
 
 class ArticleDAO():
-    def __init__(self, ip = '127.0.0.1', port = 3306, user = 'root',
-                 password = 'mamma93', db = 'mercurio'):
-        self.ip = ip
-        self.port = port
-        self.user = user
-        self.password = password
-        self.db = db
-        
-    def open_connection(self):
-        try:
-            self.database = MySQLdb.connect(user = self.user, passwd = self.password, host = self.ip, port = self.port, db = self.db)
-            self.database.set_character_set('utf8')
-        except Exception as err:
-            raise Exception(err)    
-
-    def close_connection(self):
-        self.database.close()
-    
-    def get_database(self):
-        return self.database
+    def __init__(self, database):
+        '''
+        Constructor.\n
+        - database: database object got from MySQLdb.connect
+        '''
+        self.database = database
 
 class PartialArticleDAO(ArticleDAO):
     table = 'articles_en_partial'
@@ -96,3 +81,15 @@ class FullArticleDAO(PartialArticleDAO):
             return cursor.execute(query, [self.table])
         except Exception as err:
             raise Exception(err)
+
+class ArticleAnalyzedDAO(FullArticleDAO):
+    table = 'articles_en_analyzed'
+    
+    def insertNewsAnalyzed(self, news, new_content):
+        '''
+        Insert the news in the database
+        '''
+        values = 'VALUES ( , %s, %s, %s, %s, %s, %s, %s, )' % news['date'], news['time'], news['title'], news['newspaper'], news['author'], new_content, news['tags']
+        query = 'INSERT INTO '+ self.table + '(id, date, time, title, newspaper, author, content, tags, sentiment) ' + values
+        cursor = self.database.cursor()
+        return cursor.execute(query)

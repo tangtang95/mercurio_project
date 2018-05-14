@@ -57,6 +57,27 @@ def lemmatize_file(file_path_in, file_path_out):
                     lemma = parse_lemma_xml(xml)
         lemmatized_words.append(lemma)
     write_file_per_line(file_path_out, lemmatized_words)
+    
+def get_lemmatized_text(text):
+    '''
+    Given a string of text, lemmatizes each word and return the lemmatized text
+    '''
+    with StanfordCoreNLP(r'/Users/tangtang.zhou/Downloads/stanford-corenlp-full-2018-02-27') as nlp:
+        props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}    
+        words = text.split(r' ')
+        lemmatized_words = []
+        for word in words:
+            lemma = ""
+            word = word.split(" ")
+            for w in word:
+                if w != " ":
+                    xml = nlp.annotate(w, properties=props)
+                    if lemma != "":
+                        lemma = lemma+" "+parse_lemma_xml(xml)
+                    else:
+                        lemma = parse_lemma_xml(xml)
+            lemmatized_words.append(lemma)
+        return ' '.join(lemmatized_words)
 
 def parse_sentiment_xml(xml):
     '''
