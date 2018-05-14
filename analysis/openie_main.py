@@ -15,7 +15,7 @@ def main():
     Need to pass the newspaper as first argument
     '''
     try:
-        db = articlesDAO.CoreferencesArticleDAO()
+        db = articlesDAO.ArticleAnalyzedDAO()
         list_of_news = db.getArticlesByNewsPaper(sys.argv[1])
     except Exception as err:
         print(err)
