@@ -30,3 +30,26 @@ Per le parole chiave forse sarebbe bene usare la lemmatizzazione.
 E poi usare un approccio naive: 1 punto per ogni parola chiave presente per 
 il peso della frase. 
 '''
+
+Comandi DB
+
+create table articles_en_analyzed(
+    articleId int not null primary key,
+    date date,
+    time time,
+    title varchar(100),
+    newspaper varchar(100),
+    author varchar(50),
+    content text,
+    tags text,
+    sentiment varchar(50)
+)
+
+create table openie_reports(
+    reportId int not null primary key,
+    articleId int not null foreign key references (articles_en_analyzed(articleId)) 
+    on update cascade on delete cascade,
+    subject varchar(100),
+    verb varchar(100),
+    directObject varchar(100)
+)

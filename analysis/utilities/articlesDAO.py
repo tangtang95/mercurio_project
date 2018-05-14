@@ -19,6 +19,9 @@ class ArticleDAO():
 
     def close_connection(self):
         self.database.close()
+    
+    def get_database(self):
+        return self.database
 
 class PartialArticleDAO(ArticleDAO):
     table = 'articles_en_partial'
