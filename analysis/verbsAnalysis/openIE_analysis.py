@@ -10,10 +10,12 @@ import utilities.functions as fu
 from bs4 import BeautifulSoup
 import re
 
-file_path = r"C:\Users\user\Documents\GitHub\mercurio_project\analysis\resources\openIE_reports.xml"
-
 def do_coreferences(article):
-    list_of_phrase = re.split(".|!|?|...")
+    # Split the content in different sentences
+    delimiters = ".","!","?"
+    regexPattern = "|".join(map(re.escape, delimiters))
+    list_of_phrase = re.split(regexPattern, article)
+    
     new_list = []
     for phrase in list_of_phrase:
         #TODO coreference
@@ -25,16 +27,21 @@ def parse_openie_xml(xml):
     '''
     Given an xml containing a certain word, returns the triple.
     '''
+    triple_save = ""
     try:
-        soup = BeautifulSoup(xml)
-        list_of_solutions = soup.openie
+        soup = BeautifulSoup(xml, "lxml")
+        list_of_solutions = soup.find("openie")
         for triple in list_of_solutions.find_all("triple"):
             if triple.get("confidence") == "1.000":
-                triple_save = triple.string
+                for text in triple.find_all("text"):
+                    triple_save = triple_save + text.string + " "
                 if len(triple_save.split()) == 3:
-                    return triple_save           
+                    return triple_save
+                else:
+                    triple_save = ""
+        return ""        
     except Exception as err:
-        return "" 
+        return ""
 
 def do_openie_analysis(list_of_phrase):
     nlp = StanfordCoreNLP(r"C:\Program Files\Python36\stanford-corenlp-full-2018-02-27" + 
@@ -42,13 +49,12 @@ def do_openie_analysis(list_of_phrase):
     props = {'annotators': 'openie','pipelineLanguage':'en','outputFormat':'xml'}
     
     for phrase in list_of_phrase:
-        fu.write_on_db(parse_openie_xml(nlp.annotate(sentence, properties = props)))
+        fu.write_on_db(parse_openie_xml(nlp.annotate(phrase, properties = props)))
     nlp.close()
     
-    
-sentence = "Richard buy the market."
+
 article = fu.give_article_from_server()
-do_openie_analysis(do_coreferences(sentence))
+do_openie_analysis(do_coreferences(article))
 
 
 
