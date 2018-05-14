@@ -1,14 +1,23 @@
 \subsection{Sentiment analysis}
 The purpose of this analysis is to give each article a sentiment, in order to allow pattern mining to forecast financial catastrophes. This approach has been implemented in the english version of the project because of the well-trained nlp libraries available and due to the fact the international press was thought to be more vigorous and less apathetic compared to the italian one. \\
-The sentiment tool provided by Stanford CoreNLP parses a sentence and returns "very negative", "negative", "neutral", "positive" or "very positive", depending on the deep learning model \cite{sentimentdeep} used in its implementation. So it's been necessary to find a way of weighting the results associated with each sentences presents in the article, paying attention to the fact that neutral values are relevant and not negligible \cite{neutralvalues}. Let's tackle this problem in two step.
+The sentiment tool provided by Stanford CoreNLP parses a sentence and returns "very negative", "negative", "neutral", "positive" or "very positive", depending on the deep learning model \cite{sentimentdeep} used in its implementation. So it's been necessary to find a way of weighting the results associated with each sentences presents in the article, paying attention to the fact that neutral values are relevant and not negligible \cite{neutralvalues}. Let's tackle the problem in two steps, each of which highlights different things.
 \begin{itemize}
 \item
-Clearly, not all of the phrases in an article have the same level of importance, thus some periods should weight more than others. The solution adopted to overcome this problem is creating a lemmatized vocabulary composed of financial nouns and keywords. When parsing  
-
-\item
-
+First of all, clearly not all of the phrases in an article have the same level of importance, thus some periods should weight more than others. The solution adopted to overcome this problem is creating a lemmatized vocabulary composed of financial nouns and keywords. When parsing a sentence, the more it contains this terms, the more it weights, following a linear relation. \\
+\begin{math}
+weight = 1 + 0.5*n \\
+\end{math}
+Where n is the number of words present in the dictionary that appear in the sentence too.
+The multiplier coefficient (0.5) has been chosen in an empirical way and can be subject of further research and learning models. \\
+The weight is then used to modify a python dictionary that has as keys "very negative", "negative", "neutral", "positive" and "very positive" according to the result given by Stanford CoreNLP sentiment annotator.
+\item 
+When it comes to assigning the sentiment of the article, the dictionary mentioned above comes into play: the object is to determine a number between 1 and -1 that represents the sentiment of the article (w\textsubscript{a}). The interval [-1,+1] is then divided in five equals parts, each of which is assigned to a sentiment and according to w\textsubscript{vn} the article's sentiment is calculated.\\
+Let be w\textsubscript{vn}, w\textsubscript{n}, w\textsubscript{ne}, w\textsubscript{p}, w\textsubscript{vp} the weights of "very negative", "negative", "neutral, "positive" and "very positive" for the whole article respectively, and m\textsubscript{vn}, m\textsubscript{n}, m\textsubscript{ne}, m\textsubscript{p} and m\textsubscript{vp} their central position in the [-1,+1] interval. \\
+\begin{equation}
+w_a = \sum\limits_{i} w_i * m_i
+\end{equation}
+Doing so, some important properties are guaranteed: neutral values are relevant and there w\textsubscript{a} gets balanced with equals number of negative and positive weights. However, this approach won't permit to compare different level of positiveness and negativeness. 
 \end{itemize}
 
-% What have been made 
-
-% Conclusion
+% Insert problem about the subject here(uno perde e i competitor guadagnano)
+Conclusion : to write when executed on the server.
