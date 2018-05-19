@@ -66,6 +66,18 @@ show tables;
 select * from nametable where ....
 ```
 
+## How to upload file to server with Unix OS:
+- to upload the folder of analysis use:
+```bash
+#pwd = mercurio_project/
+
+scp -r analysis dazzalini@131.175.120.10:/home/dazzalini/corenlp_project
+```
+
+## CoreNLP Server
+- the server coreNLP is opened on the port: 9001
+- remember to limit the usage of memory when opening the connection with the server
+
 ## Proxy IP Rotation Setup (only for Unix OS):
 - install tor from terminal (using apt or homebrew)
 - install privoxy from terminal (using apt or homebrew)
