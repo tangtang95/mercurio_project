@@ -1,8 +1,8 @@
 \subsection{Deployment}
 After finishing the development of the spiders, it's necessary to deploy the project on a server. 
-In the section of deploying crawlers, it's very important to make use of a server to avoid the execution of spiders on client machine because the server has more stability on terms of connection and power. 
+In the section of deploying crawlers, it's very important to make use of a server to avoid the executions on client machines: this is due to the fact that servers have more stability in terms of connection and computing power. 
 This is why the scraping project needs to be deployed on a server; to solve this issue "scrapy" offers an application for deploying and running Scrapy spiders, called scrapyd\cite{scrapyd}. 
-This daemon (software that runs on background) is executed on a server waiting for messages on a specific port. 
+This daemon is executed on a server waiting for messages on a specific port. 
 Another feature offered by scrapyd is a set of JSON API to deploy the projects and scheduling the spiders; for example:
 \begin{itemize}
 	\item daemonstatus.json, which returns the status of the scrapyd application that is running on the server
@@ -10,13 +10,10 @@ Another feature offered by scrapyd is a set of JSON API to deploy the projects a
 	\item schedule.json to schedule a spider
 	\item cancel.json to stop a spider
 \end{itemize}
-One more way to deploy the project is to use an application client for scrapyd, called scrapyd-client\cite{scrapydclient}; but this doesn't provide every API operations that scrapyd offers natively.
+One more way to deploy the project is to use an application client for scrapyd, called scrapyd-client\cite{scrapydclient}; but this doesn't provide every API operations that scrapyd offers natively. The latter is the solution adopted for Mercurio.
 \par
 Before everything, it's important to define what package, folders and files are necessary for the project deployment and then keep going with the deployment. 
-In this project, the scrapyd daemon is running on a server of the Politecnico of Milano listening on the port 6800. 
-In many cases, the server is unreachable from outside (i.e. internet) because of firewall security, so before deploying it's necessary to make a port forwarding to the server via ssh(Secure Shell)\cite{ssh} protocol. 
-After deploying the project it's possible to schedule spiders in order to crawl data and store it; to check the scheduled spiders and their logs, scrapyd offers a minimal GUI web interface accessible through browser (e.g localhost:9000).
-\subsection{Database}
-How the data or information is saved can be very important, for example if it's memorized inside a simple text file, this means that the access to that file is limited (accessible only in local). 
-But if it was saved on a database, the information will become accessible from everywhere if the server is online; it also grants less time to get the data, because the information is organized in a better way.
-In this case it has been utilized two tables, to save the data about news, and they have been placed on the same server where scrapyd has been launched.
+In this project, the scrapyd daemon is running on a server of the Politecnico of Milano listening on port 6800. 
+In many cases, the server could be unreachable from the outside (e.g. internet) due to the presence of firewalls, so before deploying, it's necessary to make a port forwarding to the server via SSH(Secure Shell)\cite{ssh} protocol. 
+After deploying the project it's possible to schedule spiders in order to crawl data and store it; to check the scheduled spiders and their logs, scrapyd offers a minimal GUI web interface accessible through browser at localhost:9000. \\
+A server owned by Politecnico di Milano has been used to host scrapyd, used with the support of scrapyd-client, and to save the data on a MySQL database.
