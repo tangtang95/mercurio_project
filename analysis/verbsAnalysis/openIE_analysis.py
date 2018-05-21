@@ -53,6 +53,3 @@ def do_openie_analysis(list_of_phrase):
     nlp.close()
     return results
     
-
-
-
