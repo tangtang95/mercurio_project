@@ -59,8 +59,9 @@ def get_article_weight(sentiments):
     wsum = wsum + sentiments['negative'] * (-0.4)
     wsum = wsum + sentiments['positive'] * 0.4
     wsum = wsum + sentiments['very positive'] * 0.8
+    total = 0
     for key in sentiments:
-        total = sentiments[key]
+        total = total + sentiments[key]
     return wsum / total
     
     
