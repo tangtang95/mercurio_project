@@ -109,7 +109,7 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         '''
         try:
             a_id = int(news_id)
-            query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articledId = %s ;'
+            query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articleId = %s ;'
             cursor = self.database.cursor()
             cursor.execute(query, [sentiment, news_id])
             self.database.commit()
