@@ -34,7 +34,7 @@ il peso della frase.
 Comandi DB
 
 create table articles_en_analyzed(
-    articleId int not null primary key,
+    articleId int not null primary key AUTO_INCREMENT,
     date date,
     time time,
     title varchar(100),
@@ -46,7 +46,7 @@ create table articles_en_analyzed(
 )
 
 create table openie_reports(
-    reportId int not null primary key,
+    reportId int not null primary key AUTO_INCREMENT,
     articleId int not null references articles_en_analyzed(articleId),
     subject varchar(100),
     verb varchar(100),

@@ -25,9 +25,10 @@ class PartialArticleDAO(ArticleDAO):
                     where_clause = where_clause + "(Title LIKE %" + str(companies[i]) +"%)"
                     
                 
-            query = "SELECT * FROM %s WHERE " + where_clause
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags  FROM {0} WHERE " + where_clause + ";".format(self.table)
             cursor = self.database.cursor()
-            return cursor.execute(query, [self.table])
+            cursor.execute(query)
+            return cursor
         except Exception as err:
             raise Exception(err)
     
@@ -36,9 +37,10 @@ class PartialArticleDAO(ArticleDAO):
         Returns every articles published by a certain source
         '''
         try:
-            query = "SELECT * FROM %s WHERE Newspaper = %s"
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags FROM {0} WHERE Newspaper = %s;".format(self.table)
             cursor = self.database.cursor()
-            return cursor.execute(query, [self.table, newspaper])
+            cursor.execute(query, [newspaper])
+            return cursor
         except Exception as err:
             raise Exception(err)
 
@@ -51,11 +53,12 @@ class PartialArticleDAO(ArticleDAO):
         try:
             cursor = self.database.cursor()
             if date == None:
-                query = "SELECT * FROM %s"
-                return cursor.execute(query, [self.table])
+                query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags FROM {0};".format(self.table)
+                cursor.execute(query)
             else:
-                query = "SELECT * FROM %s WHERE date > %s"
-                return cursor.execute(query, [self.table, date])
+                query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags FROM {0} WHERE date > %s;".format(self.table)
+                cursor.execute(query, [date])
+            return cursor
         except Exception as err:
             raise Exception(err)
 
@@ -76,9 +79,10 @@ class FullArticleDAO(PartialArticleDAO):
                     where_clause = where_clause + "(Tags LIKE %" + str(keywords[i]) +"%)"
                     
             
-            query = "SELECT * from %s WHERE " + where_clause
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags from {0} WHERE " + where_clause + ";".format(self.table)
             cursor = self.database.cursor()
-            return cursor.execute(query, [self.table])
+            cursor.execute(query)
+            return cursor
         except Exception as err:
             raise Exception(err)
             
@@ -91,18 +95,23 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         '''
         Insert the news in the database
         '''
-        values = 'VALUES ( , %s, %s, %s, %s, %s, %s, %s, )' % news['date'], news['time'], news['title'], news['newspaper'], news['author'], new_content, news['tags']
-        query = 'INSERT INTO '+ self.table + '(id, date, time, title, newspaper, author, content, tags, sentiment) ' + values
-        cursor = self.database.cursor()
-        return cursor.execute(query)
+        try:
+            query = 'INSERT INTO '+ self.table + '(articleId, date, time, title, newspaper, author, content, tags, sentiment) VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s);'
+            cursor = self.database.cursor()
+            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], new_content, news[6], None])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+        
     
     def getArticlesByNewsPaper(self, newspaper):
         '''
         Returns every articles published by a certain source
         '''
         try:
-            query = "SELECT * FROM %s WHERE Newspaper = %s"
+            query = "SELECT * FROM" + self.table + "WHERE Newspaper = %s"
             cursor = self.database.cursor()
-            return cursor.execute(query, [self.table, newspaper])
+            cursor.execute(query, [newspaper])
+            return cursor
         except Exception as err:
             raise Exception(err) 
