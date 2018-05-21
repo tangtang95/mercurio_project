@@ -18,7 +18,6 @@ def main():
                 sentiment = sf.analyze_article(row[7], vocabulary, nlp)
                 print("id: " + str(row[0]))
                 print("sentiment: " + sentiment)
-                print("content: " + row[7])
                 analyzed_dao.updateNewsSentiment(row[0], sentiment)
     except Exception as err:
         raise Exception(err)
