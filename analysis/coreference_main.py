@@ -5,6 +5,7 @@ import traceback
 from coreference import coreference
 from utilities import articlesDAO as dao
 from utilities.database import Database
+from utilities import functions
 import MySQLdb
 
 NUMBER_OF_PHRASE = 5
@@ -25,7 +26,7 @@ def main():
                 print(">> Analyzing text size: {0}".format(len(row[5])))
                 if(len(row[5]) > 0):
                     phrases = row[5].split('. ')
-                    new_content = ""
+                    coref_content = ""
                     bigger_phrase = ""
                     i = 0
                     for phrase in phrases:
@@ -34,7 +35,7 @@ def main():
                         if i == NUMBER_OF_PHRASE - 1:
                             #print(">> Phrase: {0}".format(bigger_phrase))
                             new_phrase = coreference.getCoreferencedText(bigger_phrase)
-                            new_content = new_content + new_phrase
+                            coref_content = coref_content + new_phrase
                             #print(">> Coref phrase: {0}".format(new_phrase))
                             i = 0
                             bigger_phrase = ""
@@ -42,10 +43,11 @@ def main():
                     if i > 0:
                         #print(">> Phrase: {0}".format(bigger_phrase))
                         new_phrase = coreference.getCoreferencedText(bigger_phrase)
-                        new_content = new_content + new_phrase
+                        coref_content = coref_content + new_phrase
                         #print(">> Coref phrase: {0}".format(new_phrase))
-                    print(">> Coref: " + new_content)
-                    analyzed_dao.insertNewsAnalyzed(row, new_content)
+                    print(">> Coref: " + coref_content)
+                    lemma_content = functions.get_lemmatized_text(row[5])
+                    analyzed_dao.insertNewsAnalyzed(row, coref_content, lemma_content)
                     print(">> News inserted")
                 else:
                     print(">> empty string skipped")
