@@ -109,9 +109,9 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         '''
         try:
             a_id = int(news_id)
-            query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articledId = %d ;'
+            query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articledId = %s ;'
             cursor = self.database.cursor()
-            cursor.execute(query, [sentiment, a_id])
+            cursor.execute(query, [sentiment, news_id])
             self.database.commit()
         except Exception as err:
             raise Exception(err)
