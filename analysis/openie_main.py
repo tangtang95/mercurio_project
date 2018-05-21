@@ -49,9 +49,10 @@ def insertNewsAnalyzedOnDatabase(database, new_content):
     query = 'INSERT INTO ' + table + '(id, subject, verb, directObject) VALUES (%s, %s, %s, %s,)'
     cursor = database.cursor()
     for string in new_content:
-        temp = string.split()
-        if temp[1] in fu.getVocabulary() or temp[2] in fu.getVocabulary():
-            cursor.execute(query, [None, temp[0], temp[1], temp[2]])
+        if string != "":
+            temp = string.split()
+            if temp[1] in fu.getVocabulary() or temp[2] in fu.getVocabulary():
+                cursor.execute(query, [None, temp[0], temp[1], temp[2]])
     
 def print_verbs_analyis(database, subject):
     '''
