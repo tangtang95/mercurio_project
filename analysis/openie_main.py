@@ -8,7 +8,8 @@ Created on Mon May 14 14:49:40 2018
 import sys
 from verbsAnalysis import openIE_analysis as IE
 from utilities import functions as fu
-from utilities import articlesDAO
+from utilities import articlesDAO as dao
+from utilities.database import Database
 
 def main():
     '''
@@ -17,8 +18,10 @@ def main():
     table = 'openie_reports'
     
     try:
-        db = articlesDAO.ArticleAnalyzedDAO()
-        list_of_news = db.getArticlesByNewsPaper(sys.argv[1])
+        db = Database()
+        db.open_connection()
+        full_articles_dao = dao.FullArticleDAO(db.get_database())
+        list_of_news = full_articles_dao.getArticlesByNewsPaper(sys.argv[1])
     except Exception as err:
         print(err)
     for news in list_of_news:
