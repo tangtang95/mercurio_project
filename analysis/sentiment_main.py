@@ -16,6 +16,8 @@ def main():
         with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:
             for row in result:
                 sentiment = sf.analyze_article(row[7], vocabulary, nlp)
+                print("id: " + row[0])
+                print("sentiment: " sentiment)
                 analyzed_dao.updateNewsSentiment(row[0], sentiment)
     except Exception as err:
         raise Exception(err)

@@ -76,7 +76,7 @@ def get_sentence_weight(sentence, word_list):
     weight = 1
     for word in word_list:
         if word in sentence:
-            weight = weight + 0.5
+            weight = weight + 0.1
     return weight
         
     
