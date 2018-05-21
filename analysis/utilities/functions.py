@@ -1,5 +1,6 @@
 from stanfordcorenlp import StanfordCoreNLP
 from bs4 import BeautifulSoup
+from re import re
 
 def getKeywords():
     '''
@@ -47,30 +48,9 @@ def lemmatize_file(file_path_in, file_path_out):
     Given an input file written per line and an output file, lemmatizes
     each word of the input file and write lemmas in output file.
     '''
-    nlp = StanfordCoreNLP(r'C:\Users\User.LAPTOP-FG37H74P\Desktop\stanford-corenlp-full-2018-02-27\stanford-corenlp-full-2018-02-27')
-    props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}    
-    words = read_file_per_line(file_path_in)
-    lemmatized_words = []
-    for word in words:
-        lemma = ""
-        word = word.split(" ")
-        for w in word:
-            if w != " ":
-                xml = nlp.annotate(w, properties=props)
-                if lemma != "":
-                    lemma = lemma+" "+parse_lemma_xml(xml)
-                else:
-                    lemma = parse_lemma_xml(xml)
-        lemmatized_words.append(lemma)
-    write_file_per_line(file_path_out, lemmatized_words)
-    
-def get_lemmatized_text(text):
-    '''
-    Given a string of text, lemmatizes each word and return the lemmatized text
-    '''
     with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:
         props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}    
-        words = text.split(r' ')
+        words = read_file_per_line(file_path_in)
         lemmatized_words = []
         for word in words:
             lemma = ""
@@ -83,8 +63,34 @@ def get_lemmatized_text(text):
                     else:
                         lemma = parse_lemma_xml(xml)
             lemmatized_words.append(lemma)
-    return ' '.join(lemmatized_words)
-
+        write_file_per_line(file_path_out, lemmatized_words)
+    
+def get_lemmatized_complete_text(text):
+    '''
+    Given a string of text, lemmatizes each word and return the lemmatized text
+    '''
+    with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:
+        props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'} 
+        delimiters = ". ","!","?"
+        regexPattern ="|".join(map(re.escape, delimiters))
+        phrases = re.split(regexPattern, text)
+        lemmatized_phrase = []
+        for phrase in phrases:
+            lemma = ""
+            words = phrase.split(" ")
+            lemmatized_words = []
+            for word in words:
+                if word != " ":
+                    xml = nlp.annotate(word, properties=props)
+                    if lemma != "":
+                        lemma = lemma+" "+parse_lemma_xml(xml)
+                    else:
+                        lemma = parse_lemma_xml(xml)
+                lemmatized_words.append(lemma)
+            lemmatized_phrase = ' '.join(lemmatized_words)
+    return '. '.join(lemmatized_phrase)
+    
+    
 def parse_sentiment_xml(xml):
     '''
     Given an xml representing the result of corenlp sentiment annotator used

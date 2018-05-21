@@ -18,15 +18,14 @@ In order to make writing stage work, the Scrapy Item Pipeline \cite{scrapypipeli
 % image of scrapy architecture
 \subsection{Saving data}
 When it comes to saving data there is a multitude of possibilities, from the simple text file to a more complicated database. 
-At first, for testing purpose, the data has been saved in a tsv(i.e. tab separated values) textual file. Subsequently, in the deploy stage, it has been memorized on a database. 
-Most likely everyone will replace the code, but if someone want to keep both they should use a strategy pattern or a factory pattern. (???)
+At first, for testing purpose, the data has been saved in a tsv(i.e. tab separated values) textual file. Subsequently, in the deploy stage, it has been memorized on a database. For the management of the code it has been chosen to keep both the database and the files using the strategy pattern. 
 \par
-As it is shown on the architecture(quale architettura??), the item(i.e. BriefItem or NewsItem) is gone through a pipeline, but before that it must be loaded with data.
+As it is shown on the architecture(quale architettura??), the item(i.e. BriefItem or NewsItem) is gone through a pipeline, but before that, it must be loaded with data.
 The initialization of an item is done with two methods:
 \begin{itemize}
 	\item Creating an item with its constructor
 	\item Using an item loader to fill the field of the item.\\
-	This kind of object define two preprocessing (?) for each field of the item:
+	This kind of object let the developer defines two preprocessing operation for each field of the item:
 	\begin{itemize}
 		\item input preprocessing, which provides a series of operations to be done when the data is filled inside the item loader (e.g. remove tags, remove escape characters, etc...)
 		\item output preprocessing, which provides an operation to be done when the item is created (e.g. taking only the first data of that specific field if there are a lot of data or concatenating those strings gotten through scraping)

@@ -20,7 +20,7 @@ def main():
     try:
         db = Database()
         db.open_connection()
-        full_articles_dao = dao.FullArticleDAO(db.get_database())
+        full_articles_dao = dao.ArticleAnalyzedDAO(db.get_database())
         list_of_news = full_articles_dao.getArticlesByNewsPaper(sys.argv[1])
     except Exception as err:
         print(err)
@@ -48,11 +48,13 @@ def insertNewsAnalyzedOnDatabase(database, new_content):
     table = 'openie_reports'
     query = 'INSERT INTO ' + table + '(id, subject, verb, directObject) VALUES (%s, %s, %s, %s,)'
     cursor = database.cursor()
+    print(new_content)
     for string in new_content:
         if string != "":
             temp = string.split()
             if temp[1] in fu.getVocabulary() or temp[2] in fu.getVocabulary():
                 cursor.execute(query, [None, temp[0], temp[1], temp[2]])
+                database.commit()
     
 def print_verbs_analyis(database, subject):
     '''
