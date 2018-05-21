@@ -108,9 +108,10 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         Update the field sentiment of a specified news
         '''
         try:
+            news_id = (int)news_id
             query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articledId = %d ;'
             cursor = self.database.cursor()
-            cursor.execute(query, [sentiment, str(news_id)])
+            cursor.execute(query, [sentiment, news_id])
             self.database.commit()
         except Exception as err:
             raise Exception(err)
