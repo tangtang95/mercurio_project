@@ -25,7 +25,7 @@ def main():
     except Exception as err:
         print(err)
     for news in list_of_news:
-        content = IE.do_openie_analysis(IE.split_article(news['content']))
+        content = IE.do_openie_analysis(IE.split_article(news[6]))
         if content != None:
             insertNewsAnalyzedOnDatabase(db.get_database, content)
     

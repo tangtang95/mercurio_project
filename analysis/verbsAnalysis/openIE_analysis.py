@@ -43,13 +43,12 @@ def parse_openie_xml(xml):
         return ""
 
 def do_openie_analysis(list_of_phrase):
-    nlp = StanfordCoreNLP(r"C:\Program Files\Python36\stanford-corenlp-full-2018-02-27" + 
-                      "\stanford-corenlp-full-2018-02-27")    
-    props = {'annotators': 'openie','pipelineLanguage':'en','outputFormat':'xml'}
+    with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:   
+        props = {'annotators': 'openie','pipelineLanguage':'en','outputFormat':'xml'}
     
-    results = []
-    for phrase in list_of_phrase:
-        results.append(fu.get_lemmatized_text(parse_openie_xml(nlp.annotate(phrase, properties = props))))
-    nlp.close()
-    return results
+        results = []
+        for phrase in list_of_phrase:
+            results.append(fu.get_lemmatized_text(parse_openie_xml(nlp.annotate(phrase, properties = props))))
+            nlp.close()
+        return results
     
