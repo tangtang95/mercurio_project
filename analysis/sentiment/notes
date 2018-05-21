@@ -40,7 +40,8 @@ create table articles_en_analyzed(
     title varchar(100),
     newspaper varchar(100),
     author varchar(50),
-    content text,
+    coref_content text,
+    lemma_content text,
     tags text,
     sentiment varchar(50)
 )

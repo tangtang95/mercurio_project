@@ -68,7 +68,7 @@ def get_lemmatized_text(text):
     '''
     Given a string of text, lemmatizes each word and return the lemmatized text
     '''
-    with StanfordCoreNLP(r'/Users/tangtang.zhou/Downloads/stanford-corenlp-full-2018-02-27') as nlp:
+    with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:
         props = {'annotators': 'lemma','pipelineLanguage':'en','outputFormat':'xml'}    
         words = text.split(r' ')
         lemmatized_words = []
@@ -83,7 +83,7 @@ def get_lemmatized_text(text):
                     else:
                         lemma = parse_lemma_xml(xml)
             lemmatized_words.append(lemma)
-        return ' '.join(lemmatized_words)
+    return ' '.join(lemmatized_words)
 
 def parse_sentiment_xml(xml):
     '''
