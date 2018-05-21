@@ -103,13 +103,26 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         except Exception as err:
             raise Exception(err)
         
+    def updateNewsSentiment(self, news_id, sentiment):
+        '''
+        Update the field sentiment of a specified news
+        '''
+        try:
+            a_id = int(news_id)
+            query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articleId = %s ;'
+            cursor = self.database.cursor()
+            cursor.execute(query, [sentiment, news_id])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+            
     
     def getArticlesByNewsPaper(self, newspaper):
         '''
         Returns every articles published by a certain source
         '''
         try:
-            query = "SELECT * FROM" + self.table + "WHERE Newspaper = %s"
+            query = "SELECT * FROM " + self.table + " WHERE Newspaper = %s"
             cursor = self.database.cursor()
             cursor.execute(query, [newspaper])
             return cursor
