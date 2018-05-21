@@ -25,7 +25,7 @@ class PartialArticleDAO(ArticleDAO):
                     where_clause = where_clause + "(Title LIKE %" + str(companies[i]) +"%)"
                     
                 
-            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags  FROM {0} WHERE " + where_clause + ";".format(self.table)
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags  FROM {0} WHERE ".format(self.table) + where_clause + ";"
             cursor = self.database.cursor()
             cursor.execute(query)
             return cursor
@@ -79,7 +79,7 @@ class FullArticleDAO(PartialArticleDAO):
                     where_clause = where_clause + "(Tags LIKE %" + str(keywords[i]) +"%)"
                     
             
-            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags from {0} WHERE " + where_clause + ";".format(self.table)
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags from {0} WHERE ".format(self.table) + where_clause + ";"
             cursor = self.database.cursor()
             cursor.execute(query)
             return cursor
