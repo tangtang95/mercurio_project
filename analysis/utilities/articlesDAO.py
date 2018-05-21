@@ -25,7 +25,7 @@ class PartialArticleDAO(ArticleDAO):
                     where_clause = where_clause + "(Title LIKE %" + str(companies[i]) +"%)"
                     
                 
-            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags  FROM {0} WHERE " + where_clause + ";".format(self.table)
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags  FROM {0} WHERE ".format(self.table) + where_clause + ";"
             cursor = self.database.cursor()
             cursor.execute(query)
             return cursor
@@ -79,7 +79,7 @@ class FullArticleDAO(PartialArticleDAO):
                     where_clause = where_clause + "(Tags LIKE %" + str(keywords[i]) +"%)"
                     
             
-            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags from {0} WHERE " + where_clause + ";".format(self.table)
+            query = "SELECT DISTINCT date,time,title,newspaper,author,content,tags from {0} WHERE ".format(self.table) + where_clause + ";"
             cursor = self.database.cursor()
             cursor.execute(query)
             return cursor
@@ -91,14 +91,14 @@ class FullArticleDAO(PartialArticleDAO):
 class ArticleAnalyzedDAO(FullArticleDAO):
     table = 'articles_en_analyzed'
     
-    def insertNewsAnalyzed(self, news, new_content):
+    def insertNewsAnalyzed(self, news, coref_content, lemma_content):
         '''
         Insert the news in the database
         '''
         try:
-            query = 'INSERT INTO '+ self.table + '(articleId, date, time, title, newspaper, author, content, tags, sentiment) VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s);'
+            query = 'INSERT INTO '+ self.table + ' VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s, %s);'
             cursor = self.database.cursor()
-            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], new_content, news[6], None])
+            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], coref_content, lemma_content, news[6], None])
             self.database.commit()
         except Exception as err:
             raise Exception(err)
