@@ -15,7 +15,7 @@ def main():
         vocabulary = fu.getVocabulary()
         with StanfordCoreNLP('http://localhost', port=9001, memory='4g') as nlp:
             for row in result:
-                sentiment = sf.analyze_article(row[5], vocabulary, nlp)
+                sentiment = sf.analyze_article(row[7], vocabulary, nlp)
                 analyzed_dao.updateNewsSentiment(row[0], sentiment)
     except Exception as err:
         raise Exception(err)

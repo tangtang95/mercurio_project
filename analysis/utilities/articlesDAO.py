@@ -121,7 +121,7 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         Returns every articles published by a certain source
         '''
         try:
-            query = "SELECT * FROM" + self.table + "WHERE Newspaper = %s"
+            query = "SELECT * FROM " + self.table + " WHERE Newspaper = %s"
             cursor = self.database.cursor()
             cursor.execute(query, [newspaper])
             return cursor
