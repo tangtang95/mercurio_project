@@ -28,7 +28,7 @@ def parse_openie_xml(xml):
     '''
     triple_save = ""
     try:
-        soup = BeautifulSoup(xml, "lxml")
+        soup = BeautifulSoup(xml, "html5lib")
         list_of_solutions = soup.find("openie")
         for triple in list_of_solutions.find_all("triple"):
             if triple.get("confidence") == "1.000":

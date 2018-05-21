@@ -2,4 +2,30 @@
 The Open Information Extraction (OpenIE) annotator extracts open-domain relation triples, representing a subject, a relation, and the object of the relation. This allows us to summarize the articles in a series of triples and to evaluate the actions performed by the subjects. 
 The algorithm in order to work requires that the articles are first pre-processed, performing the co-references in order to extract the triples with the correct subjects. 
 The algorithm begins by asking in input the reference journal from which to retrieve the financial items to be examined, then subdividing the individual articles into short periods that are easier to analyze from the Stanford coreNLP library. The library for each period returns a possible triplet that summarizes the described action, and assigns to the analysis a degree of confidence that goes from 0 to 1, where 1 is the maximum correctness. This is one of the critical points of the algorithm, because there are several solutions that have a degree of confidence at 1 and choosing the most correct is a very complex problem that would require an analysis far beyond our possibilities. For this reason the algorithm simply restores the first triplet with confidence to 1 that it finds.
-The idea behind this analysis is to evaluate the temperature of the shares, that refer to the financial sector such as buy, sell, invest etc... found, that is counting the number of times in which the same actions are presented in the various articles and based on their number, to risk a hypothesis on the progress of the subject who performs those actions. If a company buys a lot in the last period, the company is probably doing well.
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=5pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
+text = "This is an example"
+props = {'annotators': 'sentiment','pipelineLanguage':'en','outputFormat':'xml'}
+for triple in list_of_solutions.find_all("triple"):
+            if triple.get("confidence") == "1.000":
+                for text in triple.find_all("text"):
+                    triple_save = triple_save + text.string + " "
+                if len(triple_save.split()) == 3:
+                    return triple_save
+\end{minted}
+
+The idea behind this analysis is to evaluate the temperature of the verbs, that refer to the financial sector such as buy, sell, invest etc... found, that is counting the number of times in which the same actions are presented in the various articles and based on their number, to risk a hypothesis on the progress of the subject who performs those actions. If a company buys a lot in the last period, the company is probably doing well.
+Although the idea was good, this analysis results to have many different problems:
+\begin{itemize}
+\item
+The co-references very often are not successful and the pronouns are not replaced with the correct subjects.
+\item
+The openIE analysis of the periods often fails to extract a triplet or the result not have the confidently to 1.
+\item
+Many verbs extracted from the triples are not contained in the financial dictionary.
+\end{itemize}
+
