@@ -29,13 +29,6 @@ def analyze_article(content, financial_vocabulary, nlp_analyzer):
     for sentence in sentences:
         sentiment = fu.parse_sentiment_xml(nlp_analyzer.annotate(sentence, properties = props))
         sentiments[sentiment] = sentiments[sentiment] + get_sentence_weight(sentence, financial_vocabulary)
-        print(sentence)
-        print("\n")
-        print(sentiment)
-        print("\n")
-        print(get_sentence_weight(sentence,financial_vocabulary))
-        print("\n \n \n")
-    print(sentiments)
     return get_sentiment(get_article_weight(sentiments))
     
 def get_sentiment(article_w):
