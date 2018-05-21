@@ -41,8 +41,8 @@ def get_sentiment(article_w):
     - (+0.2, 0.6] is positive
     - (0.6, 1] is very positive
     '''
-    interval = 2 / 5
     result = ["very negative", "negative", "neutral", "positive", "very positive"]
+    interval = 2 / float(len(result))
     
     for i in range(1,5):
         if(article_w <= -1 + i * interval):
@@ -76,7 +76,7 @@ def get_sentence_weight(sentence, word_list):
     weight = 1
     for word in word_list:
         if word in sentence:
-            weight = weight + 0.1   
+            weight = weight + 0.1
     return weight
         
     
