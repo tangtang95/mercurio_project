@@ -27,9 +27,9 @@ def main():
     for news in list_of_news:
         content = IE.do_openie_analysis(IE.split_article(news[6]))
         if content != None:
-            insertNewsAnalyzedOnDatabase(db.get_database, content)
+            insertNewsAnalyzedOnDatabase(db.get_database(), content)
     
-    cursor = db.cursor()        
+    cursor = db.get_database().cursor()        
     query = "SELECT subject FROM %s"
     list_of_subjects = cursor.execute(query, [table])
     print("Subjects: "+ list_of_subjects)
