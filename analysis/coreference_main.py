@@ -46,8 +46,8 @@ def main():
                         coref_content = coref_content + new_phrase
                         #print(">> Coref phrase: {0}".format(new_phrase))
                     print(">> Coref: " + coref_content)
-                    lemma_content = functions.get_lemmatized_text(row[5])
-                    analyzed_dao.insertNewsAnalyzed(row, coref_content, lemma_content)
+                    lemma_content = functions.get_lemmatized_complete_text(row[5])
+                    analyzed_dao.insertNewsAnalyzed(row, row[5], coref_content, lemma_content)
                     print(">> News inserted")
                 else:
                     print(">> empty string skipped")

@@ -91,14 +91,14 @@ class FullArticleDAO(PartialArticleDAO):
 class ArticleAnalyzedDAO(FullArticleDAO):
     table = 'articles_en_analyzed'
     
-    def insertNewsAnalyzed(self, news, coref_content, lemma_content):
+    def insertNewsAnalyzed(self, news, original_content, coref_content, lemma_content):
         '''
         Insert the news in the database
         '''
         try:
-            query = 'INSERT INTO '+ self.table + ' VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s, %s);'
+            query = 'INSERT INTO '+ self.table + ' VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
             cursor = self.database.cursor()
-            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], coref_content, lemma_content, news[6], None])
+            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], coref_content, lemma_content, original_content, news[6], None, None, None])
             self.database.commit()
         except Exception as err:
             raise Exception(err)
