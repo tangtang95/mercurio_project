@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k}{CREATE} \PYG{k}{TABLE} \PYG{n}{articles\PYGZus{}en\PYGZus{}full}\PYG{p}{(}
+    \PYG{n}{id} \PYG{n+nb}{INT} \PYG{k}{NOT} \PYG{k}{NULL} \PYG{k}{PRIMARY} \PYG{k}{KEY} \PYG{n}{AUTO\PYGZus{}INCREMENT}\PYG{p}{,}
+    \PYG{n+nb}{date} \PYG{n+nb}{DATE}\PYG{p}{,}
+    \PYG{n}{time} \PYG{n}{TIME}\PYG{p}{,}
+    \PYG{n}{title} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{),}
+    \PYG{n}{newspaper} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+    \PYG{n}{author} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{50}\PYG{p}{),}
+	\PYG{n}{content} \PYG{n+nb}{TEXT}\PYG{p}{,}
+    \PYG{n}{tags} \PYG{n+nb}{TEXT}\PYG{p}{,}
+\PYG{p}{)}
+
+\PYG{k}{CREATE} \PYG{k}{TABLE} \PYG{n}{articles\PYGZus{}en\PYGZus{}partial}\PYG{p}{(}
+    \PYG{n}{id} \PYG{n+nb}{INT} \PYG{k}{NOT} \PYG{k}{NULL} \PYG{k}{PRIMARY} \PYG{k}{KEY} \PYG{n}{AUTO\PYGZus{}INCREMENT}\PYG{p}{,}
+    \PYG{n+nb}{date} \PYG{n+nb}{DATE}\PYG{p}{,}
+    \PYG{n}{time} \PYG{n}{TIME}\PYG{p}{,}
+    \PYG{n}{title} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{255}\PYG{p}{),}
+    \PYG{n}{newspaper} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{),}
+    \PYG{n}{url} \PYG{n+nb}{VARCHAR}\PYG{p}{(}\PYG{l+m+mi}{200}\PYG{p}{),}
+\PYG{p}{)}
+\end{Verbatim}

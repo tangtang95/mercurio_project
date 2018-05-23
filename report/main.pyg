@@ -1,4 +1,0 @@
-text = "This is an example"
-props = {'annotators': 'sentiment','pipelineLanguage':'en','outputFormat':'xml'}
-xml = nlp.annotate(text, properties=props)
-nlp.close()

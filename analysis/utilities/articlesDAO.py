@@ -103,12 +103,13 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         except Exception as err:
             raise Exception(err)
         
-    def updateNewsSentiment(self, news_id, sentiment):
+    def updateNewsSentimentStrategy1(self, news_id, sentiment):
         '''
-        Update the field sentiment of a specified news
+        Update the field sentiment of a specified news. The sentiment is the one
+        regarding counting neutral values in the analysis (no summarization applied
+        to article content). 
         '''
         try:
-            a_id = int(news_id)
             query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articleId = %s ;'
             cursor = self.database.cursor()
             cursor.execute(query, [sentiment, news_id])
@@ -116,6 +117,32 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         except Exception as err:
             raise Exception(err)
             
+    def updateNewsSentimentStrategyNoNeutral(self, news_id, sentiment):
+        '''
+        Update the field sentiment of a specified news. The sentimenty is the one
+        regarding the fact of no giving values to neutral sentiment in the analysis.
+        '''
+        try:
+            query = 'UPDATE ' + self.table + ' SET sentimentNoNeutral = %s  WHERE articleId = %s ;'
+            cursor = self.database.cursor()
+            cursor.execute(query, [sentiment, news_id])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+    
+    def updateNewsSentimentStrategySummarized(self, news_id, sentiment):
+        '''
+        Update the field sentiment of a specified news. The sentiment is the one
+        regarding the summarization strategy.
+        '''
+        try:
+            query = 'UPDATE ' + self.table + ' SET sentimentSummarized = %s  WHERE articleId = %s ;'
+            cursor = self.database.cursor()
+            cursor.execute(query, [sentiment, news_id])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+    
     
     def getArticlesByNewsPaper(self, newspaper):
         '''

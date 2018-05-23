@@ -1,0 +1,5 @@
+ALTER TABLE articles_en_analyzed
+ADD sentimentNoNeutral varchar(30)
+
+ALTER TABLE articles_en_analyzed
+ADD sentimentSummarized varchar(30)
