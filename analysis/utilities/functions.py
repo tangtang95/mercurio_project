@@ -1,6 +1,6 @@
 from stanfordcorenlp import StanfordCoreNLP
 from bs4 import BeautifulSoup
-from re import re
+import re
 
 def getKeywords():
     '''
@@ -75,20 +75,23 @@ def get_lemmatized_complete_text(text):
         regexPattern ="|".join(map(re.escape, delimiters))
         phrases = re.split(regexPattern, text)
         lemmatized_phrase = []
+        print(phrases)
         for phrase in phrases:
-            lemma = ""
+            if len(text) <= 1:
+                break
             words = phrase.split(" ")
             lemmatized_words = []
+            print(phrase)
             for word in words:
-                if word != " ":
+                if word != "":
                     xml = nlp.annotate(word, properties=props)
-                    if lemma != "":
-                        lemma = lemma+" "+parse_lemma_xml(xml)
-                    else:
-                        lemma = parse_lemma_xml(xml)
-                lemmatized_words.append(lemma)
-            lemmatized_phrase = ' '.join(lemmatized_words)
-    return '. '.join(lemmatized_phrase)
+                    lemma = parse_lemma_xml(xml)
+                    lemmatized_words.append(lemma)
+            si = text.find(phrase)
+            lemmatized_phrase.append(' '.join(lemmatized_words)+text[len(phrase)+si:len(phrase)+int(si+1)])
+            text = text[si + len(phrase): ]
+            print(text)
+    return ' '.join(lemmatized_phrase)
     
     
 def parse_sentiment_xml(xml):
@@ -108,7 +111,7 @@ def parse_lemma_xml(xml):
     single word, returns the lemma.
     '''
     try:
-        soup = BeautifulSoup(xml)
+        soup = BeautifulSoup(xml, "html5lib")
         return soup.find("lemma").string
     except Exception as err:
         return ""              

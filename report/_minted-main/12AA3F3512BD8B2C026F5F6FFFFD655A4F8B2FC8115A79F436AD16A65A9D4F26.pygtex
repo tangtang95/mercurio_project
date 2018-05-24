@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{text} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}This is an example\PYGZdq{}}
+\PYG{n}{props} \PYG{o}{=} \PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}annotators\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}sentiment\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}pipelineLanguage\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}en\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}outputFormat\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}xml\PYGZsq{}}\PYG{p}{\PYGZcb{}}
+\PYG{k}{for} \PYG{n}{triple} \PYG{o+ow}{in} \PYG{n}{list\PYGZus{}of\PYGZus{}solutions}\PYG{o}{.}\PYG{n}{find\PYGZus{}all}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}triple\PYGZdq{}}\PYG{p}{):}
+            \PYG{k}{if} \PYG{n}{triple}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}confidence\PYGZdq{}}\PYG{p}{)} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}1.000\PYGZdq{}}\PYG{p}{:}
+                \PYG{k}{for} \PYG{n}{text} \PYG{o+ow}{in} \PYG{n}{triple}\PYG{o}{.}\PYG{n}{find\PYGZus{}all}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}text\PYGZdq{}}\PYG{p}{):}
+                    \PYG{n}{triple\PYGZus{}save} \PYG{o}{=} \PYG{n}{triple\PYGZus{}save} \PYG{o}{+} \PYG{n}{text}\PYG{o}{.}\PYG{n}{string} \PYG{o}{+} \PYG{l+s+s2}{\PYGZdq{} \PYGZdq{}}
+                \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{triple\PYGZus{}save}\PYG{o}{.}\PYG{n}{split}\PYG{p}{())} \PYG{o}{==} \PYG{l+m+mi}{3}\PYG{p}{:}
+                    \PYG{k}{return} \PYG{n}{triple\PYGZus{}save}
+\end{Verbatim}

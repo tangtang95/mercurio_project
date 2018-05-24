@@ -91,24 +91,25 @@ class FullArticleDAO(PartialArticleDAO):
 class ArticleAnalyzedDAO(FullArticleDAO):
     table = 'articles_en_analyzed'
     
-    def insertNewsAnalyzed(self, news, coref_content, lemma_content):
+    def insertNewsAnalyzed(self, news, original_content, coref_content, lemma_content):
         '''
         Insert the news in the database
         '''
         try:
-            query = 'INSERT INTO '+ self.table + ' VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s, %s);'
+            query = 'INSERT INTO '+ self.table + ' VALUES (%s , %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);'
             cursor = self.database.cursor()
-            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], coref_content, lemma_content, news[6], None])
+            cursor.execute(query,[None, news[0], news[1], news[2], news[3], news[4], coref_content, lemma_content, original_content, news[6], None, None, None])
             self.database.commit()
         except Exception as err:
             raise Exception(err)
         
-    def updateNewsSentiment(self, news_id, sentiment):
+    def updateNewsSentimentStrategy1(self, news_id, sentiment):
         '''
-        Update the field sentiment of a specified news
+        Update the field sentiment of a specified news. The sentiment is the one
+        regarding counting neutral values in the analysis (no summarization applied
+        to article content). 
         '''
         try:
-            a_id = int(news_id)
             query = 'UPDATE ' + self.table + ' SET sentiment = %s  WHERE articleId = %s ;'
             cursor = self.database.cursor()
             cursor.execute(query, [sentiment, news_id])
@@ -116,6 +117,32 @@ class ArticleAnalyzedDAO(FullArticleDAO):
         except Exception as err:
             raise Exception(err)
             
+    def updateNewsSentimentStrategyNoNeutral(self, news_id, sentiment):
+        '''
+        Update the field sentiment of a specified news. The sentimenty is the one
+        regarding the fact of no giving values to neutral sentiment in the analysis.
+        '''
+        try:
+            query = 'UPDATE ' + self.table + ' SET sentimentNoNeutral = %s  WHERE articleId = %s ;'
+            cursor = self.database.cursor()
+            cursor.execute(query, [sentiment, news_id])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+    
+    def updateNewsSentimentStrategySummarized(self, news_id, sentiment):
+        '''
+        Update the field sentiment of a specified news. The sentiment is the one
+        regarding the summarization strategy.
+        '''
+        try:
+            query = 'UPDATE ' + self.table + ' SET sentimentSummarized = %s  WHERE articleId = %s ;'
+            cursor = self.database.cursor()
+            cursor.execute(query, [sentiment, news_id])
+            self.database.commit()
+        except Exception as err:
+            raise Exception(err)
+    
     
     def getArticlesByNewsPaper(self, newspaper):
         '''

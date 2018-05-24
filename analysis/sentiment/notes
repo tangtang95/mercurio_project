@@ -42,8 +42,11 @@ create table articles_en_analyzed(
     author varchar(50),
     coref_content text,
     lemma_content text,
+    original_content text,
     tags text,
-    sentiment varchar(50)
+    sentiment varchar(50),
+    sentimentNoNeutral varchar(50),
+    sentimentSummarized varchar(50)
 )
 
 create table openie_reports(
