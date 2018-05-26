@@ -75,13 +75,11 @@ def get_lemmatized_complete_text(text):
         regexPattern ="|".join(map(re.escape, delimiters))
         phrases = re.split(regexPattern, text)
         lemmatized_phrase = []
-        print(phrases)
         for phrase in phrases:
             if len(text) <= 1:
                 break
             words = phrase.split(" ")
             lemmatized_words = []
-            print(phrase)
             for word in words:
                 if word != "":
                     xml = nlp.annotate(word, properties=props)
@@ -90,7 +88,6 @@ def get_lemmatized_complete_text(text):
             si = text.find(phrase)
             lemmatized_phrase.append(' '.join(lemmatized_words)+text[len(phrase)+si:len(phrase)+int(si+1)])
             text = text[si + len(phrase): ]
-            print(text)
     return ' '.join(lemmatized_phrase)
     
     

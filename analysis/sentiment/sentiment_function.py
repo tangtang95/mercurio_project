@@ -31,10 +31,11 @@ def analyze_article(content, financial_vocabulary, nlp_analyzer, title, strategy
     sentences = []
     
     if strategy == STRATEGY_SUMMARIZATION:
-        content = summarize.Summarize(title, content)
-    
+        content = (summarize.Summarize(title, content))  
+        content = ' '.join(content)
+        
     # Split the content in different sentences
-    delimiters = ".","!","?"
+    delimiters = ". ","! ","? "
     regexPattern ="|".join(map(re.escape, delimiters))
     s = re.split(regexPattern, content)
     for sentence in s:
@@ -43,6 +44,8 @@ def analyze_article(content, financial_vocabulary, nlp_analyzer, title, strategy
     
     # Analyze each sentence 
     for sentence in sentences:
+        if strategy == STRATEGY_SUMMARIZATION:
+            sentence = fu.get_lemmatized_complete_text(sentence)
         sentiment = fu.parse_sentiment_xml(nlp_analyzer.annotate(sentence, properties = props))
         sentiments[sentiment] = sentiments[sentiment] + get_sentence_weight(sentence, financial_vocabulary)
 
@@ -84,6 +87,8 @@ def get_article_weight_no_neutral(sentiments):
     for key in sentiments:
         if key != 'neutral':
             total = total + sentiments[key]
+    if total == 0:
+        return 0
     return wsum / float(total)
 
 def get_article_weight(sentiments):

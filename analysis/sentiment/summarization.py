@@ -66,7 +66,7 @@ def Summarize(title, text):
     del sentences[-1]
     
     #score setences, and use the top n sentences
-    ranks = score(sentences, titleWords, keys).most_common(n)
+    ranks = score(sentences, titleWords, keys).most_common(int(n))
     for rank in ranks:
         summary.append(rank[0])
     
