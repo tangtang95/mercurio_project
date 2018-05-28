@@ -48,6 +48,8 @@ def analyze_article(content, financial_vocabulary, nlp_analyzer, title, strategy
             sentence = fu.get_lemmatized_complete_text(sentence)
         sentiment = fu.parse_sentiment_xml(nlp_analyzer.annotate(sentence, properties = props))
         sentiments[sentiment] = sentiments[sentiment] + get_sentence_weight(sentence, financial_vocabulary)
+        print(sentence)
+        print(sentiment)
 
     if strategy == STRATEGY_NEUTRAL_VOCABULARY or strategy == STRATEGY_SUMMARIZATION:    
         return get_sentiment(get_article_weight(sentiments))

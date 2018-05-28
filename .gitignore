@@ -4,7 +4,6 @@ __pycache__/
 *.log
 *.tsv
 *.swp
-*.pdf
 *.aux
 *.glo
 *.idx

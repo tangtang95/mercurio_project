@@ -18,7 +18,10 @@ def main():
             for row in result:
                 sentiment_neutral_strategy = sf.analyze_article(row[7], vocabulary, nlp, row[3], 1)
                 sentiment_none_neutral_strategy = sf.analyze_article(row[7], vocabulary, nlp, row[3], 2)
-                sentiment_summarize_strategy = sf.analyze_article(row[8], vocabulary, nlp, row[3], 3)
+                try:
+                    sentiment_summarize_strategy = sf.analyze_article(row[8], vocabulary, nlp, row[3], 3)
+                except:
+                    traceback.print_exc()
                 print("id: " + str(row[0]))
                 print("title: " + str(row[3]))
                 print("sentiment1: " + sentiment_neutral_strategy)

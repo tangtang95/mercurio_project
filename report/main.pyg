@@ -1,8 +1,0 @@
-text = "This is an example"
-props = {'annotators': 'sentiment','pipelineLanguage':'en','outputFormat':'xml'}
-for triple in list_of_solutions.find_all("triple"):
-            if triple.get("confidence") == "1.000":
-                for text in triple.find_all("text"):
-                    triple_save = triple_save + text.string + " "
-                if len(triple_save.split()) == 3:
-                    return triple_save
