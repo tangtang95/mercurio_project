@@ -21,7 +21,7 @@ When it comes to saving data there is a multitude of possibilities, from the sim
 At first, for testing purpose, the data has been saved in a tsv(i.e. tab separated values) textual file. Subsequently, in the deploy stage, it has been memorized on a database. For the management of the code it has been chosen to keep both the database and the files using the strategy pattern. 
 \par
 As it is shown on the architecture(quale architettura??), the item(i.e. BriefItem or NewsItem) is gone through a pipeline, but before that, it must be loaded with data.
-The initialization of an item is done with two methods:
+The initialization of an item can be done with two methods:
 \begin{itemize}
 	\item Creating an item with its constructor
 	\item Using an item loader to fill the field of the item.\\

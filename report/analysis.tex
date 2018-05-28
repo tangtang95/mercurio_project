@@ -15,7 +15,7 @@ xml = nlp.annotate(text, properties=props)
 nlp.close()
 \end{minted}
 Among the available types of output, XML has been chosen: it get parsed with Beautiful Soup 4 \cite{bs4}. \par 
-Coreference resolution, lemmatization, sentiment analysis and open information extraction, are the main language tools that have been used. As a result of the fact that dcoref, which is the annotator that solves pronominal and nominal coreferences, and lemmatisation take significant amounts of time to run, their manipulated results are saved in two different fields of a new database table. Doing so allow to change the mechanisms of the scripts regarding sentiment analysis and open information extraction in future, and therefore re-run them without the time waste mentioned above.
+Coreference resolution, lemmatization, sentiment analysis and open information extraction, are the main language tools that have been used. As a result of the fact that dcoref, which is the annotator that solves pronominal and nominal coreferences, and lemmatisation takes significant amount of time to run, their manipulated results are saved in two different fields of a new database table. Doing so allow to change the mechanisms of the scripts regarding sentiment analysis and open information extraction in future, and therefore re-run them without the time waste mentioned above.
 \input{coreference}
 \input{sentiment}
 \input{openie}
