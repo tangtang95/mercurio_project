@@ -1,8 +1,7 @@
 \subsection{Coreference resolution}
-The coreference, in language linguistic, it occurs when two or more expression inside a text refers to the same object (e.g. Jessica has sold her phone to Marcus: in this phrase the pronoun "her" refers to Jessica). 
+The coreference occurs when two or more expression inside a text refers to the same object (e.g. "Jessica has sold her phone to Marcus": in this phrase the pronoun "her" refers to "Jessica"). 
 This analysis is done to capture every coreferences inside the article scraped from the website, with the help of the external library Stanford CoreNLP, and substitute it with the representation of that expression (e.g. Jessica has sold Jessica's phone to Marcus).
-\par
-The API used for this case is the annotator "dcoref" that returns a summary in XML, JSON or string of the analysis. In this project it has been decided to analyze an XML text, for this purpose it has been used BeautifulSoup to parse it. 
+\par 
 Basically, the algorithm written for this analysis consists in dividing the text in more phrases splitted by a dot, and for each phrase analyze it with CoreNLP. 
 After that it has been used BeautifulSoup to analyze the XML which the external library gives back; to find the representation and the coreferences, there is a tag "coreference" inside the XML. 
 Since there is also another tag called "sentences" that contains all the text analyzed, so it has been used for the substitution of the pronoun or other literal expression into the representation text. 
@@ -12,8 +11,8 @@ At the end the entire text is reconstructed from the tag XML "sentences" that co
 It was also possible to analyze the entire text with CoreNLP, but after some tests it has been founded a lot of errors about the coreference (e.g. replacement of "he" with "Clinton"). 
 So it has been decided to split the entire article into different substrings of 5 phrases and with this technique it's possible to at least found coreference inside two or more expression. 
 
-\subsection{Saving Data}
-After the analysis of coreference the new data needs to be saved somewhere. In this project it has been allocated on a database. The tables created for all the study of article content are:
+\subsubsection{Saving Data}
+After the analysis of coreference the new data needs to be saved somewhere. In this project it has been stored on a database. The tables created for all the study of article content are:
 \begin{itemize}
 	\item articles\_en\_analyzed: this contains the same field of the old table "articles\_en\_full" but with 5 more fields:
 	\begin{enumerate}
@@ -21,7 +20,7 @@ After the analysis of coreference the new data needs to be saved somewhere. In t
 		\item lemma\_content: this contains the text article with every word lemmatized (made by using the lemma annotators)
 		\item sentiment: a field that can contains "very negative", "negative", "neutral", "positive" or "very positive". This is useful for the sentiment analysis
 		\item sentimentNoNeutral: it's the same of the above one, but in this case the "neutral" is ignored (i.e. the "neutral" sentiment returned by a phrase from CoreNLP is ignored)
-		\item sentimentSummarized: it's the same of the first sentiment, but with this, it analyze a summarized text instead of the entire article
+		\item sentimentSummarized: it's the same of the first sentiment, but with this, it analyzes a summarized text instead of the entire article
 	\end{enumerate}
 	\item openie\_reports: this table is linked with the article id of the table above, and it contains 5 fields:
 	\begin{enumerate}
@@ -32,5 +31,5 @@ After the analysis of coreference the new data needs to be saved somewhere. In t
 		\item object: it represents the object on which the action is taken
 	\end{enumerate}
 \end{itemize}
-In this part of the project, all the news articles are gotten from the old table "articles\_en\_full", and then after the analysis, the news is saved on the new table "articles\_en\_analyzed" with two new field: coref\_content and lemma\_content.
+In this part of the project, all the news articles are read from the table "articles\_en\_full", and then after the analysis, the news is saved on the new table "articles\_en\_analyzed" with two new field: coref\_content and lemma\_content.
 
