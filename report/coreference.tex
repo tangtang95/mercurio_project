@@ -1,5 +1,9 @@
 \subsection{Coreference resolution}
-The coreference occurs when two or more expression inside a text refers to the same object (e.g. "Jessica has sold her phone to Marcus": in this phrase the pronoun "her" refers to "Jessica"). 
+Definition of the coreference:
+\begin{itemize}
+	\item a relationship between two words or phrases in which both refer to the same person or thing and one is a linguistic antecedent of the other
+\end{itemize}
+the coreference occurs when two or more expression inside a text refers to the same object (e.g. "Jessica has sold her phone to Marcus": in this phrase the pronoun "her" refers to "Jessica"). 
 This analysis is done to capture every coreferences inside the article scraped from the website, with the help of the external library Stanford CoreNLP, and substitute it with the representation of that expression (e.g. Jessica has sold Jessica's phone to Marcus).
 \par 
 Basically, the algorithm written for this analysis consists in dividing the text in more phrases splitted by a dot, and for each phrase analyze it with CoreNLP. 
@@ -8,8 +12,7 @@ Since there is also another tag called "sentences" that contains all the text an
 Every time a coreference expression is founded, the algorithm will replace that coreference expression (i.e. pronoun or other literal expression) with the representation of that. 
 At the end the entire text is reconstructed from the tag XML "sentences" that contains the string of text replaced.
 \par
-It was also possible to analyze the entire text with CoreNLP, but after some tests it has been founded a lot of errors about the coreference (e.g. replacement of "he" with "Clinton"). 
-So it has been decided to split the entire article into different substrings of 5 phrases and with this technique it's possible to at least found coreference inside two or more expression. 
+At the end, we decided to split the entire article into different substrings of 5 phrases to avoid an overload of text passed to the method of coreference, because after some tests of article analysis, it has been founded a lot of errors about the coreference (e.g. replacement of "he" with "Clinton"). 
 
 \subsubsection{Saving Data}
 After the analysis of coreference the new data needs to be saved somewhere. In this project it has been stored on a database. The tables created for all the study of article content are:
@@ -31,5 +34,5 @@ After the analysis of coreference the new data needs to be saved somewhere. In t
 		\item object: it represents the object on which the action is taken
 	\end{enumerate}
 \end{itemize}
-In this part of the project, all the news articles are read from the table "articles\_en\_full", and then after the analysis, the news is saved on the new table "articles\_en\_analyzed" with two new field: coref\_content and lemma\_content.
+In this part of the project, the news articles are read from the table "articles\_en\_full", and then after the analysis of coreference, the news are saved on a new table ,called "articles\_en\_analyzed", with two new field: coref\_content and lemma\_content.
 

@@ -13,16 +13,24 @@ The first target that had to be accomplished to turn the Mercurio project and it
 \item \href{http://www.4-traders.com/}{4-traders.com}
 \end{itemize}
 An important distinction among the sources mentioned above is whether or not is required an ajax/javascript interaction with the user in the web page that arranges the articles under consideration. Those that do not involve these interaction will be treated in the "static websites" section, the leftovers in the "dynamic websites" section, with a focus on infinite scroll websites. \\ 
-To manage this issue of the project, the Scrapy open source framework \cite{scrapyframework} has been used. % Insert project creation here, but before check README % \\
+To manage this issue of the project, the Scrapy open source framework \cite{scrapyframework} has been used. 
+\par
+The creation of the project has been done with the command: "scrapy startproject tutorial" from command line interface; this will create the template composed with a series of folder for the implementation of spiders.
 Once the project has been created, a single Spider \cite{scrapyspider} for each source has to be set up: they are the classes that define how a source will be scraped, and in particular, how to perform the crawling (i.e. follow links) and how to extract structured data from the page. The Spider's lifecycle varies a little between dynamic and static websites, but basically it starts by sending a request to URLs specified in starting\_url, afterwards it gets the data, stores it on some physical support (e.g. database, files) and finally crawls to another source or invokes some javascript commands and repeats. The single steps could be more or less complicated depending on the considered source. \\
 In order to make the storing stage work, the Scrapy Item Pipeline \cite{scrapypipeline} has been used. It does a very simple task, once it receives an item that changes according to the source, it performs some action over it (i.e. store it).\\
-Depending on the type of information that the website provides, the items that can be stored using the pipeline are two: "BriefItem", that contains a field for title, date, time, and an eventual URL where the news is better specified, and "NewsItem", which carries a value for title, authors, date, time, content and keywords. The former has been used when the use of the latter didn't make sense, due to a lack of information on the website, or due to the impossibility of retrieving it: for example, some websites (e.g. Marketwatch) provide a list of links to financial articles from many different websites, making out of the question to get the more specified data from such different website formats.
-% image of scrapy architecture
+Depending on the type of information that the website provides, the items that can be stored using the pipeline are two: "BriefItem", that contains a field for title, date, time, and an eventual URL where the news is better specified, and "NewsItem", which carries a value for title, authors, date, time, content and keywords. The former has been used when the use of the latter didn't make sense, due to a lack of information on the website, or due to the impossibility of retrieving it: for example, some websites (e.g. Marketwatch) provide a list of links to financial articles from many different websites, making out of the question to get the more specified data from such different website formats. The "date" saved for each news is synchronized on the UTC timezone with the usage of a library called "pytz".
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{Architettura}
+\caption{Architettura del framework di Scrapy}\label{fig:1}
+\end{figure}
+
 \subsection{Saving the data}
 When it comes to saving the data there is a multitude of possibilities, ranging from a simple text file to a more structured database. 
 At first, for testing purpose, the data has been saved in a tsv(i.e. tab separated values) textual file. Subsequently, in the deployment stage, it has been memorized on a database. For the management of the code it has been chosen to keep both the database and the files using a strategy pattern. This means that in order to test new scraping scripts in the future, it is possible to switch to the file methodology changing only few lines of code. 
 \par
-As it is shown on the architecture(quale architettura??), the item(i.e. BriefItem or NewsItem) goes through a pipeline, but before that, it must be loaded with data.
+As it is shown on the architecture, the item(i.e. BriefItem or NewsItem) goes through a pipeline, but before that, it must be loaded with data.
 The initialization of an item can be done with two methods:
 \begin{itemize}
 	\item Creating an item with its constructor;
@@ -33,8 +41,7 @@ The initialization of an item can be done with two methods:
 		\item output preprocessing, which provides an operation to be done when the item is created (e.g. taking only the first data of that specific field if there are a lot of data or concatenating those strings gotten through scraping)
 	\end{itemize}
 \end{itemize}
-% Insert stuff regarding scroll pause time and robots.txt (robots.txt already written in webscrapingStatico)
-% Insert stuff regarding the date here
+
 \par While structuring and developing the scripts, no design pattern has been identified and used, except for the structure that the Scrapy framework itself already has. In fact the single steps that have to be performed have strong dependencies with  the websites' structure and the ways that they arrange the information. For instance, most of the scripts are really light in term of lines of code, and the majority of them regards mainly the way in which the websites arranges its information and article (e.g. a set of <li> tags). The only model that came to mind is the Template method pattern \cite{templatepattern}, but it only introduces redundancy with the Scrapy framework structure. 
 \input{webscrapingStatico}
 \input{webscrapingDinamico}
