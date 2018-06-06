@@ -13,6 +13,12 @@ Every time a coreference expression is founded, the algorithm will replace that 
 At the end the entire text is reconstructed from the tag XML "sentences" that contains the string of text replaced.
 \par
 At the end, we decided to split the entire article into different substrings of 5 phrases to avoid an overload of text passed to the method of coreference, because after some tests of article analysis, it has been founded a lot of errors about the coreference (e.g. replacement of "he" with "Clinton"). 
+\par
+Example of original and coreferenced content:
+\begin{itemize}
+	\item Last week, we talked about what the "too-big-to-fail" banks were saying on their earnings calls. Now, investors have to know what these mega-banks are up to, because they're the 800-lb gorillas of the market, but I don't own a single one of those. As I mentioned a couple of weeks ago, I like regional banks, because they offer what I like the most: unreasonably good returns. Naturally, I never miss an earnings call from these guys. Especially on the first earnings call after the biggest tax reform since 1986 has been passed.
+	\item Last week , we talked about what the "too-big-to-fail" banks were saying on the "too-big-to-fail" banks's earnings calls . Now , investors have to know what the "too-big-to-fail" banks are up to , because the "too-big-to-fail" banks 're the 800-lb gorillas of the market , but I don't own a single one of those . As I mentioned a couple of weeks ago , I like regional banks , because the "too-big-to-fail " banks offer what I like the most : unreasonably good returns . Naturally , I never miss an earnings call from the "too-big-to-fail" banks . Especially on the first earnings call after the biggest tax reform since 1986 has been passed .
+\end{itemize}
 
 \subsubsection{Saving Data}
 After the analysis of coreference the new data needs to be saved somewhere. In this project it has been stored on a database. The tables created for all the study of article content are:
