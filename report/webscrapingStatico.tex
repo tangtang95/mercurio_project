@@ -1,23 +1,23 @@
-\subsection{Static sites}
-Nytimes.com and marketwatch.com are the only sources considered that doesn't fall under this category: every other sites doesn't require any kind of interaction with the client. In particular, the remaining ones can be further split in the ones that needs to scraped by modifying a value in the URL (i.e. the page number of a certain section) and the ones for which their sitemap is used and analyzed to retrieve the links of the interested articles. 
+\subsection{Static websites}
+Nytimes.com and marketwatch.com are the only sources considered that doesn't fall under this category: every other websites doesn't require any kind of interaction with the client. In particular, the remaining ones can be further split into two categories: those that need to be scraped by modifying a value in the URL (i.e. the page number of a certain section) and those for which their sitemap can be used and analyzed to retrieve the links of the articles. 
 \par
-4-traders.com is a site which falls under the first of the two classes illustrated above. The parse method starts from a certain page number (zero) and retrieves the information required (e.g. links to various news); after that, another function that scrapes the single article is called. Finally, a request to the next page is done and the parse method will handle it.
+4-traders.com is a website which falls under the first of the two classes illustrated above. The parse method starts from a certain page number (zero) and retrieves the information required (e.g. links to various news); after that, another function that scrapes the single article is called. Finally, a request to the next page is done and the parse method will handle it.
 \par 
-The easiest way to scrape data from a website is via sitemap, but not every sites has one. 
-The sitemap is a special file XML containing a list of every "core" information of the website like news, videos, stocks and so on; it is important for the web site itself to have a well specified sitemap because huge crawlers like googlebot, yahoobot and other company's bot could use this to search for data and this could lead to a potential increase of its google rank at the end the process (Google also ranks web pages and not just websites). 
+The easiest way to scrape data from a website is via sitemap, but not every website has one. 
+The sitemap is a special XML file containing a list of every "core" information of the website such as news, videos, stocks and so on; it is important for the website itself to have a well specified sitemap because huge crawlers like googlebot, yahoobot and other company's bots could use it to search for data and this could lead to a potential increase of its rank in the search results (Google also ranks web pages and not just websites). 
 Of course, there are other benefits like:
 \begin{itemize}
-	\item facilitating the work of the crawler
-	\item simplifying the categorization of content
-	\item reducing the amount of jobs that has to be done to monitor the visitors
+	\item facilitating the work of the crawler;
+	\item simplifying the categorization of content;
+	\item reducing the amount of jobs that has to be done to monitor the visitors.
 \end{itemize}
-Another essential thing to look for is the file "robots.txt", which every sites has, which contains all the rules a crawler should follow and sometimes there is also a sitemap. 
+Another essential thing to take into consideration is the file "robots.txt", (every website has one) which contains all the rules a crawler should follow and sometimes there is also a sitemap. 
 This is why before scraping everyone should examine this particular file. 
 \par 
 This project, with the help of Scrapy, has searched through a lot of websites (Bloomberg, CNN, This Money,...) via sitemaps using an XML parser offered by Scrapy. 
-Unlike the dynamic sites, these are very simply to implement and that's why there are no particular ploy to use to increase the efficiency of the crawler. 
-Although, there is a big problem when someone scrape data with nonchalance. 
+Unlike dynamic websites, these are very simple to implement and that's why there are no particular ploy to use to increase the efficiency of the crawler. 
+However, there is a big problem when someone scrapes data with nonchalance. 
 The web company sometimes doesn't want every user agent to crawl its website, so they take countermeasures like temporary ban. 
-For example Bloomberg has implemented a system detection to identify unauthorized crawlers with the purpose of banning them; to solve partially this case, it's possible to implement a rotation of the IP address synchronized with a rotation of the user agents. 
-This method can maybe avoid the system detection, but for Bloomberg it just increases the number of GET request before getting banned. 
+For example, Bloomberg has implemented a detection system to identify unauthorized crawlers with the purpose of banning them; to solve partially this issue, it's possible to implement a rotation of the IP address synchronized with a rotation of the user agents. 
+This method can partially prevent the detection, but for Bloomberg it just increases the number of GET request before getting banned. 
 Nevertheless, the sitemap approach is still one of the best technique to scrape data.
