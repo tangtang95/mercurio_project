@@ -48,7 +48,7 @@ def do_openie_analysis(list_of_phrase):
     
         results = []
         for phrase in list_of_phrase:
-            results.append(fu.get_lemmatized_text(parse_openie_xml(nlp.annotate(phrase, properties = props))))
+            results.append(fu.get_lemmatized_complete_text(parse_openie_xml(nlp.annotate(phrase, properties = props))))
             nlp.close()
         return results
     

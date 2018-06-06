@@ -1,6 +1,10 @@
 \subsection{Open information extraction}
+\par 
 The Open Information Extraction (OpenIE) annotator extracts open-domain relation triples, representing a subject, a relation, and the object of the relation. This allows to summarize the articles in a series of triples and to evaluate the actions performed by the subjects. 
-The algorithm, in order to work, requires that the articles are first pre-processed, by resolving the co-references so as to extract the triples with the correct subjects. 
+The extraction is said to be a textual representation of a potential fact because its elements are not linked to a knowledge base. Furthermore, the factual nature of the proposition has not yet been established. In the above example, transforming the extraction into a full fledged fact would first require linking, if possible, the relation and the arguments to a knowledge base. Second, the truth of the extraction would need to be determined. In computer science transforming OIE extractions into ontological facts is known as relation extraction.
+\par 
+\cite{openIEwiki}. \\
+The algorithm, in order to work, requires that the articles are first pre-processed, by resolving the co-references so as to extract the triples with the correct subjects. \\
 The process begins by asking in input the reference journal from which to retrieve the financial items to be examined, then subdividing the individual articles into short periods that are easier to analyze from the Stanford coreNLP library. The library for each period returns a possible triplet that summarizes the described action, and assigns to the analysis a degree of confidence that goes from 0 to 1, where 1 is the maximum correctness. This is one of the critical points of the algorithm, since there are several solutions that have a degree of confidence at 1, choosing the most correct is a very complex problem that would require a much more specific analysis, which at the moment is impossible to find in any open source library. For this reason simply returns the first triplet with confidence to 1 that it finds.
 \begin{minted}[mathescape,
                linenos,
@@ -19,7 +23,7 @@ for triple in list_of_solutions.find_all("triple"):
                     return triple_save
 \end{minted}
 
-The idea behind this analysis is to evaluate the temperature of the verbs, that refer to the financial sector such as buy, sell, invest etc... found, that is counting the number of times in which the same actions are presented in the various articles and based on their number, to risk a hypothesis on the progress of the subject who performs those actions. If a company buys a lot in the last period, the company is probably doing well.
+The idea behind this analysis is to evaluate the temperature of the verbs, that refer to the financial sector such as buy, sell, invest etc... found, that is counting the number of times in which the same actions are presented in the various articles and based on their number, to risk a hypothesis on the progress of the subject who performs those actions. If a company buys a lot in the last period, the company is probably doing well.\\
 Although the idea was good, this analysis results to have many different problems:
 \begin{itemize}
 \item
