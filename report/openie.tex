@@ -1,6 +1,15 @@
 \subsection{Open information extraction}
 \par 
 The Open Information Extraction (OpenIE) annotator extracts open-domain relation triples, representing a subject, a relation, and the object of the relation. This allows to summarize the articles in a series of triples and to evaluate the actions performed by the subjects. 
+For example, from the sentence\\
+The ICRW is a non-profit organization headquartered in Washington.\\
+the following triples might be extracted:
+\begin{itemize}
+\item
+(ICRW) (is) (organization)
+\item
+(a organization) (is headquartered in) (Washington)
+\end{itemize}
 The extraction is said to be a textual representation of a potential fact because its elements are not linked to a knowledge base. Furthermore, the factual nature of the proposition has not yet been established. In the above example, transforming the extraction into a full fledged fact would first require linking, if possible, the relation and the arguments to a knowledge base. Second, the truth of the extraction would need to be determined. In computer science transforming OIE extractions into ontological facts is known as relation extraction.
 \par 
 \cite{openIEwiki}. \\
